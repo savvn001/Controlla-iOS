@@ -3,6 +3,7 @@
 //  PGMidi
 //
 
+#import <UIKit/UIKit.h>
 #import "PGMidi.h"
 #import "PGArc.h"
 #import <mach/mach_time.h>

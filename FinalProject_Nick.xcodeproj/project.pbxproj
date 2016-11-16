@@ -153,6 +153,8 @@
 		69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-02.png"; sourceTree = "<group>"; };
 		69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-03.png"; sourceTree = "<group>"; };
 		69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-05.png"; sourceTree = "<group>"; };
+		69AF38711DDC769A00219D0F /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		69AF38721DDC76BE00219D0F /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
 		69E6A4231DDA391000562E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69E6A4251DDA391900562E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E6A4271DDA392100562E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -224,6 +226,8 @@
 		69A084E11DD77B9B008AF00D /* FinalProject_Nick */ = {
 			isa = PBXGroup;
 			children = (
+				69AF38721DDC76BE00219D0F /* iOSVersionDetection.h */,
+				69AF38711DDC769A00219D0F /* PGArc.h */,
 				6928F79B1DDC6E640087EEEA /* PGMidi.h */,
 				6928F79C1DDC6E640087EEEA /* PGMidi.mm */,
 				6928F79D1DDC6E640087EEEA /* PGMidiAllSources.h */,
