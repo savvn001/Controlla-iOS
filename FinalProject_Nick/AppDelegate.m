@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+//#import "MidiMonitorViewController.h"
+#import "PGMidi.h"
+#import "iOSVersionDetection.h"
+#import "PGArc.h"
 
 @interface AppDelegate ()
 

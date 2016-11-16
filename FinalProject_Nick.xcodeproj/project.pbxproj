@@ -7,6 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6928F7A11DDC6E640087EEEA /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6928F79C1DDC6E640087EEEA /* PGMidi.mm */; };
+		6928F7A21DDC6E640087EEEA /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6928F79E1DDC6E640087EEEA /* PGMidiAllSources.mm */; };
+		6928F7A31DDC6E640087EEEA /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6928F7A01DDC6E640087EEEA /* PGMidiFind.mm */; };
+		6989379D1DDA23B9006F0515 /* 4 Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937781DDA23B9006F0515 /* 4 Filled.png */; };
+		6989379E1DDA23B9006F0515 /* Activity Grid Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937791DDA23B9006F0515 /* Activity Grid Filled.png */; };
+		6989379F1DDA23B9006F0515 /* Activity Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377A1DDA23B9006F0515 /* Activity Grid.png */; };
+		698937A01DDA23B9006F0515 /* Bass Drum Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377B1DDA23B9006F0515 /* Bass Drum Filled.png */; };
+		698937A11DDA23B9006F0515 /* Bass Drum.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377C1DDA23B9006F0515 /* Bass Drum.png */; };
+		698937A21DDA23B9006F0515 /* Circled 4 Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377D1DDA23B9006F0515 /* Circled 4 Filled.png */; };
+		698937A31DDA23B9006F0515 /* Circled 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377E1DDA23B9006F0515 /* Circled 4.png */; };
+		698937A41DDA23B9006F0515 /* Circled 5 .png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377F1DDA23B9006F0515 /* Circled 5 .png */; };
+		698937A51DDA23B9006F0515 /* Electronic Music Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937801DDA23B9006F0515 /* Electronic Music Filled.png */; };
+		698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937811DDA23B9006F0515 /* Electronic Music.png */; };
+		698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937821DDA23B9006F0515 /* Fast Forward Filled.png */; };
+		698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937831DDA23B9006F0515 /* Fast Forward.png */; };
+		698937A91DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937841DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png */; };
+		698937AA1DDA23B9006F0515 /* Horizontal Settings Mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937851DDA23B9006F0515 /* Horizontal Settings Mixer.png */; };
+		698937AB1DDA23B9006F0515 /* Mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937861DDA23B9006F0515 /* Mixer.png */; };
+		698937AC1DDA23B9006F0515 /* Musical Notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937871DDA23B9006F0515 /* Musical Notes.png */; };
+		698937AD1DDA23B9006F0515 /* Piano Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937881DDA23B9006F0515 /* Piano Filled.png */; };
+		698937AE1DDA23B9006F0515 /* Piano.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937891DDA23B9006F0515 /* Piano.png */; };
+		698937AF1DDA23B9006F0515 /* Play Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989378A1DDA23B9006F0515 /* Play Filled.png */; };
+		698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989378B1DDA23B9006F0515 /* Play Record Filled.png */; };
+		698937B11DDA23B9006F0515 /* Play Record.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989378C1DDA23B9006F0515 /* Play Record.png */; };
+		698937B21DDA23B9006F0515 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989378D1DDA23B9006F0515 /* Play.png */; };
+		698937B31DDA23B9006F0515 /* Record_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989378E1DDA23B9006F0515 /* Record_2.png */; };
+		698937B41DDA23B9006F0515 /* Record.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989378F1DDA23B9006F0515 /* Record.png */; };
+		698937B51DDA23B9006F0515 /* Repeat Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937901DDA23B9006F0515 /* Repeat Filled.png */; };
+		698937B61DDA23B9006F0515 /* Repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937911DDA23B9006F0515 /* Repeat.png */; };
+		698937B71DDA23B9006F0515 /* Rewind Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937921DDA23B9006F0515 /* Rewind Filled.png */; };
+		698937B81DDA23B9006F0515 /* Rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937931DDA23B9006F0515 /* Rewind.png */; };
+		698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937941DDA23B9006F0515 /* Skip to Start Filled.png */; };
+		698937BA1DDA23B9006F0515 /* Skip to Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937951DDA23B9006F0515 /* Skip to Start.png */; };
+		698937BB1DDA23B9006F0515 /* Stop Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937961DDA23B9006F0515 /* Stop Filled.png */; };
+		698937BC1DDA23B9006F0515 /* Stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937971DDA23B9006F0515 /* Stop.png */; };
+		698937BD1DDA23B9006F0515 /* Time Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937981DDA23B9006F0515 /* Time Filled.png */; };
+		698937BE1DDA23B9006F0515 /* Time.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937991DDA23B9006F0515 /* Time.png */; };
+		698937BF1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989379A1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png */; };
+		698937C01DDA23B9006F0515 /* Vertical Settings Mixer_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989379B1DDA23B9006F0515 /* Vertical Settings Mixer_2.png */; };
+		698937C11DDA23B9006F0515 /* Vertical Settings Mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */; };
+		698937C41DDA253A006F0515 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698937C31DDA253A006F0515 /* CoreAudioKit.framework */; };
+		698937C61DDA2542006F0515 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698937C51DDA2542006F0515 /* CoreMIDI.framework */; };
 		69A084E41DD77B9B008AF00D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E31DD77B9B008AF00D /* main.m */; };
 		69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E61DD77B9B008AF00D /* AppDelegate.m */; };
 		69A084EA1DD77B9B008AF00D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E91DD77B9B008AF00D /* ViewController.m */; };
@@ -15,6 +57,14 @@
 		69A084F21DD77B9B008AF00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A084F01DD77B9B008AF00D /* LaunchScreen.storyboard */; };
 		69A084FD1DD77B9B008AF00D /* FinalProject_NickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084FC1DD77B9B008AF00D /* FinalProject_NickTests.m */; };
 		69A085081DD77B9B008AF00D /* FinalProject_NickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A085071DD77B9B008AF00D /* FinalProject_NickUITests.m */; };
+		69A085171DD783A7008AF00D /* padViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A085161DD783A7008AF00D /* padViewController.m */; };
+		69A0851A1DD788A0008AF00D /* controlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A085191DD788A0008AF00D /* controlsViewController.m */; };
+		69A0851C1DD7ADA9008AF00D /* GUI For App 1-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */; };
+		69A0851E1DD7AE9F008AF00D /* GUI For App 1-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */; };
+		69A085201DD7AFED008AF00D /* GUI For App 1-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */; };
+		69E6A4241DDA391000562E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4231DDA391000562E75 /* UIKit.framework */; };
+		69E6A4261DDA391900562E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4251DDA391900562E75 /* Foundation.framework */; };
+		69E6A4281DDA392100562E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4271DDA392100562E75 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +85,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6928F79B1DDC6E640087EEEA /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		6928F79C1DDC6E640087EEEA /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		6928F79D1DDC6E640087EEEA /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		6928F79E1DDC6E640087EEEA /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		6928F79F1DDC6E640087EEEA /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		6928F7A01DDC6E640087EEEA /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		698937781DDA23B9006F0515 /* 4 Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4 Filled.png"; sourceTree = "<group>"; };
+		698937791DDA23B9006F0515 /* Activity Grid Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity Grid Filled.png"; sourceTree = "<group>"; };
+		6989377A1DDA23B9006F0515 /* Activity Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity Grid.png"; sourceTree = "<group>"; };
+		6989377B1DDA23B9006F0515 /* Bass Drum Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bass Drum Filled.png"; sourceTree = "<group>"; };
+		6989377C1DDA23B9006F0515 /* Bass Drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bass Drum.png"; sourceTree = "<group>"; };
+		6989377D1DDA23B9006F0515 /* Circled 4 Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circled 4 Filled.png"; sourceTree = "<group>"; };
+		6989377E1DDA23B9006F0515 /* Circled 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circled 4.png"; sourceTree = "<group>"; };
+		6989377F1DDA23B9006F0515 /* Circled 5 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circled 5 .png"; sourceTree = "<group>"; };
+		698937801DDA23B9006F0515 /* Electronic Music Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Electronic Music Filled.png"; sourceTree = "<group>"; };
+		698937811DDA23B9006F0515 /* Electronic Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Electronic Music.png"; sourceTree = "<group>"; };
+		698937821DDA23B9006F0515 /* Fast Forward Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fast Forward Filled.png"; sourceTree = "<group>"; };
+		698937831DDA23B9006F0515 /* Fast Forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fast Forward.png"; sourceTree = "<group>"; };
+		698937841DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Horizontal Settings Mixer Filled.png"; sourceTree = "<group>"; };
+		698937851DDA23B9006F0515 /* Horizontal Settings Mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Horizontal Settings Mixer.png"; sourceTree = "<group>"; };
+		698937861DDA23B9006F0515 /* Mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mixer.png; sourceTree = "<group>"; };
+		698937871DDA23B9006F0515 /* Musical Notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Musical Notes.png"; sourceTree = "<group>"; };
+		698937881DDA23B9006F0515 /* Piano Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Piano Filled.png"; sourceTree = "<group>"; };
+		698937891DDA23B9006F0515 /* Piano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Piano.png; sourceTree = "<group>"; };
+		6989378A1DDA23B9006F0515 /* Play Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play Filled.png"; sourceTree = "<group>"; };
+		6989378B1DDA23B9006F0515 /* Play Record Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play Record Filled.png"; sourceTree = "<group>"; };
+		6989378C1DDA23B9006F0515 /* Play Record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play Record.png"; sourceTree = "<group>"; };
+		6989378D1DDA23B9006F0515 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		6989378E1DDA23B9006F0515 /* Record_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Record_2.png; sourceTree = "<group>"; };
+		6989378F1DDA23B9006F0515 /* Record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Record.png; sourceTree = "<group>"; };
+		698937901DDA23B9006F0515 /* Repeat Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Repeat Filled.png"; sourceTree = "<group>"; };
+		698937911DDA23B9006F0515 /* Repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Repeat.png; sourceTree = "<group>"; };
+		698937921DDA23B9006F0515 /* Rewind Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rewind Filled.png"; sourceTree = "<group>"; };
+		698937931DDA23B9006F0515 /* Rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rewind.png; sourceTree = "<group>"; };
+		698937941DDA23B9006F0515 /* Skip to Start Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Skip to Start Filled.png"; sourceTree = "<group>"; };
+		698937951DDA23B9006F0515 /* Skip to Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Skip to Start.png"; sourceTree = "<group>"; };
+		698937961DDA23B9006F0515 /* Stop Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop Filled.png"; sourceTree = "<group>"; };
+		698937971DDA23B9006F0515 /* Stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stop.png; sourceTree = "<group>"; };
+		698937981DDA23B9006F0515 /* Time Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Time Filled.png"; sourceTree = "<group>"; };
+		698937991DDA23B9006F0515 /* Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Time.png; sourceTree = "<group>"; };
+		6989379A1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vertical Settings Mixer Filled.png"; sourceTree = "<group>"; };
+		6989379B1DDA23B9006F0515 /* Vertical Settings Mixer_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vertical Settings Mixer_2.png"; sourceTree = "<group>"; };
+		6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vertical Settings Mixer.png"; sourceTree = "<group>"; };
+		698937C31DDA253A006F0515 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		698937C51DDA2542006F0515 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		69A084DF1DD77B9B008AF00D /* FinalProject_Nick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_Nick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A084E31DD77B9B008AF00D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69A084E51DD77B9B008AF00D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +146,16 @@
 		69A085031DD77B9B008AF00D /* FinalProject_NickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalProject_NickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A085071DD77B9B008AF00D /* FinalProject_NickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalProject_NickUITests.m; sourceTree = "<group>"; };
 		69A085091DD77B9B008AF00D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A085151DD783A7008AF00D /* padViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = padViewController.h; sourceTree = "<group>"; };
+		69A085161DD783A7008AF00D /* padViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = padViewController.m; sourceTree = "<group>"; };
+		69A085181DD788A0008AF00D /* controlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controlsViewController.h; sourceTree = "<group>"; };
+		69A085191DD788A0008AF00D /* controlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = controlsViewController.m; sourceTree = "<group>"; };
+		69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-02.png"; sourceTree = "<group>"; };
+		69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-03.png"; sourceTree = "<group>"; };
+		69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-05.png"; sourceTree = "<group>"; };
+		69E6A4231DDA391000562E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		69E6A4251DDA391900562E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		69E6A4271DDA392100562E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +163,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E6A4281DDA392100562E75 /* CoreGraphics.framework in Frameworks */,
+				69E6A4261DDA391900562E75 /* Foundation.framework in Frameworks */,
+				69E6A4241DDA391000562E75 /* UIKit.framework in Frameworks */,
+				698937C61DDA2542006F0515 /* CoreMIDI.framework in Frameworks */,
+				698937C41DDA253A006F0515 /* CoreAudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +188,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		698937C21DDA253A006F0515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69E6A4271DDA392100562E75 /* CoreGraphics.framework */,
+				69E6A4251DDA391900562E75 /* Foundation.framework */,
+				69E6A4231DDA391000562E75 /* UIKit.framework */,
+				698937C51DDA2542006F0515 /* CoreMIDI.framework */,
+				698937C31DDA253A006F0515 /* CoreAudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69A084D61DD77B9A008AF00D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +207,7 @@
 				69A084FB1DD77B9B008AF00D /* FinalProject_NickTests */,
 				69A085061DD77B9B008AF00D /* FinalProject_NickUITests */,
 				69A084E01DD77B9B008AF00D /* Products */,
+				698937C21DDA253A006F0515 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +224,61 @@
 		69A084E11DD77B9B008AF00D /* FinalProject_Nick */ = {
 			isa = PBXGroup;
 			children = (
+				6928F79B1DDC6E640087EEEA /* PGMidi.h */,
+				6928F79C1DDC6E640087EEEA /* PGMidi.mm */,
+				6928F79D1DDC6E640087EEEA /* PGMidiAllSources.h */,
+				6928F79E1DDC6E640087EEEA /* PGMidiAllSources.mm */,
+				6928F79F1DDC6E640087EEEA /* PGMidiFind.h */,
+				6928F7A01DDC6E640087EEEA /* PGMidiFind.mm */,
+				698937781DDA23B9006F0515 /* 4 Filled.png */,
+				698937791DDA23B9006F0515 /* Activity Grid Filled.png */,
+				6989377A1DDA23B9006F0515 /* Activity Grid.png */,
+				6989377B1DDA23B9006F0515 /* Bass Drum Filled.png */,
+				6989377C1DDA23B9006F0515 /* Bass Drum.png */,
+				6989377D1DDA23B9006F0515 /* Circled 4 Filled.png */,
+				6989377E1DDA23B9006F0515 /* Circled 4.png */,
+				6989377F1DDA23B9006F0515 /* Circled 5 .png */,
+				698937801DDA23B9006F0515 /* Electronic Music Filled.png */,
+				698937811DDA23B9006F0515 /* Electronic Music.png */,
+				698937821DDA23B9006F0515 /* Fast Forward Filled.png */,
+				698937831DDA23B9006F0515 /* Fast Forward.png */,
+				698937841DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png */,
+				698937851DDA23B9006F0515 /* Horizontal Settings Mixer.png */,
+				698937861DDA23B9006F0515 /* Mixer.png */,
+				698937871DDA23B9006F0515 /* Musical Notes.png */,
+				698937881DDA23B9006F0515 /* Piano Filled.png */,
+				698937891DDA23B9006F0515 /* Piano.png */,
+				6989378A1DDA23B9006F0515 /* Play Filled.png */,
+				6989378B1DDA23B9006F0515 /* Play Record Filled.png */,
+				6989378C1DDA23B9006F0515 /* Play Record.png */,
+				6989378D1DDA23B9006F0515 /* Play.png */,
+				6989378E1DDA23B9006F0515 /* Record_2.png */,
+				6989378F1DDA23B9006F0515 /* Record.png */,
+				698937901DDA23B9006F0515 /* Repeat Filled.png */,
+				698937911DDA23B9006F0515 /* Repeat.png */,
+				698937921DDA23B9006F0515 /* Rewind Filled.png */,
+				698937931DDA23B9006F0515 /* Rewind.png */,
+				698937941DDA23B9006F0515 /* Skip to Start Filled.png */,
+				698937951DDA23B9006F0515 /* Skip to Start.png */,
+				698937961DDA23B9006F0515 /* Stop Filled.png */,
+				698937971DDA23B9006F0515 /* Stop.png */,
+				698937981DDA23B9006F0515 /* Time Filled.png */,
+				698937991DDA23B9006F0515 /* Time.png */,
+				6989379A1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png */,
+				6989379B1DDA23B9006F0515 /* Vertical Settings Mixer_2.png */,
+				6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */,
+				69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */,
+				69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */,
+				69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */,
 				69A084E51DD77B9B008AF00D /* AppDelegate.h */,
 				69A084E61DD77B9B008AF00D /* AppDelegate.m */,
 				69A084E81DD77B9B008AF00D /* ViewController.h */,
 				69A084E91DD77B9B008AF00D /* ViewController.m */,
 				69A084EB1DD77B9B008AF00D /* Main.storyboard */,
+				69A085151DD783A7008AF00D /* padViewController.h */,
+				69A085161DD783A7008AF00D /* padViewController.m */,
+				69A085181DD788A0008AF00D /* controlsViewController.h */,
+				69A085191DD788A0008AF00D /* controlsViewController.m */,
 				69A084EE1DD77B9B008AF00D /* Assets.xcassets */,
 				69A084F01DD77B9B008AF00D /* LaunchScreen.storyboard */,
 				69A084F31DD77B9B008AF00D /* Info.plist */,
@@ -246,8 +419,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */,
+				698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */,
+				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
+				698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */,
+				698937B71DDA23B9006F0515 /* Rewind Filled.png in Resources */,
+				698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */,
+				698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */,
+				698937AE1DDA23B9006F0515 /* Piano.png in Resources */,
+				698937AD1DDA23B9006F0515 /* Piano Filled.png in Resources */,
+				6989379F1DDA23B9006F0515 /* Activity Grid.png in Resources */,
+				698937A21DDA23B9006F0515 /* Circled 4 Filled.png in Resources */,
+				698937A31DDA23B9006F0515 /* Circled 4.png in Resources */,
+				698937BF1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png in Resources */,
+				698937A11DDA23B9006F0515 /* Bass Drum.png in Resources */,
+				69A0851C1DD7ADA9008AF00D /* GUI For App 1-02.png in Resources */,
+				698937AA1DDA23B9006F0515 /* Horizontal Settings Mixer.png in Resources */,
+				698937AB1DDA23B9006F0515 /* Mixer.png in Resources */,
+				698937B31DDA23B9006F0515 /* Record_2.png in Resources */,
+				698937BA1DDA23B9006F0515 /* Skip to Start.png in Resources */,
+				698937C01DDA23B9006F0515 /* Vertical Settings Mixer_2.png in Resources */,
+				698937A01DDA23B9006F0515 /* Bass Drum Filled.png in Resources */,
+				698937A91DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png in Resources */,
+				698937A41DDA23B9006F0515 /* Circled 5 .png in Resources */,
+				698937A51DDA23B9006F0515 /* Electronic Music Filled.png in Resources */,
 				69A084F21DD77B9B008AF00D /* LaunchScreen.storyboard in Resources */,
+				69A0851E1DD7AE9F008AF00D /* GUI For App 1-03.png in Resources */,
+				6989379D1DDA23B9006F0515 /* 4 Filled.png in Resources */,
+				698937B51DDA23B9006F0515 /* Repeat Filled.png in Resources */,
+				698937B11DDA23B9006F0515 /* Play Record.png in Resources */,
+				69A085201DD7AFED008AF00D /* GUI For App 1-05.png in Resources */,
 				69A084EF1DD77B9B008AF00D /* Assets.xcassets in Resources */,
+				698937BD1DDA23B9006F0515 /* Time Filled.png in Resources */,
+				698937AF1DDA23B9006F0515 /* Play Filled.png in Resources */,
+				698937BC1DDA23B9006F0515 /* Stop.png in Resources */,
+				698937BB1DDA23B9006F0515 /* Stop Filled.png in Resources */,
+				698937AC1DDA23B9006F0515 /* Musical Notes.png in Resources */,
+				698937C11DDA23B9006F0515 /* Vertical Settings Mixer.png in Resources */,
+				698937B21DDA23B9006F0515 /* Play.png in Resources */,
+				6989379E1DDA23B9006F0515 /* Activity Grid Filled.png in Resources */,
+				698937B81DDA23B9006F0515 /* Rewind.png in Resources */,
+				698937B41DDA23B9006F0515 /* Record.png in Resources */,
+				698937B61DDA23B9006F0515 /* Repeat.png in Resources */,
 				69A084ED1DD77B9B008AF00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +486,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6928F7A31DDC6E640087EEEA /* PGMidiFind.mm in Sources */,
+				6928F7A21DDC6E640087EEEA /* PGMidiAllSources.mm in Sources */,
 				69A084EA1DD77B9B008AF00D /* ViewController.m in Sources */,
+				6928F7A11DDC6E640087EEEA /* PGMidi.mm in Sources */,
+				69A0851A1DD788A0008AF00D /* controlsViewController.m in Sources */,
 				69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */,
+				69A085171DD783A7008AF00D /* padViewController.m in Sources */,
 				69A084E41DD77B9B008AF00D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,10 +642,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FinalProject_Nick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "leeds.ac.uk.FinalProject-Nick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -435,10 +659,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FinalProject_Nick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "leeds.ac.uk.FinalProject-Nick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -507,6 +737,7 @@
 				69A0850E1DD77B9B008AF00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69A0850F1DD77B9B008AF00D /* Build configuration list for PBXNativeTarget "FinalProject_NickTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +746,7 @@
 				69A085111DD77B9B008AF00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69A085121DD77B9B008AF00D /* Build configuration list for PBXNativeTarget "FinalProject_NickUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +755,7 @@
 				69A085141DD77B9B008AF00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

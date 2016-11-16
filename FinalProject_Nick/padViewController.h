@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  padViewController.h
 //  FinalProject_Nick
 //
 //  Created by Nicholas on 12/11/2016.
@@ -8,18 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
+@interface padViewController : UIViewController{
     
-    
+
 }
-
-//Button for switching View to Pads View
--(IBAction)goToPads:(id)sender;
-
-//button for switching view to controls view
+ //Button to switch to keyboard view
+-(IBAction)goToKeyboard:(id)sender;
 - (IBAction)goToControls:(id)sender;
 
 
 
 @end
-
