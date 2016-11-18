@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MidiBusClient.h"
 
 @interface controlsViewController : UIViewController
 

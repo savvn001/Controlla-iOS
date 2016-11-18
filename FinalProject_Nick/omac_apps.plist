@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Applications</key>
+	<array>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/midibridge/id449160859</string>
+			<key>Application</key>
+			<string>MidiBridge</string>
+			<key>Description</key>
+			<string>Patchbay, router, filter and interface bridger</string>
+			<key>Developer</key>
+			<string>Audeonic Apps</string>
+			<key>LaunchURL</key>
+			<string>midibridge://</string>
+			<key>MinimumIOSBuild</key>
+			<string>478.47</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>1</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=KRJkaxIKxYk</string>
+			<key>VirtualPortName</key>
+			<string>MidiBridge</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/midivision/id405828617</string>
+			<key>Application</key>
+			<string>MidiVision</string>
+			<key>Description</key>
+			<string>MIDI protocol analyser/monitor</string>
+			<key>Developer</key>
+			<string>Audeonic Apps</string>
+			<key>LaunchURL</key>
+			<string>midivision://</string>
+			<key>MinimumIOSBuild</key>
+			<string>478.47</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>3</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>MidiVision</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/arctic-keys/id457216963</string>
+			<key>Application</key>
+			<string>Arctic Keys</string>
+			<key>Description</key>
+			<string>Virtual analog synthesizer</string>
+			<key>Developer</key>
+			<string>One Red Dog Media Pty Ltd</string>
+			<key>LaunchURL</key>
+			<string>onereddogarctickeys://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>4</string>
+			<key>VideoURL</key>
+			<string>http://www.youtube.com/watch?v=7_EKRBaCSdE</string>
+			<key>VirtualPortName</key>
+			<string>Arctic Keys</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/freewi/id485711674</string>
+			<key>Application</key>
+			<string>FreEWI</string>
+			<key>Description</key>
+			<string>Inline virtual MIDI event mapper</string>
+			<key>Developer</key>
+			<string>Audeonic Apps</string>
+			<key>LaunchURL</key>
+			<string>freewi://</string>
+			<key>MinimumIOSBuild</key>
+			<string>550.52</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>9</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>FreEWI</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/beatmaker-2/id417020234</string>
+			<key>Application</key>
+			<string>BeatMaker 2</string>
+			<key>Description</key>
+			<string>Sample based music production studio</string>
+			<key>Developer</key>
+			<string>INTUA</string>
+			<key>LaunchURL</key>
+			<string>beatmaker2://</string>
+			<key>MinimumIOSBuild</key>
+			<string>550.58</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>10</string>
+			<key>VideoURL</key>
+			<string>http://youtube.com/watch?v=gBeSjsbVW18</string>
+			<key>VirtualPortName</key>
+			<string>BeatMaker 2</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/midibus/id648856167</string>
+			<key>Application</key>
+			<string>MidiBus</string>
+			<key>Description</key>
+			<string>MIDI Clock generator/monitor</string>
+			<key>Developer</key>
+			<string>Audeonic Apps</string>
+			<key>LaunchURL</key>
+			<string>midibus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>86</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>MidiBus</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/midisequencer/id787934896</string>
+			<key>Application</key>
+			<string>midiSequencer</string>
+			<key>Description</key>
+			<string>midi step sequencer with analog controls and ornaments</string>
+			<key>Developer</key>
+			<string>tony saunders</string>
+			<key>LaunchURL</key>
+			<string>midiSequencer://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+			</array>
+			<key>Serial</key>
+			<string>87</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>midiSequencer</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/sector/id618095247</string>
+			<key>Application</key>
+			<string>SECTOR</string>
+			<key>Description</key>
+			<string>Stochastic sample slice sequencer</string>
+			<key>Developer</key>
+			<string>kymatica</string>
+			<key>LaunchURL</key>
+			<string>kymaticasector.1.audiobus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+			</array>
+			<key>Serial</key>
+			<string>88</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>SECTOR</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/anytune-slow-down-music-bpm/id415365180</string>
+			<key>Application</key>
+			<string>Anytune</string>
+			<key>Description</key>
+			<string>Slow down music, choose the perfect pitch, and learn to play by ear</string>
+			<key>Developer</key>
+			<string>Anystone Technologies, Inc.</string>
+			<key>LaunchURL</key>
+			<string>com.anystonetech.Anytune://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>89</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=UlL0Dy0DTpI</string>
+			<key>VirtualPortName</key>
+			<string>Anytune</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/anytune-pro+-slow-downer-music/id478293637</string>
+			<key>Application</key>
+			<string>Anytune Pro</string>
+			<key>Description</key>
+			<string>Slow down music, choose the perfect pitch, and learn to play by ear</string>
+			<key>Developer</key>
+			<string>Anystone Technologies, Inc.</string>
+			<key>LaunchURL</key>
+			<string>com.anystonetech.Anytune.Pro://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>90</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=UlL0Dy0DTpI</string>
+			<key>VirtualPortName</key>
+			<string>Anytune Pro</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/anytune-pro+-slow-downer-music/id478293637</string>
+			<key>Application</key>
+			<string>Anytune Pro+</string>
+			<key>Description</key>
+			<string>Slow down music, choose the perfect pitch, and learn to play by ear</string>
+			<key>Developer</key>
+			<string>Anystone Technologies, Inc.</string>
+			<key>LaunchURL</key>
+			<string>com.anystonetech.Anytune.HQ://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>91</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=UlL0Dy0DTpI</string>
+			<key>VirtualPortName</key>
+			<string>Anytune Pro+</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/birdstepper/id818699197</string>
+			<key>Application</key>
+			<string>birdStepper</string>
+			<key>Description</key>
+			<string>Step-sequenced effects processor</string>
+			<key>Developer</key>
+			<string>birdSound L.L.C.</string>
+			<key>LaunchURL</key>
+			<string>birdStepper.1.1.1.audiobus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+			</array>
+			<key>Serial</key>
+			<string>92</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=lJ3MvC8MmSA</string>
+			<key>VirtualPortName</key>
+			<string>birdStepper</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/miselu-key/id899280039</string>
+			<key>Application</key>
+			<string>Miselu KEY</string>
+			<key>Description</key>
+			<string>Connection application for Miselu music devices</string>
+			<key>Developer</key>
+			<string>Miselu Inc.</string>
+			<key>LaunchURL</key>
+			<string>miselukey://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>93</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Miselu KEY</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/gumdrops-*-beats-so-sweet/id732635007</string>
+			<key>Application</key>
+			<string>Gumdrops</string>
+			<key>Description</key>
+			<string>64 track 32 step drum machine instrument</string>
+			<key>Developer</key>
+			<string>Hanson Interactive</string>
+			<key>LaunchURL</key>
+			<string>gumdrops://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+			</array>
+			<key>Serial</key>
+			<string>94</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>http://www.youtube.com/watch?v=hv6WBfI8KGQ</string>
+			<key>VirtualPortName</key>
+			<string>Gumdrops</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/triggler-sampler-synth/id817153337</string>
+			<key>Application</key>
+			<string>Triggler</string>
+			<key>Description</key>
+			<string>Rapid sampler/sequencer geared towards live performance with on board effects</string>
+			<key>Developer</key>
+			<string>Christopher Hobson</string>
+			<key>LaunchURL</key>
+			<string>triggler://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>95</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>http://www.youtube.com/watch?v=eATENwwhgZk</string>
+			<key>VirtualPortName</key>
+			<string>Triggler</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/oscilab/id790213913</string>
+			<key>Application</key>
+			<string>Oscilab</string>
+			<key>Description</key>
+			<string>Innovative wave-oriented sequencer, create unique loops and melodies</string>
+			<key>Developer</key>
+			<string>2beat</string>
+			<key>LaunchURL</key>
+			<string>soundbitsmodulab://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+			</array>
+			<key>Serial</key>
+			<string>96</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>http://www.youtube.com/watch?v=R1L9AmJQG6Q</string>
+			<key>VirtualPortName</key>
+			<string>Oscilab</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/solo-nr.19/id884781236</string>
+			<key>Application</key>
+			<string>Solo</string>
+			<key>Description</key>
+			<string>Algorithm for the performance of Solo by Karlheinz Stockhausen</string>
+			<key>Developer</key>
+			<string>apeSoft</string>
+			<key>LaunchURL</key>
+			<string>Solo-2.audiobus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>97</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Solo</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string></string>
+			<key>Application</key>
+			<string>PULSOR</string>
+			<key>Description</key>
+			<string>Modulated monophonic synth producing unique sounds</string>
+			<key>Developer</key>
+			<string>amazingnoises</string>
+			<key>LaunchURL</key>
+			<string>PULSOR-2.audiobus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>98</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>PULSOR</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/apefilter/id903006632</string>
+			<key>Application</key>
+			<string>apeFilter</string>
+			<key>Description</key>
+			<string>Fibonacci Filter</string>
+			<key>Developer</key>
+			<string>apeSoft</string>
+			<key>LaunchURL</key>
+			<string>apeFilter://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>99</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>apeFilter</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/ivcs3/id665703927</string>
+			<key>Application</key>
+			<string>iVCS3</string>
+			<key>Description</key>
+			<string>Official EMS VCS3 emulator</string>
+			<key>Developer</key>
+			<string>apeSoft</string>
+			<key>LaunchURL</key>
+			<string>iVCS3://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>100</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>iVCS3</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/gliderverb/id887408942</string>
+			<key>Application</key>
+			<string>GliderVerb</string>
+			<key>Description</key>
+			<string>Reverberator with Glissandos</string>
+			<key>Developer</key>
+			<string>amazingnoises</string>
+			<key>LaunchURL</key>
+			<string>GliderVerb://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>101</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>GliderVerb</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/sparkle/id818477094</string>
+			<key>Application</key>
+			<string>Sparkle</string>
+			<key>Description</key>
+			<string>Advanced Cross Synthesis</string>
+			<key>Developer</key>
+			<string>apeSoft</string>
+			<key>LaunchURL</key>
+			<string>Sparkle://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>102</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Sparkle</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/stria/id625740515</string>
+			<key>Application</key>
+			<string>Stria</string>
+			<key>Description</key>
+			<string>Multilevel Interactive Sound Synthesizer</string>
+			<key>Developer</key>
+			<string>apeSoft</string>
+			<key>LaunchURL</key>
+			<string>Stria-2.audiobus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>104</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Stria</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/ipulsaret/id565880268</string>
+			<key>Application</key>
+			<string>iPulsaret</string>
+			<key>Description</key>
+			<string>All time-domain varieties of Granular Synthesis</string>
+			<key>Developer</key>
+			<string>apeSoft</string>
+			<key>LaunchURL</key>
+			<string>iPulsaret-2.audiobus://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>105</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>iPulsaret</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/limiter-amazing-noises-audio/id945375756</string>
+			<key>Application</key>
+			<string>Limiter</string>
+			<key>Description</key>
+			<string>Brickwall peak limiter</string>
+			<key>Developer</key>
+			<string>Amazing Noises</string>
+			<key>LaunchURL</key>
+			<string>Limiter://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>106</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Limiter</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/reverb-feedback-delay-network/id950600083</string>
+			<key>Application</key>
+			<string>Reverb - Feedback Delay Network</string>
+			<key>Description</key>
+			<string>Reverb effect</string>
+			<key>Developer</key>
+			<string>Amazing Noises</string>
+			<key>LaunchURL</key>
+			<string>Reverb://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>107</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Reverb</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/motion-synth/id945266624?mt=8</string>
+			<key>Application</key>
+			<string>Motion Synth</string>
+			<key>Description</key>
+			<string>Music through motion</string>
+			<key>Developer</key>
+			<string>AUUG</string>
+			<key>LaunchURL</key>
+			<string>MotionSynth://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>108</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>http://www.youtube.com/watch?v=vOlIawT01uo</string>
+			<key>VirtualPortName</key>
+			<string>auug</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/us/app/music-io-audio-midi-over-usb/id966003016</string>
+			<key>Application</key>
+			<string>Music IO</string>
+			<key>Description</key>
+			<string>Stream audio and MIDI over USB with VST/AU support</string>
+			<key>Developer</key>
+			<string>Power Trio LLC</string>
+			<key>LaunchURL</key>
+			<string>musicio://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>109</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string>http://www.youtube.com/watch?v=19orQSxbc6Q</string>
+			<key>VirtualPortName</key>
+			<string>MusicIO</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/app/peter-vogel-cmi/id420212505</string>
+			<key>Application</key>
+			<string>Peter Vogel CMI</string>
+			<key>Description</key>
+			<string>Fairlight CMI for iOS</string>
+			<key>Developer</key>
+			<string>Fairlight Instruments Pty Ltd</string>
+			<key>LaunchURL</key>
+			<string>VogelCMI://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>110</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Vogel CMI</string>
+		</dict>
+		<dict>
+			<key>AppStoreURL</key>
+			<string>https://itunes.apple.com/app/peter-vogel-cmi-pro/id427747876</string>
+			<key>Application</key>
+			<string>Peter Vogel CMI Pro</string>
+			<key>Description</key>
+			<string>Pro Fairlight CMI for iOS</string>
+			<key>Developer</key>
+			<string>Fairlight Instruments Pty Ltd</string>
+			<key>LaunchURL</key>
+			<string>VogelCMIPro://</string>
+			<key>MinimumIOSBuild</key>
+			<string>675.00</string>
+			<key>Platforms</key>
+			<array>
+				<string>iPad</string>
+				<string>iPhone</string>
+				<string>iPod touch</string>
+			</array>
+			<key>Serial</key>
+			<string>111</string>
+			<key>SupportsMIDISwitch</key>
+			<true/>
+			<key>VideoURL</key>
+			<string></string>
+			<key>VirtualPortName</key>
+			<string>Vogel CMI Pro</string>
+		</dict>
+	</array>
+	<key>ApplicationsPorts</key>
+	<array>
+		<string>Sunrizer</string>
+		<string>StepPolyArp</string>
+		<string>BeatMaker 2</string>
+		<string>Reactable</string>
+		<string>Animoog</string>
+		<string>MS-20 Controller</string>
+		<string>U-Plex</string>
+		<string>SHREDDER</string>
+		<string>Waldorf Blofeld</string>
+		<string>Nord Stage 2</string>
+		<string>GrainBender</string>
+		<string>ProKeys M</string>
+		<string>SelineHD</string>
+		<string>Polyplayground</string>
+		<string>Changeling</string>
+		<string>DPad</string>
+		<string>Symphonix Evo</string>
+		<string>SpaceLab</string>
+		<string>iCON iPAD</string>
+		<string>MIDI Probe</string>
+		<string>DrumsXD</string>
+		<string>MIDI Designer Lite</string>
+		<string>MIDI Designer Pro</string>
+		<string>MidiMonitor</string>
+		<string>AXE_FX II</string>
+		<string>Nord Stage 2</string>
+		<string>Organ+</string>
+		<string>TriggerIO</string>
+		<string>Venom Port 1 Synth</string>
+		<string>Venom Port 2 MIDI</string>
+		<string>iFretless</string>
+		<string>miniSynth PRO</string>
+		<string>Synth49</string>
+		<string>PPG WG</string>
+		<string>E-MU XMidi2X2 Port 1</string>
+		<string>E-MU XMidi2X2 Port 2</string>
+		<string>Arpeggionome</string>
+		<string>Futulele</string>
+		<string>midiwrench</string>
+		<string>MIND </string>
+		<string>MMC </string>
+		<string>MTBL </string>
+		<string>MTBe </string>
+		<string>Miselu Bluetooth</string>
+		<string>Miselu Virtual</string>
+		<string>PearlGuitar</string>
+		<string>OMGuitar</string>
+		<string>OP-1</string>
+		<string>cmpgrand</string>
+		<string>g2M</string>
+		<string>Harmony</string>
+		<string>Filtatron</string>
+		<string>Alchemy</string>
+		<string>Chords </string>
+		<string>MDMIDI</string>
+		<string>MIDI Designer 12</string>
+		<string>MIDIDemo</string>
+		<string>Magical MIDI</string>
+		<string>Sonic Logic</string>
+		<string>Sound Wand</string>
+		<string>TTMIDI</string>
+		<string>Unity </string>
+		<string>Voice Synth</string>
+		<string>nanoloop</string>
+		<string>Neo-Soul</string>
+		<string>iTuttle</string>
+		<string>Chordion</string>
+	</array>
+	<key>Author</key>
+	<string>nic</string>
+	<key>DateUpdated</key>
+	<string>15 Sep 2016</string>
+	<key>FutureURL</key>
+	<string></string>
+	<key>Version</key>
+	<string>58</string>
+</dict>
+</plist>

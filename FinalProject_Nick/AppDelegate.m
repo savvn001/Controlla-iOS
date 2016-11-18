@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-//#import "MidiMonitorViewController.h"
-#import "PGMidi.h"
-#import "iOSVersionDetection.h"
-#import "PGArc.h"
+
 
 @interface AppDelegate ()
 
@@ -21,8 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     return YES;
 }
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
