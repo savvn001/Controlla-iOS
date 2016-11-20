@@ -65,6 +65,10 @@
 		69A0851C1DD7ADA9008AF00D /* GUI For App 1-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */; };
 		69A0851E1DD7AE9F008AF00D /* GUI For App 1-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */; };
 		69A085201DD7AFED008AF00D /* GUI For App 1-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */; };
+		69A254BE1DE125660045F23E /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BA1DE125660045F23E /* black.png */; };
+		69A254BF1DE125660045F23E /* blackpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BB1DE125660045F23E /* blackpressed.png */; };
+		69A254C01DE125660045F23E /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BC1DE125660045F23E /* white.png */; };
+		69A254C11DE125660045F23E /* whitepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BD1DE125660045F23E /* whitepressed.png */; };
 		69E6A4241DDA391000562E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4231DDA391000562E75 /* UIKit.framework */; };
 		69E6A4261DDA391900562E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4251DDA391900562E75 /* Foundation.framework */; };
 		69E6A4281DDA392100562E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4271DDA392100562E75 /* CoreGraphics.framework */; };
@@ -161,6 +165,10 @@
 		69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-02.png"; sourceTree = "<group>"; };
 		69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-03.png"; sourceTree = "<group>"; };
 		69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GUI For App 1-05.png"; sourceTree = "<group>"; };
+		69A254BA1DE125660045F23E /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
+		69A254BB1DE125660045F23E /* blackpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpressed.png; sourceTree = "<group>"; };
+		69A254BC1DE125660045F23E /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		69A254BD1DE125660045F23E /* whitepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitepressed.png; sourceTree = "<group>"; };
 		69E6A4231DDA391000562E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69E6A4251DDA391900562E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E6A4271DDA392100562E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +245,7 @@
 		69A084E11DD77B9B008AF00D /* FinalProject_Nick */ = {
 			isa = PBXGroup;
 			children = (
+				69A254C21DE125720045F23E /* pianoGUI */,
 				6981B6841DDE74C60086D0F5 /* libMidiBus.a */,
 				6981B6851DDE74C60086D0F5 /* midibus_enums.h */,
 				6981B6861DDE74C60086D0F5 /* midibus.h */,
@@ -327,6 +336,17 @@
 				69A085091DD77B9B008AF00D /* Info.plist */,
 			);
 			path = FinalProject_NickUITests;
+			sourceTree = "<group>";
+		};
+		69A254C21DE125720045F23E /* pianoGUI */ = {
+			isa = PBXGroup;
+			children = (
+				69A254BA1DE125660045F23E /* black.png */,
+				69A254BB1DE125660045F23E /* blackpressed.png */,
+				69A254BC1DE125660045F23E /* white.png */,
+				69A254BD1DE125660045F23E /* whitepressed.png */,
+			);
+			name = pianoGUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,10 +465,12 @@
 				698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */,
 				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
 				698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */,
+				69A254C01DE125660045F23E /* white.png in Resources */,
 				698937B71DDA23B9006F0515 /* Rewind Filled.png in Resources */,
 				698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */,
 				698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */,
 				698937AE1DDA23B9006F0515 /* Piano.png in Resources */,
+				69A254C11DE125660045F23E /* whitepressed.png in Resources */,
 				698937AD1DDA23B9006F0515 /* Piano Filled.png in Resources */,
 				6989379F1DDA23B9006F0515 /* Activity Grid.png in Resources */,
 				698937A21DDA23B9006F0515 /* Circled 4 Filled.png in Resources */,
@@ -469,6 +491,7 @@
 				69A0851E1DD7AE9F008AF00D /* GUI For App 1-03.png in Resources */,
 				6989379D1DDA23B9006F0515 /* 4 Filled.png in Resources */,
 				698937B51DDA23B9006F0515 /* Repeat Filled.png in Resources */,
+				69A254BE1DE125660045F23E /* black.png in Resources */,
 				698937B11DDA23B9006F0515 /* Play Record.png in Resources */,
 				69A085201DD7AFED008AF00D /* GUI For App 1-05.png in Resources */,
 				69A084EF1DD77B9B008AF00D /* Assets.xcassets in Resources */,
@@ -483,6 +506,7 @@
 				698937B81DDA23B9006F0515 /* Rewind.png in Resources */,
 				698937B41DDA23B9006F0515 /* Record.png in Resources */,
 				698937B61DDA23B9006F0515 /* Repeat.png in Resources */,
+				69A254BF1DE125660045F23E /* blackpressed.png in Resources */,
 				69A084ED1DD77B9B008AF00D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

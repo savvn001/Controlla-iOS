@@ -8,7 +8,13 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
+
+
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pianoKeys;
+
+
 
 @end
 
@@ -19,6 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    for (UIButton *pianoKey in self.pianoKeys) {
+        [pianoKey addTarget:self action:@selector(pianoKeyDown:) forControlEvents:UIControlEventTouchDown];
+        [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchUpInside];
+        [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchUpOutside];
+        [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchCancel];
+    }
     
 }
 
@@ -51,7 +63,44 @@
 
 
 
+
+
+
 #pragma mark sending midi
+    //variable for controlling octave of notes sent out, initally 0, then set to +/- multiples of 12 when 'octave down' and 'octave up' are pressed
+    int octave = 0;
+
+- (IBAction) pianoKeyDown:(id)sender
+{
+    int note = 60 + [sender tag];
+    [self pianoKeys:note state:0x90];
+    NSLog(@"note on");
+}
+ 
+- (IBAction) pianoKeyUp:(id)sender
+    {
+        UInt8 note = 60 + [sender tag];
+        [self pianoKeys:note state:0x80];
+        NSLog(@"note off");
+    }
+
+- (IBAction)octaveDown:(UIButton *)sender {
+    octave = octave - 12;
+    if (octave <  -60){
+        octave = -60;
+    }
+   
+}
+
+- (IBAction)octaveUp:(UIButton *)sender {
+    octave = octave + 12;
+    if (octave > 60){
+        octave = 60;
+    }
+}
+
+
+
 
 
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
@@ -61,58 +110,38 @@
 }
 
 
-//finger pressed
-- (IBAction)playsomeMIDIoff:(UIButton *)sender {
+
+
+
+
+
+#pragma mark Button Methods
+
+    /* - method for sending a MIDI note on/note off when piano key button is pressed
+       - takes two input parameters, note value and status byte (both defined in hex)
+     */
+
+- (void)pianoKeys:(int)note state:(int)statusbyte{
     
-    NSLog(@"note on..");
+   
     
     MIDIBUS_MIDI_EVENT* key1 = [MidiBusClient setupSmallEvent];
     
     key1->timestamp = 0;
     key1->length = 3;
-    key1->data[0] = 0x90;
-    key1->data[1] = 0x3C;
-    key1->data[2] = 0x78;
+    key1->data[0] = statusbyte;
+    key1->data[1] = note + octave;
+    key1->data[2] = 0x7F;
     
-    eMidiBusStatus status = [MidiBusClient sendMidiBusEvent:key1->index withEvent:key1];
+    [MidiBusClient sendMidiBusEvent:key1->index withEvent:key1];
     
     [MidiBusClient disposeSmallEvent:key1];
-    
-    
-    
+
     
 }
 
-
-    //finger removed
-- (IBAction)playsomeMIDI:(UIButton *)sender {
-    
-    
-    NSLog(@"note off..");
-    
-    MIDIBUS_MIDI_EVENT* key1 = [MidiBusClient setupSmallEvent];
-    
-    key1->timestamp = 0;
-    key1->length = 3;
-    key1->data[0] = 0x80;
-    key1->data[1] = 0x3C;
-    key1->data[2] = 0x78;
-    
-    eMidiBusStatus status = [MidiBusClient sendMidiBusEvent:key1->index withEvent:key1];
-    
-    [MidiBusClient disposeSmallEvent:key1];
-    
-}
-
-
-
-
-
-
-
-
-
-
+//[self pianoKeys:0x3C state:0x80];
+//[self pianoKeys:0x3C state:0x90];
 
 
 @end

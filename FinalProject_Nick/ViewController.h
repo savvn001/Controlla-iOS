@@ -11,7 +11,9 @@
 
 @interface ViewController : UIViewController
     <MidiBusClientDelegate>
-    
+
+//method for sending midi when keys are pressed, more information in implemenation of method in ViewController.m
+- (void)pianoKeys:(int)note state:(int)statusbyte;
 
 
 //Button for switching View to Pads View
@@ -20,10 +22,17 @@
 //button for switching view to controls view
 - (IBAction)goToControls:(id)sender;
 
+- (IBAction) pianoKeyDown: (id) sender;
+- (IBAction) pianoKeyUp: (id) sender;
+
+- (IBAction)octaveDown:(UIButton *)sender;
+- (IBAction)octaveUp:(UIButton *)sender;
 
 
-- (IBAction)playsomeMIDI:(UIButton *)sender;
-- (IBAction)playsomeMIDIoff:(UIButton *)sender;
+
+
+
+
 
 
 
