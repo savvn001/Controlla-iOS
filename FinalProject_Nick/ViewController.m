@@ -99,13 +99,89 @@
     }
 }
 
+    //sending modulation cc message for modulation slider
+- (IBAction)modulationSlider:(UISlider *)sender {
+    
+    //rounding slider value to an integer
+    int modvalue = sender.value;
+    
+    
+    //midibus event
+    MIDIBUS_MIDI_EVENT* modulation = [MidiBusClient setupSmallEvent];
+    
+    modulation->timestamp = 0;
+    modulation->length = 3; //3 byte message
+    modulation->data[0] = 0xB0; //control change message
+    modulation->data[1] = 0x01; //controller set to modulation
+    modulation->data[2] = modvalue; //controler value
+    
+    
+    NSLog(@"modlation slider, value: %i", modvalue);
+    
+    [MidiBusClient sendMidiBusEvent:modulation->index withEvent:modulation];
+    [MidiBusClient disposeSmallEvent:modulation];
+}
+
+
+
+
+    //pitch bend slider
+- (IBAction)pitchSliderSend:(UISlider *)sender {
+    
+    int pitchvalue = sender.value;
+    
+    
+    //midibus event
+    MIDIBUS_MIDI_EVENT* pitch = [MidiBusClient setupSmallEvent];
+    
+    pitch->timestamp = 0;
+    pitch->length = 3; //3 byte message
+    pitch->data[0] = 0xE0; //pitch bend message
+    pitch->data[1] = 0x01; //LSB (7 bits) bend value
+    pitch->data[2] = pitchvalue; //MSB (7 bits) bend value
+    
+    
+    NSLog(@"pitch value slider, value: %i", pitchvalue);
+    
+    [MidiBusClient sendMidiBusEvent:pitch->index withEvent:pitch];
+    [MidiBusClient disposeSmallEvent:pitch];
+    
+    
+    
+    
+}
+
+- (IBAction)pitchSliderRelease:(UISlider *)sender {
+    //reset slider to centre after released by user
+    self.pitchSliderCenter.value = 64.00;
+    
+    int pitchvalue = sender.value;
+    
+    MIDIBUS_MIDI_EVENT* pitch = [MidiBusClient setupSmallEvent];
+    
+    pitch->timestamp = 0;
+    pitch->length = 3; //3 byte message
+    pitch->data[0] = 0xE0; //pitch bend message
+    pitch->data[1] = 0x01; //LSB (7 bits) bend value
+    pitch->data[2] = pitchvalue; //MSB (7 bits) bend value
+    
+    
+    NSLog(@"pitch value slider, value: %i", pitchvalue);
+    
+    [MidiBusClient sendMidiBusEvent:pitch->index withEvent:pitch];
+    [MidiBusClient disposeSmallEvent:pitch];
+    
+    
+    
+    
+}
 
 
 
 
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
     // do something with a received MIDI event
-    NSLog(@"just recieved some midi m8");
+    NSLog(@"just recieved some midi");
     //[MidiBusClient sendMidiBusEvent:event->index withEvent:event];
 }
 

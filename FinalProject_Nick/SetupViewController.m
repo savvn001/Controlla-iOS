@@ -58,7 +58,7 @@
 #pragma mark MidiBus protocol methods
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
     // do something with a received MIDI event
-    NSLog(@"just recieved some midi m8");
+    NSLog(@"just recieved some midi");
     //[MidiBusClient sendMidiBusEvent:event->index withEvent:event];
 }
 

@@ -28,6 +28,14 @@
 - (IBAction)octaveDown:(UIButton *)sender;
 - (IBAction)octaveUp:(UIButton *)sender;
 
+- (IBAction)modulationSlider:(UISlider *)sender;
+
+- (IBAction)pitchSliderSend:(UISlider *)sender;
+- (IBAction)pitchSliderRelease:(UISlider *)sender;
+
+@property (weak, nonatomic) IBOutlet UISlider *pitchSliderCenter;
+
+
 
 
 

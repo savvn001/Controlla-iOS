@@ -12,6 +12,7 @@
 		6981B68B1DDE74C60086D0F5 /* libMidiBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981B6841DDE74C60086D0F5 /* libMidiBus.a */; };
 		6981B68C1DDE74C60086D0F5 /* MidiBusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6981B6881DDE74C60086D0F5 /* MidiBusClient.m */; };
 		6981B68D1DDE74C60086D0F5 /* omac_apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6981B6891DDE74C60086D0F5 /* omac_apps.plist */; };
+		698272491DE60A6C0079233B /* positionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698272481DE60A6C0079233B /* positionViewController.m */; };
 		6989379D1DDA23B9006F0515 /* 4 Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937781DDA23B9006F0515 /* 4 Filled.png */; };
 		6989379E1DDA23B9006F0515 /* Activity Grid Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 698937791DDA23B9006F0515 /* Activity Grid Filled.png */; };
 		6989379F1DDA23B9006F0515 /* Activity Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989377A1DDA23B9006F0515 /* Activity Grid.png */; };
@@ -69,6 +70,7 @@
 		69A254BF1DE125660045F23E /* blackpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BB1DE125660045F23E /* blackpressed.png */; };
 		69A254C01DE125660045F23E /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BC1DE125660045F23E /* white.png */; };
 		69A254C11DE125660045F23E /* whitepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BD1DE125660045F23E /* whitepressed.png */; };
+		69BB7CE51DE5ACD900DCAF2F /* transportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */; };
 		69E6A4241DDA391000562E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4231DDA391000562E75 /* UIKit.framework */; };
 		69E6A4261DDA391900562E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4251DDA391900562E75 /* Foundation.framework */; };
 		69E6A4281DDA392100562E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4271DDA392100562E75 /* CoreGraphics.framework */; };
@@ -101,6 +103,8 @@
 		6981B6881DDE74C60086D0F5 /* MidiBusClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiBusClient.m; sourceTree = "<group>"; };
 		6981B6891DDE74C60086D0F5 /* omac_apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = omac_apps.plist; sourceTree = "<group>"; };
 		6981B68A1DDE74C60086D0F5 /* OMACApplicationRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMACApplicationRegistry.h; sourceTree = "<group>"; };
+		698272471DE60A6C0079233B /* positionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = positionViewController.h; sourceTree = "<group>"; };
+		698272481DE60A6C0079233B /* positionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = positionViewController.m; sourceTree = "<group>"; };
 		698937781DDA23B9006F0515 /* 4 Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4 Filled.png"; sourceTree = "<group>"; };
 		698937791DDA23B9006F0515 /* Activity Grid Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity Grid Filled.png"; sourceTree = "<group>"; };
 		6989377A1DDA23B9006F0515 /* Activity Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Activity Grid.png"; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 		69A254BB1DE125660045F23E /* blackpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpressed.png; sourceTree = "<group>"; };
 		69A254BC1DE125660045F23E /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		69A254BD1DE125660045F23E /* whitepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitepressed.png; sourceTree = "<group>"; };
+		69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transportViewController.h; sourceTree = "<group>"; };
+		69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transportViewController.m; sourceTree = "<group>"; };
 		69E6A4231DDA391000562E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69E6A4251DDA391900562E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E6A4271DDA392100562E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -300,6 +306,10 @@
 				69A084E81DD77B9B008AF00D /* ViewController.h */,
 				69A084E91DD77B9B008AF00D /* ViewController.m */,
 				69A084EB1DD77B9B008AF00D /* Main.storyboard */,
+				698272471DE60A6C0079233B /* positionViewController.h */,
+				698272481DE60A6C0079233B /* positionViewController.m */,
+				69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */,
+				69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */,
 				69A085151DD783A7008AF00D /* padViewController.h */,
 				69A085161DD783A7008AF00D /* padViewController.m */,
 				69A085181DD788A0008AF00D /* controlsViewController.h */,
@@ -532,9 +542,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69BB7CE51DE5ACD900DCAF2F /* transportViewController.m in Sources */,
 				69A084EA1DD77B9B008AF00D /* ViewController.m in Sources */,
 				69A0851A1DD788A0008AF00D /* controlsViewController.m in Sources */,
 				6981B68C1DDE74C60086D0F5 /* MidiBusClient.m in Sources */,
+				698272491DE60A6C0079233B /* positionViewController.m in Sources */,
 				69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */,
 				69A085171DD783A7008AF00D /* padViewController.m in Sources */,
 				6997C5BF1DDE5B34003451C1 /* SetupViewController.m in Sources */,
