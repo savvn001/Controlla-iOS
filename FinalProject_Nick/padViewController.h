@@ -18,6 +18,11 @@
 - (IBAction)goToControls:(id)sender;
 
 
+//method for sending midi when buttons are pressed
+- (void)transportSend:(int)note controllervalue:(int)status;
+
+- (IBAction) padDown: (id) sender;
+- (IBAction) padUp: (id) sender;
 
 
 

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MidiBusClient.h"
 
 @interface positionViewController : UIViewController
+ <MidiBusClientDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *bpmLabel;
 
 @end

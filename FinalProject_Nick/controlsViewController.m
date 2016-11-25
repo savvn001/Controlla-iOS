@@ -10,6 +10,8 @@
 
 @interface controlsViewController ()
 
+
+
 @end
 
 @implementation controlsViewController
@@ -20,6 +22,8 @@ UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
 UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"keyboardViewController"];
 [self presentViewController: vc animated:NO completion:nil];
 }
+
+#pragma mark Switching Views
 
 - (IBAction)goToPads:(id)sender {
     //Switch view to pads view
@@ -39,15 +43,7 @@ UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"keyboard
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark sliders
 
 
 

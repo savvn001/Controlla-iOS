@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 
+
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pianoKeys;
 
 
@@ -57,7 +58,7 @@
     UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
     UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"controlsViewController"];
     [self presentViewController: vc animated:NO completion:nil];
-
+    
 }
 
 
@@ -67,39 +68,49 @@
 
 
 #pragma mark sending midi
-    //variable for controlling octave of notes sent out, initally 0, then set to +/- multiples of 12 when 'octave down' and 'octave up' are pressed
-    int octave = 0;
+//variable for controlling octave of notes sent out, initally 0, then set to +/- multiples of 12 when 'octave down' and 'octave up' are pressed
+int octave = 0;
 
+
+//when piano keys are pressed down
 - (IBAction) pianoKeyDown:(id)sender
 {
+    //generate note variable to be unique to each key (each key is identified by its sender tag which is set to be unqiue to each button)
     int note = 60 + [sender tag];
     [self pianoKeys:note state:0x90];
     NSLog(@"note on");
 }
- 
-- (IBAction) pianoKeyUp:(id)sender
-    {
-        UInt8 note = 60 + [sender tag];
-        [self pianoKeys:note state:0x80];
-        NSLog(@"note off");
-    }
 
+- (IBAction) pianoKeyUp:(id)sender
+{
+    UInt8 note = 60 + [sender tag];
+    [self pianoKeys:note state:0x80];
+    NSLog(@"note off");
+}
+
+//octave up and down buttons
 - (IBAction)octaveDown:(UIButton *)sender {
+    
+    //12 notes = 1 octave, so reduce octave by 12
     octave = octave - 12;
+    //if octave goes below -60 (lower limit of midi notes, nothing below 0), set back to -60
     if (octave <  -60){
         octave = -60;
     }
-   
+    
 }
 
 - (IBAction)octaveUp:(UIButton *)sender {
+    
     octave = octave + 12;
+    
+    //if octave goes above 60 (upper limit of midi notes, nothing above 127), set back to 60
     if (octave > 60){
         octave = 60;
     }
 }
 
-    //sending modulation cc message for modulation slider
+//sending modulation cc message for modulation slider
 - (IBAction)modulationSlider:(UISlider *)sender {
     
     //rounding slider value to an integer
@@ -125,7 +136,7 @@
 
 
 
-    //pitch bend slider
+//pitch bend slider
 - (IBAction)pitchSliderSend:(UISlider *)sender {
     
     int pitchvalue = sender.value;
@@ -181,7 +192,7 @@
 
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
     // do something with a received MIDI event
-    NSLog(@"just recieved some midi");
+    //NSLog(@"just recieved some midi");
     //[MidiBusClient sendMidiBusEvent:event->index withEvent:event];
 }
 
@@ -193,13 +204,13 @@
 
 #pragma mark Button Methods
 
-    /* - method for sending a MIDI note on/note off when piano key button is pressed
-       - takes two input parameters, note value and status byte (both defined in hex)
-     */
+/* - method for sending a MIDI note on/note off when piano key button is pressed
+ - takes two input parameters, note value and status byte (both defined in hex)
+ */
 
 - (void)pianoKeys:(int)note state:(int)statusbyte{
     
-   
+    
     
     MIDIBUS_MIDI_EVENT* key1 = [MidiBusClient setupSmallEvent];
     
@@ -212,7 +223,7 @@
     [MidiBusClient sendMidiBusEvent:key1->index withEvent:key1];
     
     [MidiBusClient disposeSmallEvent:key1];
-
+    
     
 }
 

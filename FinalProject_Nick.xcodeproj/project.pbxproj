@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		691266831DDE61AA007B7525 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691266821DDE61AA007B7525 /* QuartzCore.framework */; };
 		691266851DDE64AA007B7525 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691266841DDE64AA007B7525 /* CoreData.framework */; };
+		697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A31DE7212B00ED2F27 /* orange_square.png */; };
+		697CF8A61DE7218B00ED2F27 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A51DE7218B00ED2F27 /* Red.png */; };
 		6981B68B1DDE74C60086D0F5 /* libMidiBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981B6841DDE74C60086D0F5 /* libMidiBus.a */; };
 		6981B68C1DDE74C60086D0F5 /* MidiBusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6981B6881DDE74C60086D0F5 /* MidiBusClient.m */; };
 		6981B68D1DDE74C60086D0F5 /* omac_apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6981B6891DDE74C60086D0F5 /* omac_apps.plist */; };
@@ -96,6 +98,8 @@
 /* Begin PBXFileReference section */
 		691266821DDE61AA007B7525 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		691266841DDE64AA007B7525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		697CF8A31DE7212B00ED2F27 /* orange_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_square.png; sourceTree = "<group>"; };
+		697CF8A51DE7218B00ED2F27 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		6981B6841DDE74C60086D0F5 /* libMidiBus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMidiBus.a; sourceTree = "<group>"; };
 		6981B6851DDE74C60086D0F5 /* midibus_enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midibus_enums.h; sourceTree = "<group>"; };
 		6981B6861DDE74C60086D0F5 /* midibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midibus.h; sourceTree = "<group>"; };
@@ -259,6 +263,8 @@
 				6981B6881DDE74C60086D0F5 /* MidiBusClient.m */,
 				6981B6891DDE74C60086D0F5 /* omac_apps.plist */,
 				6981B68A1DDE74C60086D0F5 /* OMACApplicationRegistry.h */,
+				697CF8A31DE7212B00ED2F27 /* orange_square.png */,
+				697CF8A51DE7218B00ED2F27 /* Red.png */,
 				698937781DDA23B9006F0515 /* 4 Filled.png */,
 				698937791DDA23B9006F0515 /* Activity Grid Filled.png */,
 				6989377A1DDA23B9006F0515 /* Activity Grid.png */,
@@ -471,10 +477,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6981B68D1DDE74C60086D0F5 /* omac_apps.plist in Resources */,
+				697CF8A61DE7218B00ED2F27 /* Red.png in Resources */,
 				698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */,
 				698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */,
 				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
 				698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */,
+				697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */,
 				69A254C01DE125660045F23E /* white.png in Resources */,
 				698937B71DDA23B9006F0515 /* Rewind Filled.png in Resources */,
 				698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */,

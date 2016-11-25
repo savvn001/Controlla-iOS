@@ -10,11 +10,28 @@
 
 @interface padViewController ()
 
+
+@property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pianoKeys;
+
 @end
 
 @implementation padViewController
 
+int padoctave = 0;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    for (UIButton *pad in self.pianoKeys) {
+        [pad addTarget:self action:@selector(padDown:) forControlEvents:UIControlEventTouchDown];
+        [pad addTarget:self action:@selector(padUp:) forControlEvents:UIControlEventTouchUpInside];
+        [pad addTarget:self action:@selector(padUp:) forControlEvents:UIControlEventTouchUpOutside];
+        [pad addTarget:self action:@selector(padUp:) forControlEvents:UIControlEventTouchCancel];
+    }
+}
+
 -(IBAction)goToKeyboard:(id)sender {
+    
+    
     
     //Switch view to keyboard view
     UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
@@ -29,24 +46,45 @@
     [self presentViewController: vc animated:NO completion:nil];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
+
+
+
+-(void)padDown:(id)sender{
+    
+    int note = 60 + [sender tag];
+    [self transportSend:note controllervalue:0x81];
+    NSLog(@"pad on");
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)padUp:(id)sender{
+    
+    int note = 60 + [sender tag];
+    [self transportSend:note controllervalue:0x91];
+    NSLog(@"pad off");
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)transportSend:(int)note controllervalue:(int)status{
+    
+    MIDIBUS_MIDI_EVENT* key1 = [MidiBusClient setupSmallEvent];
+    
+    key1->timestamp = 0;
+    key1->length = 3;
+    key1->data[0] = status;
+    key1->data[1] = note + padoctave;
+    key1->data[2] = 0x7F;
+    
+    [MidiBusClient sendMidiBusEvent:key1->index withEvent:key1];
+    
+    [MidiBusClient disposeSmallEvent:key1];
+    
+    
+    
 }
-*/
 
 @end
