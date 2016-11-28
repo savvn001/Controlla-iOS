@@ -54,7 +54,7 @@ int padoctave = 0;
 -(void)padDown:(id)sender{
     
     int note = 60 + [sender tag];
-    [self transportSend:note controllervalue:0x81];
+    [self transportSend:note controllervalue:0x91];
     NSLog(@"pad on");
     
 }
@@ -62,7 +62,7 @@ int padoctave = 0;
 -(void)padUp:(id)sender{
     
     int note = 60 + [sender tag];
-    [self transportSend:note controllervalue:0x91];
+    [self transportSend:note controllervalue:0x81];
     NSLog(@"pad off");
     
 }

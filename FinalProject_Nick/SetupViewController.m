@@ -9,6 +9,7 @@
 #import "SetupViewController.h"
 #import <CoreMIDI/CoreMIDI.h>
 
+
 @interface SetupViewController (){
     
     //uint8_t myVirtualIndex;
@@ -55,7 +56,6 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     
     
     
-    
     // create a static query object which we can reuse time and time again // that won't get de-alloced by ARC by making a strong reference // this query gets all interfaces; you can get subsets of the interfaces // by using a different filter value - see midibus.h for #defines for this
     static MidiBusInterfaceQuery* query = nil;
     if (query == nil)
@@ -84,47 +84,34 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark MidiBus protocol methods
+#pragma mark Receiving MIDI
+
+    //When any MIDI data is recieved, this method is called
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
     
-    static unsigned long tick_count = 0;
-    switch (event->data[0])
+    // set to listen to all MIDI channels (set default to only listen to channel 1)
+    int map = MIDIBUS_CHANNEL_OMNI;
+    [MidiBusClient setMidiBusChannels:map];
+    
+    //print values of incoming MIDI data, useful for debugging
+    NSLog(@"received midi");
+    NSLog(@"data 1 = %i",event->data[0]);
+    NSLog(@"data 2 = %i",event->data[1]);
+    NSLog(@"data 3 = %i",event->data[2]);
+    
+    
+    
+    
+    
+    if(event->data[0] == 0xB1)
     {
-            // start/continue
-        case 0xFA :
-        case 0xFB :
-            // start your own transport at the timestamp of this event
-            tick_count = 0;
-            break;
-            
-            // timing tick (24 per 1/4 note)
-        case 0xF8 :
-            
-            // engine sync point here
-            
-            // example - MIDI metronome
-            if (!(tick_count % 24))
-            {
-                /*
-                 // schedule MIDI metronome off/on to co-incide exactly with this with this incoming tick
-                 event->length = 3;
-                 event->data[0] = 0x90;
-                 event->data[1] = 0x3C;
-                 event->data[2] = ((tick_count % 96) == 0 ? 0x60 : 0x40);
-                 midibus_send(myVirtualIndex, event);
-                 NSLog(@"tick1");
-                 
-                 event->data[0] = 0x80;
-                 event->data[2] = 0x00;
-                 event->delay_ms = 20.0;
-                 midibus_send(myVirtualIndex, event);
-                 NSLog(@"tick2");
-                 */
-            }
-            
-            tick_count++;
-            break;
+        NSLog(@"cc value from ableton = %i", event->data[2]);
+        //fadervalue = event->data[2];
+        
+        
     }
+    
+    
     
 }
 

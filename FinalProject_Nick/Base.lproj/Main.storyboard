@@ -689,9 +689,18 @@
                                     <segue destination="PWi-DM-P1T" kind="embed" id="jo8-pb-fF8"/>
                                 </connections>
                             </containerView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NaJ-Lc-05c">
-                                <rect key="frame" x="226" y="488" width="299" height="31"/>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="64" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="zqf-fP-m87" userLabel="fader2">
+                                <rect key="frame" x="252" y="357" width="299" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="64" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="jgl-2F-2pA" userLabel="fader1">
+                                <rect key="frame" x="148" y="357" width="299" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="fader1" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="64" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="NaJ-Lc-05c" userLabel="fader3">
+                                <rect key="frame" x="346" y="357" width="295" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.96362567204301075" green="0.15355769436667838" blue="0.11637662690605445" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -704,6 +713,12 @@
                             <constraint firstItem="M0I-K3-vaR" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="106" id="yZP-ty-6kY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fader1" destination="jgl-2F-2pA" id="X7n-WZ-qsu"/>
+                        <outletCollection property="faders" destination="NaJ-Lc-05c" id="AWA-wA-sV1"/>
+                        <outletCollection property="faders" destination="zqf-fP-m87" id="E62-Xq-X4I"/>
+                        <outletCollection property="faders" destination="jgl-2F-2pA" id="An8-XW-qal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usv-99-qLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
