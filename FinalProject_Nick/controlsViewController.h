@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MidiBusClient.h"
+#import "AppDelegate.h"
 
 @interface controlsViewController : UIViewController
  
 
 - (void)faderSendMIDI:(int)controller state:(int)value;
+-(void)faderReceive;
 
 - (IBAction)goToKeyboard:(id)sender;
 - (IBAction)goToPads:(id)sender;

@@ -7,10 +7,16 @@
 //
 
 #import "controlsViewController.h"
+#import "setValues.h"
+#import "AppDelegate.h"
+
+@interface controlsViewController (){
+    
+    
+    
+}
 
 
-
-@interface controlsViewController ()
 
 //IBoutlet collection for UIsliders to set properties, further down
 @property (nonatomic, strong) IBOutletCollection(UISlider) NSArray *faders;
@@ -27,7 +33,6 @@
     [super viewDidLoad];
     
     
-    
     //setting properties for all sliders
     for (UISlider *fader in self.faders) {
         
@@ -38,7 +43,7 @@
         //add action method to each slider
         [fader addTarget:self action:@selector(faderSend:) forControlEvents:UIControlEventValueChanged];
         
-        
+       
         
         
         
@@ -85,6 +90,15 @@
     NSLog(@"fader send, value %f:",sender.value);
 }
 
+-(void)faderReceive{
+    
+    setValues *setValueClass = [setValues sharedInstance];
+    
+    self.fader1.value = [setValueClass value];
+    
+    
+    
+}
 
 
 

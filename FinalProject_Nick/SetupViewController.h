@@ -11,7 +11,7 @@
 
 @interface SetupViewController : UIViewController
 
- <MidiBusClientDelegate>
+
 
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 

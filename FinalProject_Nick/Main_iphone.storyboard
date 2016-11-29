@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8e6-Jb-Rgs">
-    <device id="ipad9_7" orientation="landscape">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,25 +19,25 @@
                         <viewControllerLayoutGuide type="bottom" id="UNI-Wi-9lP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ocV-Cd-GZb">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connection Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoD-qd-zRs">
-                                <rect key="frame" x="560" y="71" width="247" height="95"/>
+                                <rect key="frame" x="147" y="46" width="247" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Connections" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDF-Mr-Hxl">
-                                <rect key="frame" x="81" y="399" width="1232" height="101"/>
+                                <rect key="frame" x="103" y="101" width="334" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYx-YV-aaC">
-                                <rect key="frame" x="572" y="409" width="151" height="58"/>
+                                <rect key="frame" x="195" y="183" width="151" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Continue"/>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ie3-1C-miX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633.3821376281112" y="44.53125"/>
+            <point key="canvasLocation" x="-633.3984375" y="44.53125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -65,18 +65,247 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDR-Aw-s0E">
-                                <rect key="frame" x="252" y="85" width="92" height="21"/>
+                                <rect key="frame" x="245" y="6" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efM-47-mlL">
+                                <rect key="frame" x="84" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-Ue-Rc8">
+                                <rect key="frame" x="139" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="D" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-z8-8Zh">
+                                <rect key="frame" x="194" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="E" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHY-aL-6hZ">
+                                <rect key="frame" x="249" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="F" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJn-gt-348">
+                                <rect key="frame" x="304" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="G" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juH-nh-kSu">
+                                <rect key="frame" x="359" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdJ-Z5-4tF">
+                                <rect key="frame" x="414" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeM-AE-lqY">
+                                <rect key="frame" x="469" y="57" width="55" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" title="pianoKey" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSv-uI-J7C">
+                                <rect key="frame" x="127" y="57" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Db" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLM-6K-X6B">
+                                <rect key="frame" x="182" y="57" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eb" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90m-ic-Izd">
+                                <rect key="frame" x="291" y="57" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gb" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-kh-z9C">
+                                <rect key="frame" x="346" y="57" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ab" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-LP-jqI">
+                                <rect key="frame" x="401" y="57" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bb" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-Da-dKc">
+                                <rect key="frame" x="82" y="208" width="175" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="modulationSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="DhD-dQ-dii"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="64" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="DLs-YN-fja">
+                                <rect key="frame" x="82" y="232" width="175" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pitchSliderRelease:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="03o-35-DMa"/>
+                                    <action selector="pitchSliderRelease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDq-P2-gst"/>
+                                    <action selector="pitchSliderSend:" destination="BYZ-38-t0r" eventType="valueChanged" id="qUK-W7-adx"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUl-wQ-8cH">
+                                <rect key="frame" x="372" y="207" width="209" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Octave Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="octaveUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Que-9S-9HG"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuv-qY-71X">
+                                <rect key="frame" x="0.0" y="264" width="568" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="wig-zh-fdj" kind="embed" id="cyV-Dz-dvP"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73M-L9-0wf">
+                                <rect key="frame" x="827" y="86" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="G2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1u-Bh-OS2">
+                                <rect key="frame" x="871" y="86" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CG4-kC-Q1q">
+                                <rect key="frame" x="915" y="86" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="B2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrh-Fc-zIj">
+                                <rect key="frame" x="959" y="86" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C3" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-pO-peL">
+                                <rect key="frame" x="813" y="86" width="32" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gb2" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xh-3Z-UtE">
+                                <rect key="frame" x="871" y="86" width="32" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ab2" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c92-l1-UrW">
+                                <rect key="frame" x="928" y="86" width="32" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bb2" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCl-DS-ptr">
+                                <rect key="frame" x="757" y="87" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="D2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-fl-tOe">
+                                <rect key="frame" x="801" y="87" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="E2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cst-vU-D9A">
+                                <rect key="frame" x="845" y="87" width="45" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="F2" image="white.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="whitepressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJY-bt-vjk">
+                                <rect key="frame" x="749" y="85" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Db2" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-ZV-Ahr">
+                                <rect key="frame" x="809" y="85" width="27" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Eb2" image="black.png"/>
+                                <state key="highlighted" image="blackpressed.png"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loN-V2-wXx">
-                                <rect key="frame" x="20" y="258" width="56" height="38"/>
+                                <rect key="frame" x="7" y="188" width="56" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="mLw-Ye-Ljp"/>
                                     <constraint firstAttribute="height" constant="38" id="o8Q-dG-6dl"/>
@@ -89,7 +318,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-Nf-b8R">
-                                <rect key="frame" x="23" y="191" width="49" height="49"/>
+                                <rect key="frame" x="10" y="121" width="49" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="7UF-SU-Yhr"/>
                                     <constraint firstAttribute="width" constant="49" id="bR8-yJ-zBO"/>
@@ -102,7 +331,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwC-VO-f9c">
-                                <rect key="frame" x="20" y="126" width="56" height="48"/>
+                                <rect key="frame" x="7" y="56" width="56" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="EoZ-ug-1jd"/>
                                     <constraint firstAttribute="width" constant="56" id="wh8-WV-kvr"/>
@@ -110,232 +339,10 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" backgroundImage="Piano Filled.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efM-47-mlL">
-                                <rect key="frame" x="112" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="C" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-Ue-Rc8">
-                                <rect key="frame" x="170" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="D" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-z8-8Zh">
-                                <rect key="frame" x="228" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="E" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHY-aL-6hZ">
-                                <rect key="frame" x="286" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="F" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJn-gt-348">
-                                <rect key="frame" x="344" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="G" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juH-nh-kSu">
-                                <rect key="frame" x="402" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="A" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdJ-Z5-4tF">
-                                <rect key="frame" x="460" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="B" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeM-AE-lqY">
-                                <rect key="frame" x="518" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="C2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" title="pianoKey" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCl-DS-ptr">
-                                <rect key="frame" x="575" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="D2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-fl-tOe">
-                                <rect key="frame" x="633" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="E2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cst-vU-D9A">
-                                <rect key="frame" x="691" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="F2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73M-L9-0wf">
-                                <rect key="frame" x="749" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="G2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1u-Bh-OS2">
-                                <rect key="frame" x="807" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="A2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CG4-kC-Q1q">
-                                <rect key="frame" x="865" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="B2" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrh-Fc-zIj">
-                                <rect key="frame" x="923" y="277" width="57" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="C3" image="white.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="whitepressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSv-uI-J7C">
-                                <rect key="frame" x="154" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Db" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLM-6K-X6B">
-                                <rect key="frame" x="212" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Eb" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90m-ic-Izd">
-                                <rect key="frame" x="328" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gb" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgq-kh-z9C">
-                                <rect key="frame" x="386" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ab" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmP-LP-jqI">
-                                <rect key="frame" x="443" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bb" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJY-bt-vjk">
-                                <rect key="frame" x="559" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Db2" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-ZV-Ahr">
-                                <rect key="frame" x="617" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Eb2" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-pO-peL">
-                                <rect key="frame" x="733" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gb2" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xh-3Z-UtE">
-                                <rect key="frame" x="791" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ab2" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c92-l1-UrW">
-                                <rect key="frame" x="848" y="277" width="32" height="121"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bb2" image="black.png"/>
-                                <state key="highlighted" image="blackpressed.png"/>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-Da-dKc">
-                                <rect key="frame" x="110" y="524" width="342" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="modulationSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="DhD-dQ-dii"/>
-                                </connections>
-                            </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUl-wQ-8cH">
-                                <rect key="frame" x="731" y="516" width="209" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Octave Up">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="octaveUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Que-9S-9HG"/>
-                                </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="64" minValue="0.0" maxValue="127" translatesAutoresizingMaskIntoConstraints="NO" id="DLs-YN-fja">
-                                <rect key="frame" x="110" y="580" width="342" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="pitchSliderRelease:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="03o-35-DMa"/>
-                                    <action selector="pitchSliderRelease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDq-P2-gst"/>
-                                    <action selector="pitchSliderSend:" destination="BYZ-38-t0r" eventType="valueChanged" id="qUK-W7-adx"/>
-                                </connections>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEX-ID-998">
-                                <rect key="frame" x="518" y="516" width="209" height="46"/>
+                                <rect key="frame" x="244" y="208" width="204" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Octave Down">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -343,15 +350,8 @@
                                     <action selector="octaveDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zRn-02-QzN"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wuv-qY-71X">
-                                <rect key="frame" x="0.0" y="675" width="703" height="93"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="wig-zh-fdj" kind="embed" id="cyV-Dz-dvP"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-8M-GTd">
-                                <rect key="frame" x="0.0" y="0.0" width="703" height="77"/>
+                                <rect key="frame" x="107" y="-308" width="0.0" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="PWi-DM-P1T" kind="embed" id="Hob-7x-DPe"/>
@@ -360,12 +360,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="loN-V2-wXx" secondAttribute="leading" id="0fG-pg-HOK"/>
-                            <constraint firstItem="fhO-Nf-b8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="3" id="4NE-7A-bns"/>
-                            <constraint firstItem="VwC-VO-f9c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="106" id="4Nw-Ks-DZn"/>
-                            <constraint firstItem="loN-V2-wXx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="238" id="71I-df-mwJ"/>
-                            <constraint firstItem="fhO-Nf-b8R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="171" id="X4q-no-dZ0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="VwC-VO-f9c" secondAttribute="leading" id="zo8-mH-d7q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="loN-V2-wXx" secondAttribute="leading" constant="13" id="0fG-pg-HOK"/>
+                            <constraint firstItem="fhO-Nf-b8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="4NE-7A-bns"/>
+                            <constraint firstItem="VwC-VO-f9c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="4Nw-Ks-DZn"/>
+                            <constraint firstItem="loN-V2-wXx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="168" id="71I-df-mwJ"/>
+                            <constraint firstItem="fhO-Nf-b8R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="X4q-no-dZ0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VwC-VO-f9c" secondAttribute="leading" constant="13" id="zo8-mH-d7q"/>
                         </constraints>
                     </view>
                     <connections>
@@ -399,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39.2578125" y="44.53125"/>
+            <point key="canvasLocation" x="38.028169014084504" y="41.25"/>
         </scene>
         <!--Pad View Controller-->
         <scene sceneID="aDo-fA-zxf">
@@ -410,11 +410,11 @@
                         <viewControllerLayoutGuide type="bottom" id="ZeU-TW-gPB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kbw-Aa-whc">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie4-ts-5S7">
-                                <rect key="frame" x="20" y="126" width="56" height="48"/>
+                                <rect key="frame" x="7" y="56" width="56" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="WIJ-oU-pJX"/>
                                     <constraint firstAttribute="height" constant="48" id="spV-nu-aMY"/>
@@ -426,7 +426,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAr-eM-Tua">
-                                <rect key="frame" x="23" y="191" width="49" height="49"/>
+                                <rect key="frame" x="10" y="121" width="49" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="956-Lo-iVO"/>
                                     <constraint firstAttribute="width" constant="49" id="b5d-Qp-eYN"/>
@@ -434,7 +434,7 @@
                                 <state key="normal" image="Activity Grid Filled.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cF-hv-WhR">
-                                <rect key="frame" x="20" y="258" width="56" height="38"/>
+                                <rect key="frame" x="7" y="188" width="56" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="F5f-Vl-HCz"/>
                                     <constraint firstAttribute="width" constant="56" id="ZOy-Rd-KYj"/>
@@ -446,142 +446,142 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-AK-TqF">
-                                <rect key="frame" x="111" y="59" width="38" height="80"/>
+                                <rect key="frame" x="270" y="-13" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mw0-bG-OqQ">
-                                <rect key="frame" x="0.0" y="675" width="703" height="93"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="wig-zh-fdj" kind="embed" id="ETp-MC-7Hk"/>
-                                </connections>
-                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWv-ay-iTt">
-                                <rect key="frame" x="0.0" y="0.0" width="703" height="77"/>
+                                <rect key="frame" x="0.0" y="-448" width="568" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="PWi-DM-P1T" kind="embed" id="Anr-dc-LUW"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZf-Fl-iPA">
-                                <rect key="frame" x="132" y="495" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmN-ac-XpV">
-                                <rect key="frame" x="264" y="495" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utQ-qi-eCT">
-                                <rect key="frame" x="396" y="495" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-FC-Fm1">
-                                <rect key="frame" x="528" y="495" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T10-zF-U1d">
-                                <rect key="frame" x="659" y="495" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khb-fI-fCZ">
-                                <rect key="frame" x="132" y="379" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRc-3Y-yVi">
-                                <rect key="frame" x="264" y="379" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRs-hJ-XVK">
-                                <rect key="frame" x="396" y="379" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-8i-9BQ">
-                                <rect key="frame" x="528" y="379" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-LU-4xM">
-                                <rect key="frame" x="659" y="379" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mw0-bG-OqQ">
+                                <rect key="frame" x="0.0" y="263" width="568" height="57"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="wig-zh-fdj" kind="embed" id="ETp-MC-7Hk"/>
+                                </connections>
+                            </containerView>
                             <button opaque="NO" tag="10" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvm-3A-qs2">
-                                <rect key="frame" x="132" y="263" width="116" height="108"/>
+                                <rect key="frame" x="77" y="148" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faa-Tm-o6c">
-                                <rect key="frame" x="264" y="263" width="116" height="108"/>
+                                <rect key="frame" x="169" y="148" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZe-ko-H4j">
-                                <rect key="frame" x="396" y="263" width="116" height="108"/>
+                                <rect key="frame" x="262" y="148" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWZ-P7-P8V">
-                                <rect key="frame" x="528" y="263" width="116" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="orange_square.png"/>
-                                <state key="highlighted" image="Red.png"/>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89c-2K-Uxh">
-                                <rect key="frame" x="659" y="263" width="116" height="108"/>
+                                <rect key="frame" x="355" y="148" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSG-dC-3OJ">
-                                <rect key="frame" x="132" y="147" width="116" height="108"/>
+                                <rect key="frame" x="77" y="55" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="16" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDg-wI-YtH">
-                                <rect key="frame" x="264" y="147" width="116" height="108"/>
+                                <rect key="frame" x="169" y="55" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="17" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFD-ex-nfN">
-                                <rect key="frame" x="396" y="147" width="116" height="108"/>
+                                <rect key="frame" x="262" y="55" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="18" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTM-s8-bIR">
-                                <rect key="frame" x="528" y="147" width="116" height="108"/>
+                                <rect key="frame" x="355" y="55" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZf-Fl-iPA">
+                                <rect key="frame" x="202" y="559" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmN-ac-XpV">
+                                <rect key="frame" x="270" y="559" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utQ-qi-eCT">
+                                <rect key="frame" x="338" y="559" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-FC-Fm1">
+                                <rect key="frame" x="406" y="559" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T10-zF-U1d">
+                                <rect key="frame" x="474" y="559" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khb-fI-fCZ">
+                                <rect key="frame" x="202" y="491" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRc-3Y-yVi">
+                                <rect key="frame" x="270" y="491" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRs-hJ-XVK">
+                                <rect key="frame" x="338" y="491" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-8i-9BQ">
+                                <rect key="frame" x="406" y="491" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-LU-4xM">
+                                <rect key="frame" x="474" y="491" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="orange_square.png"/>
+                                <state key="highlighted" image="Red.png"/>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89c-2K-Uxh">
+                                <rect key="frame" x="448" y="148" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
                             <button opaque="NO" tag="19" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFy-R6-uhR">
-                                <rect key="frame" x="659" y="147" width="116" height="108"/>
+                                <rect key="frame" x="448" y="55" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
@@ -589,12 +589,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yAr-eM-Tua" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="171" id="2PU-FR-e5K"/>
-                            <constraint firstItem="Ie4-ts-5S7" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="106" id="DzC-82-3ir"/>
-                            <constraint firstItem="9cF-hv-WhR" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="238" id="Q2H-gM-Ck5"/>
-                            <constraint firstItem="yAr-eM-Tua" firstAttribute="leading" secondItem="Kbw-Aa-whc" secondAttribute="leadingMargin" constant="3" id="SMO-qm-vV0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Ie4-ts-5S7" secondAttribute="leading" id="dp0-Oj-bhX"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="9cF-hv-WhR" secondAttribute="leading" id="shi-Y2-Xrn"/>
+                            <constraint firstItem="yAr-eM-Tua" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="101" id="2PU-FR-e5K"/>
+                            <constraint firstItem="Ie4-ts-5S7" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="36" id="DzC-82-3ir"/>
+                            <constraint firstItem="9cF-hv-WhR" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="168" id="Q2H-gM-Ck5"/>
+                            <constraint firstItem="yAr-eM-Tua" firstAttribute="leading" secondItem="Kbw-Aa-whc" secondAttribute="leadingMargin" constant="-10" id="SMO-qm-vV0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ie4-ts-5S7" secondAttribute="leading" constant="13" id="dp0-Oj-bhX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9cF-hv-WhR" secondAttribute="leading" constant="13" id="shi-Y2-Xrn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -622,7 +622,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAY-Jb-QDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675.5859375" y="44.53125"/>
+            <point key="canvasLocation" x="675" y="43.125"/>
         </scene>
         <!--Controls View Controller-->
         <scene sceneID="Rve-DY-AKr">
@@ -633,7 +633,7 @@
                         <viewControllerLayoutGuide type="bottom" id="25D-UL-SU9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BlD-3L-yVD">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="controls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-mx-WCx">
@@ -643,47 +643,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0I-K3-vaR">
-                                <rect key="frame" x="20" y="126" width="56" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="bei-mE-muv"/>
-                                    <constraint firstAttribute="height" constant="48" id="xzH-64-gAo"/>
-                                </constraints>
-                                <state key="normal" image="Piano.png"/>
-                                <connections>
-                                    <action selector="goToKeyboard:" destination="lQE-o0-jFt" eventType="touchUpInside" id="oME-Px-KFN"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="iUa-Xw-81W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-bq-17E">
-                                <rect key="frame" x="23" y="191" width="49" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="7Y1-Yv-1LH"/>
-                                    <constraint firstAttribute="height" constant="49" id="FLR-so-3J6"/>
-                                </constraints>
-                                <state key="normal" image="Activity Grid.png"/>
-                                <connections>
-                                    <action selector="goToPads:" destination="lQE-o0-jFt" eventType="touchUpInside" id="7VB-RD-vlb"/>
-                                    <segue destination="SBi-Jb-oes" kind="show" id="bQ6-oj-sHd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6E-Ur-eL7">
-                                <rect key="frame" x="20" y="258" width="56" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="1bk-Hu-JGG"/>
-                                    <constraint firstAttribute="height" constant="38" id="RQx-CT-qvs"/>
-                                </constraints>
-                                <state key="normal" image="Horizontal Settings Mixer Filled.png"/>
-                            </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OZ-m4-dFJ">
-                                <rect key="frame" x="0.0" y="675" width="703" height="93"/>
+                                <rect key="frame" x="0.0" y="264" width="568" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="wig-zh-fdj" kind="embed" id="W3M-hR-vGK"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XgX-48-Jmc">
-                                <rect key="frame" x="0.0" y="0.0" width="703" height="77"/>
+                                <rect key="frame" x="0.0" y="-448" width="568" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="PWi-DM-P1T" kind="embed" id="jo8-pb-fF8"/>
@@ -702,15 +670,47 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.96362567204301075" green="0.15355769436667838" blue="0.11637662690605445" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0I-K3-vaR">
+                                <rect key="frame" x="7" y="56" width="56" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="bei-mE-muv"/>
+                                    <constraint firstAttribute="height" constant="48" id="xzH-64-gAo"/>
+                                </constraints>
+                                <state key="normal" image="Piano.png"/>
+                                <connections>
+                                    <action selector="goToKeyboard:" destination="lQE-o0-jFt" eventType="touchUpInside" id="oME-Px-KFN"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iUa-Xw-81W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-bq-17E">
+                                <rect key="frame" x="10" y="121" width="49" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="7Y1-Yv-1LH"/>
+                                    <constraint firstAttribute="height" constant="49" id="FLR-so-3J6"/>
+                                </constraints>
+                                <state key="normal" image="Activity Grid.png"/>
+                                <connections>
+                                    <action selector="goToPads:" destination="lQE-o0-jFt" eventType="touchUpInside" id="7VB-RD-vlb"/>
+                                    <segue destination="SBi-Jb-oes" kind="show" id="bQ6-oj-sHd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6E-Ur-eL7">
+                                <rect key="frame" x="7" y="188" width="56" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="1bk-Hu-JGG"/>
+                                    <constraint firstAttribute="height" constant="38" id="RQx-CT-qvs"/>
+                                </constraints>
+                                <state key="normal" image="Horizontal Settings Mixer Filled.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ij0-bq-17E" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="171" id="443-yu-qPd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="M0I-K3-vaR" secondAttribute="leading" id="4af-Oa-NS0"/>
-                            <constraint firstItem="Q6E-Ur-eL7" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="238" id="ERX-bf-iMz"/>
-                            <constraint firstItem="Ij0-bq-17E" firstAttribute="leading" secondItem="BlD-3L-yVD" secondAttribute="leadingMargin" constant="3" id="LqM-nb-5DL"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Q6E-Ur-eL7" secondAttribute="leading" id="WQe-r4-Wdg"/>
-                            <constraint firstItem="M0I-K3-vaR" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="106" id="yZP-ty-6kY"/>
+                            <constraint firstItem="Ij0-bq-17E" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="101" id="443-yu-qPd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="M0I-K3-vaR" secondAttribute="leading" constant="13" id="4af-Oa-NS0"/>
+                            <constraint firstItem="Q6E-Ur-eL7" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="168" id="ERX-bf-iMz"/>
+                            <constraint firstItem="Ij0-bq-17E" firstAttribute="leading" secondItem="BlD-3L-yVD" secondAttribute="leadingMargin" constant="-10" id="LqM-nb-5DL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Q6E-Ur-eL7" secondAttribute="leading" constant="13" id="WQe-r4-Wdg"/>
+                            <constraint firstItem="M0I-K3-vaR" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="36" id="yZP-ty-6kY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -722,7 +722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usv-99-qLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336.5234375" y="44.53125"/>
+            <point key="canvasLocation" x="1336.2676056338028" y="43.125"/>
         </scene>
         <!--Transport View Controller-->
         <scene sceneID="1TY-Vt-bFM">
@@ -733,62 +733,62 @@
                         <viewControllerLayoutGuide type="bottom" id="Hhk-TT-eMW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aRT-CI-ba2">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="93"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="57"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGb-j2-3Zh">
-                                <rect key="frame" x="-42" y="-4" width="198" height="100"/>
+                                <rect key="frame" x="-11" y="2" width="69" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Skip to Start.png"/>
                                 <state key="highlighted" image="Skip to Start Filled.png"/>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlq-Rd-aJc">
-                                <rect key="frame" x="80" y="-4" width="155" height="100"/>
+                                <rect key="frame" x="47" y="2" width="69" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Rewind.png"/>
                                 <state key="highlighted" image="Rewind Filled.png"/>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZh-aG-R29">
-                                <rect key="frame" x="223" y="-5" width="100" height="100"/>
+                                <rect key="frame" x="117" y="2" width="69" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Fast Forward.png"/>
                                 <state key="highlighted" image="Fast Forward Filled.png"/>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWV-9e-r4B">
-                                <rect key="frame" x="326" y="-4" width="100" height="100"/>
+                                <rect key="frame" x="180" y="2" width="69" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop.png"/>
                                 <state key="highlighted" image="Stop Filled.png"/>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSK-vT-6kK">
-                                <rect key="frame" x="427" y="-6" width="100" height="100"/>
+                                <rect key="frame" x="235" y="2" width="69" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play.png"/>
                                 <state key="highlighted" image="Play Filled.png"/>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13I-ZZ-DSY">
-                                <rect key="frame" x="498" y="-6" width="153" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Record.png"/>
-                                <state key="highlighted" image="Record_2.png"/>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obI-dB-BFa">
-                                <rect key="frame" x="713" y="-4" width="193" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Time.png"/>
-                                <state key="highlighted" image="Time Filled.png"/>
-                            </button>
                             <button opaque="NO" tag="6" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOr-i9-HVn">
-                                <rect key="frame" x="631" y="-4" width="100" height="100"/>
+                                <rect key="frame" x="363" y="6" width="55" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Repeat.png"/>
                                 <state key="highlighted" image="Repeat Filled.png"/>
                             </button>
+                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13I-ZZ-DSY">
+                                <rect key="frame" x="292" y="2" width="69" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Record.png"/>
+                                <state key="highlighted" image="Record_2.png"/>
+                            </button>
                             <button opaque="NO" tag="8" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcn-7T-9kq">
-                                <rect key="frame" x="859" y="-4" width="165" height="100"/>
+                                <rect key="frame" x="495" y="2" width="53" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Circled 4.png"/>
                                 <state key="highlighted" image="Circled 4 Filled.png"/>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obI-dB-BFa">
+                                <rect key="frame" x="432" y="4" width="53" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Time.png"/>
+                                <state key="highlighted" image="Time Filled.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -807,7 +807,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O54-LY-PBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360" y="780"/>
+            <point key="canvasLocation" x="359.15492957746477" y="778.125"/>
         </scene>
         <!--Position View Controller-->
         <scene sceneID="foP-Is-qgy">
@@ -818,7 +818,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2vb-TN-clL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ECR-8m-hKB">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="77"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="77"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempo: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMN-mR-8B7">
@@ -880,10 +880,10 @@
         <image name="whitepressed.png" width="238" height="1004"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PWq-Zv-Jq7"/>
-        <segue reference="MAx-4i-IWd"/>
-        <segue reference="ETp-MC-7Hk"/>
         <segue reference="7iM-4J-y78"/>
+        <segue reference="MAx-4i-IWd"/>
+        <segue reference="PWq-Zv-Jq7"/>
         <segue reference="Anr-dc-LUW"/>
+        <segue reference="ETp-MC-7Hk"/>
     </inferredMetricsTieBreakers>
 </document>
