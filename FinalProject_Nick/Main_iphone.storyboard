@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -304,41 +303,6 @@
                                 <state key="normal" title="Eb2" image="black.png"/>
                                 <state key="highlighted" image="blackpressed.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loN-V2-wXx">
-                                <rect key="frame" x="7" y="188" width="56" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="mLw-Ye-Ljp"/>
-                                    <constraint firstAttribute="height" constant="38" id="o8Q-dG-6dl"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="Horizontal Settings Mixer.png"/>
-                                <connections>
-                                    <action selector="goToControls:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qf6-2I-10O"/>
-                                    <segue destination="lQE-o0-jFt" kind="show" id="JGH-n7-16d"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-Nf-b8R">
-                                <rect key="frame" x="10" y="121" width="49" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="7UF-SU-Yhr"/>
-                                    <constraint firstAttribute="width" constant="49" id="bR8-yJ-zBO"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="Activity Grid.png"/>
-                                <connections>
-                                    <action selector="goToPads:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gy9-r9-aK9"/>
-                                    <segue destination="SBi-Jb-oes" kind="showDetail" id="MAx-4i-IWd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwC-VO-f9c">
-                                <rect key="frame" x="7" y="56" width="56" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="EoZ-ug-1jd"/>
-                                    <constraint firstAttribute="width" constant="56" id="wh8-WV-kvr"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="Piano Filled.png"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEX-ID-998">
                                 <rect key="frame" x="244" y="208" width="204" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -357,16 +321,15 @@
                                     <segue destination="PWi-DM-P1T" kind="embed" id="Hob-7x-DPe"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2BL-Yz-hW0">
+                                <rect key="frame" x="0.0" y="57" width="68" height="196"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="X0K-CF-7vk" kind="embed" id="j2P-ui-kJx"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="loN-V2-wXx" secondAttribute="leading" constant="13" id="0fG-pg-HOK"/>
-                            <constraint firstItem="fhO-Nf-b8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="4NE-7A-bns"/>
-                            <constraint firstItem="VwC-VO-f9c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="4Nw-Ks-DZn"/>
-                            <constraint firstItem="loN-V2-wXx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="168" id="71I-df-mwJ"/>
-                            <constraint firstItem="fhO-Nf-b8R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="X4q-no-dZ0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="VwC-VO-f9c" secondAttribute="leading" constant="13" id="zo8-mH-d7q"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="pitchSliderCenter" destination="DLs-YN-fja" id="QfF-fg-4Zz"/>
@@ -413,38 +376,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie4-ts-5S7">
-                                <rect key="frame" x="7" y="56" width="56" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="WIJ-oU-pJX"/>
-                                    <constraint firstAttribute="height" constant="48" id="spV-nu-aMY"/>
-                                </constraints>
-                                <state key="normal" image="Piano.png"/>
-                                <connections>
-                                    <action selector="goToKeyboard:" destination="SBi-Jb-oes" eventType="touchUpInside" id="ymW-w0-TIC"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="PWq-Zv-Jq7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAr-eM-Tua">
-                                <rect key="frame" x="10" y="121" width="49" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="956-Lo-iVO"/>
-                                    <constraint firstAttribute="width" constant="49" id="b5d-Qp-eYN"/>
-                                </constraints>
-                                <state key="normal" image="Activity Grid Filled.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cF-hv-WhR">
-                                <rect key="frame" x="7" y="188" width="56" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="F5f-Vl-HCz"/>
-                                    <constraint firstAttribute="width" constant="56" id="ZOy-Rd-KYj"/>
-                                </constraints>
-                                <state key="normal" image="Horizontal Settings Mixer.png"/>
-                                <connections>
-                                    <action selector="goToControls:" destination="SBi-Jb-oes" eventType="touchUpInside" id="pm7-rQ-eBX"/>
-                                    <segue destination="lQE-o0-jFt" kind="show" id="7iM-4J-y78"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-AK-TqF">
                                 <rect key="frame" x="270" y="-13" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -586,16 +517,15 @@
                                 <state key="normal" title="Button" image="orange_square.png"/>
                                 <state key="highlighted" image="Red.png"/>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-Qn-1d2">
+                                <rect key="frame" x="0.0" y="55" width="68" height="196"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="X0K-CF-7vk" kind="embed" id="gsy-lf-ay8"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="yAr-eM-Tua" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="101" id="2PU-FR-e5K"/>
-                            <constraint firstItem="Ie4-ts-5S7" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="36" id="DzC-82-3ir"/>
-                            <constraint firstItem="9cF-hv-WhR" firstAttribute="top" secondItem="dvR-1a-zMe" secondAttribute="bottom" constant="168" id="Q2H-gM-Ck5"/>
-                            <constraint firstItem="yAr-eM-Tua" firstAttribute="leading" secondItem="Kbw-Aa-whc" secondAttribute="leadingMargin" constant="-10" id="SMO-qm-vV0"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Ie4-ts-5S7" secondAttribute="leading" constant="13" id="dp0-Oj-bhX"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="9cF-hv-WhR" secondAttribute="leading" constant="13" id="shi-Y2-Xrn"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outletCollection property="pianoKeys" destination="TZf-Fl-iPA" id="i4D-GL-OvA"/>
@@ -670,48 +600,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.96362567204301075" green="0.15355769436667838" blue="0.11637662690605445" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0I-K3-vaR">
-                                <rect key="frame" x="7" y="56" width="56" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="bei-mE-muv"/>
-                                    <constraint firstAttribute="height" constant="48" id="xzH-64-gAo"/>
-                                </constraints>
-                                <state key="normal" image="Piano.png"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBr-hk-eHl">
+                                <rect key="frame" x="0.0" y="40" width="68" height="196"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <action selector="goToKeyboard:" destination="lQE-o0-jFt" eventType="touchUpInside" id="oME-Px-KFN"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="iUa-Xw-81W"/>
+                                    <segue destination="X0K-CF-7vk" kind="embed" id="yGQ-Sy-3ac"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-bq-17E">
-                                <rect key="frame" x="10" y="121" width="49" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="7Y1-Yv-1LH"/>
-                                    <constraint firstAttribute="height" constant="49" id="FLR-so-3J6"/>
-                                </constraints>
-                                <state key="normal" image="Activity Grid.png"/>
-                                <connections>
-                                    <action selector="goToPads:" destination="lQE-o0-jFt" eventType="touchUpInside" id="7VB-RD-vlb"/>
-                                    <segue destination="SBi-Jb-oes" kind="show" id="bQ6-oj-sHd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6E-Ur-eL7">
-                                <rect key="frame" x="7" y="188" width="56" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="1bk-Hu-JGG"/>
-                                    <constraint firstAttribute="height" constant="38" id="RQx-CT-qvs"/>
-                                </constraints>
-                                <state key="normal" image="Horizontal Settings Mixer Filled.png"/>
-                            </button>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ij0-bq-17E" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="101" id="443-yu-qPd"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="M0I-K3-vaR" secondAttribute="leading" constant="13" id="4af-Oa-NS0"/>
-                            <constraint firstItem="Q6E-Ur-eL7" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="168" id="ERX-bf-iMz"/>
-                            <constraint firstItem="Ij0-bq-17E" firstAttribute="leading" secondItem="BlD-3L-yVD" secondAttribute="leadingMargin" constant="-10" id="LqM-nb-5DL"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Q6E-Ur-eL7" secondAttribute="leading" constant="13" id="WQe-r4-Wdg"/>
-                            <constraint firstItem="M0I-K3-vaR" firstAttribute="top" secondItem="mRh-QA-7DZ" secondAttribute="bottom" constant="36" id="yZP-ty-6kY"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="fader1" destination="jgl-2F-2pA" id="X7n-WZ-qsu"/>
@@ -733,7 +630,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hhk-TT-eMW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aRT-CI-ba2">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="57"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="56"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGb-j2-3Zh">
@@ -846,15 +743,61 @@
             </objects>
             <point key="canvasLocation" x="341" y="-671"/>
         </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="IeA-Tz-fjo">
+            <objects>
+                <viewController id="X0K-CF-7vk" customClass="navigationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q7t-cu-mhL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wuv-6c-Rmh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eZD-2z-wl2">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="196"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heA-gJ-LHQ">
+                                <rect key="frame" x="12" y="13" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="Piano.png"/>
+                                <state key="highlighted" backgroundImage="Piano Filled.png"/>
+                                <connections>
+                                    <action selector="goToKeyboard:" destination="X0K-CF-7vk" eventType="touchUpInside" id="cIo-jT-aQu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tx-L3-omZ">
+                                <rect key="frame" x="12" y="73" width="45" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="Activity Grid.png"/>
+                                <connections>
+                                    <action selector="goToPads:" destination="X0K-CF-7vk" eventType="touchUpInside" id="QYM-9a-SQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSj-6V-5tW">
+                                <rect key="frame" x="12" y="133" width="45" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="Horizontal Settings Mixer.png"/>
+                                <connections>
+                                    <action selector="goToMixer:" destination="X0K-CF-7vk" eventType="touchUpInside" id="MdI-sv-ZH8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ek-OI-JQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343.3098591549296" y="-712.5"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Activity Grid Filled.png" width="100" height="100"/>
         <image name="Activity Grid.png" width="100" height="100"/>
         <image name="Circled 4 Filled.png" width="100" height="100"/>
         <image name="Circled 4.png" width="100" height="100"/>
         <image name="Fast Forward Filled.png" width="100" height="100"/>
         <image name="Fast Forward.png" width="100" height="100"/>
-        <image name="Horizontal Settings Mixer Filled.png" width="100" height="100"/>
         <image name="Horizontal Settings Mixer.png" width="100" height="100"/>
         <image name="Piano Filled.png" width="100" height="100"/>
         <image name="Piano.png" width="100" height="100"/>
@@ -880,10 +823,8 @@
         <image name="whitepressed.png" width="238" height="1004"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7iM-4J-y78"/>
-        <segue reference="MAx-4i-IWd"/>
-        <segue reference="PWq-Zv-Jq7"/>
-        <segue reference="Anr-dc-LUW"/>
-        <segue reference="ETp-MC-7Hk"/>
+        <segue reference="W3M-hR-vGK"/>
+        <segue reference="jo8-pb-fF8"/>
+        <segue reference="yGQ-Sy-3ac"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -56,6 +56,7 @@
 		698937C41DDA253A006F0515 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698937C31DDA253A006F0515 /* CoreAudioKit.framework */; };
 		698937C61DDA2542006F0515 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698937C51DDA2542006F0515 /* CoreMIDI.framework */; };
 		698DA7D01DEE0441009B9760 /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */; };
+		698DA7D31DEE10C2009B9760 /* navigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698DA7D21DEE10C2009B9760 /* navigationViewController.m */; };
 		6997C5BF1DDE5B34003451C1 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6997C5BE1DDE5B34003451C1 /* SetupViewController.m */; };
 		69A084E41DD77B9B008AF00D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E31DD77B9B008AF00D /* main.m */; };
 		69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E61DD77B9B008AF00D /* AppDelegate.m */; };
@@ -153,6 +154,8 @@
 		698937C31DDA253A006F0515 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		698937C51DDA2542006F0515 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iphone.storyboard; sourceTree = "<group>"; };
+		698DA7D11DEE10C2009B9760 /* navigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navigationViewController.h; sourceTree = "<group>"; };
+		698DA7D21DEE10C2009B9760 /* navigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navigationViewController.m; sourceTree = "<group>"; };
 		6997C5BD1DDE5B34003451C1 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
 		6997C5BE1DDE5B34003451C1 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		69A084DF1DD77B9B008AF00D /* FinalProject_Nick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_Nick.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,6 +321,8 @@
 				6997C5BE1DDE5B34003451C1 /* SetupViewController.m */,
 				69A084EB1DD77B9B008AF00D /* Main.storyboard */,
 				698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */,
+				698DA7D11DEE10C2009B9760 /* navigationViewController.h */,
+				698DA7D21DEE10C2009B9760 /* navigationViewController.m */,
 				69A084E81DD77B9B008AF00D /* ViewController.h */,
 				69A084E91DD77B9B008AF00D /* ViewController.m */,
 				698272471DE60A6C0079233B /* positionViewController.h */,
@@ -561,6 +566,7 @@
 			files = (
 				69BB7CE51DE5ACD900DCAF2F /* transportViewController.m in Sources */,
 				69A084EA1DD77B9B008AF00D /* ViewController.m in Sources */,
+				698DA7D31DEE10C2009B9760 /* navigationViewController.m in Sources */,
 				69A0851A1DD788A0008AF00D /* controlsViewController.m in Sources */,
 				6981B68C1DDE74C60086D0F5 /* MidiBusClient.m in Sources */,
 				6935B0B01DEC8FB40007C935 /* setValues.m in Sources */,
