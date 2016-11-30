@@ -76,6 +76,11 @@
 		69A254C01DE125660045F23E /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BC1DE125660045F23E /* white.png */; };
 		69A254C11DE125660045F23E /* whitepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BD1DE125660045F23E /* whitepressed.png */; };
 		69BB7CE51DE5ACD900DCAF2F /* transportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */; };
+		69BFE3DD1DEE4DB3009C33A9 /* Minus Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */; };
+		69BFE3DE1DEE4DB3009C33A9 /* Minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3DA1DEE4DB3009C33A9 /* Minus.png */; };
+		69BFE3DF1DEE4DB3009C33A9 /* Plus Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3DB1DEE4DB3009C33A9 /* Plus Filled.png */; };
+		69BFE3E01DEE4DB3009C33A9 /* Plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3DC1DEE4DB3009C33A9 /* Plus.png */; };
+		69BFE3E21DEE509E009C33A9 /* dark_grey_box.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3E11DEE509E009C33A9 /* dark_grey_box.jpg */; };
 		69E6A4241DDA391000562E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4231DDA391000562E75 /* UIKit.framework */; };
 		69E6A4261DDA391900562E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4251DDA391900562E75 /* Foundation.framework */; };
 		69E6A4281DDA392100562E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4271DDA392100562E75 /* CoreGraphics.framework */; };
@@ -187,6 +192,11 @@
 		69A254BD1DE125660045F23E /* whitepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitepressed.png; sourceTree = "<group>"; };
 		69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transportViewController.h; sourceTree = "<group>"; };
 		69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transportViewController.m; sourceTree = "<group>"; };
+		69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Minus Filled.png"; sourceTree = "<group>"; };
+		69BFE3DA1DEE4DB3009C33A9 /* Minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Minus.png; sourceTree = "<group>"; };
+		69BFE3DB1DEE4DB3009C33A9 /* Plus Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plus Filled.png"; sourceTree = "<group>"; };
+		69BFE3DC1DEE4DB3009C33A9 /* Plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plus.png; sourceTree = "<group>"; };
+		69BFE3E11DEE509E009C33A9 /* dark_grey_box.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dark_grey_box.jpg; sourceTree = "<group>"; };
 		69E6A4231DDA391000562E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69E6A4251DDA391900562E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E6A4271DDA392100562E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -271,6 +281,11 @@
 				6981B6881DDE74C60086D0F5 /* MidiBusClient.m */,
 				6981B6891DDE74C60086D0F5 /* omac_apps.plist */,
 				6981B68A1DDE74C60086D0F5 /* OMACApplicationRegistry.h */,
+				69BFE3E11DEE509E009C33A9 /* dark_grey_box.jpg */,
+				69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */,
+				69BFE3DA1DEE4DB3009C33A9 /* Minus.png */,
+				69BFE3DB1DEE4DB3009C33A9 /* Plus Filled.png */,
+				69BFE3DC1DEE4DB3009C33A9 /* Plus.png */,
 				697CF8A31DE7212B00ED2F27 /* orange_square.png */,
 				697CF8A51DE7218B00ED2F27 /* Red.png */,
 				698937781DDA23B9006F0515 /* 4 Filled.png */,
@@ -323,12 +338,12 @@
 				698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */,
 				698DA7D11DEE10C2009B9760 /* navigationViewController.h */,
 				698DA7D21DEE10C2009B9760 /* navigationViewController.m */,
-				69A084E81DD77B9B008AF00D /* ViewController.h */,
-				69A084E91DD77B9B008AF00D /* ViewController.m */,
-				698272471DE60A6C0079233B /* positionViewController.h */,
-				698272481DE60A6C0079233B /* positionViewController.m */,
 				69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */,
 				69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */,
+				698272471DE60A6C0079233B /* positionViewController.h */,
+				698272481DE60A6C0079233B /* positionViewController.m */,
+				69A084E81DD77B9B008AF00D /* ViewController.h */,
+				69A084E91DD77B9B008AF00D /* ViewController.m */,
 				69A085151DD783A7008AF00D /* padViewController.h */,
 				69A085161DD783A7008AF00D /* padViewController.m */,
 				69A085181DD788A0008AF00D /* controlsViewController.h */,
@@ -445,6 +460,7 @@
 				TargetAttributes = {
 					69A084DE1DD77B9A008AF00D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BGSVHERM8R;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -489,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69BFE3E21DEE509E009C33A9 /* dark_grey_box.jpg in Resources */,
 				6981B68D1DDE74C60086D0F5 /* omac_apps.plist in Resources */,
 				697CF8A61DE7218B00ED2F27 /* Red.png in Resources */,
 				698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */,
@@ -509,9 +526,11 @@
 				698937A31DDA23B9006F0515 /* Circled 4.png in Resources */,
 				698937BF1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png in Resources */,
 				698937A11DDA23B9006F0515 /* Bass Drum.png in Resources */,
+				69BFE3DE1DEE4DB3009C33A9 /* Minus.png in Resources */,
 				69A0851C1DD7ADA9008AF00D /* GUI For App 1-02.png in Resources */,
 				698937AA1DDA23B9006F0515 /* Horizontal Settings Mixer.png in Resources */,
 				698937AB1DDA23B9006F0515 /* Mixer.png in Resources */,
+				69BFE3DF1DEE4DB3009C33A9 /* Plus Filled.png in Resources */,
 				698937B31DDA23B9006F0515 /* Record_2.png in Resources */,
 				698937BA1DDA23B9006F0515 /* Skip to Start.png in Resources */,
 				698937C01DDA23B9006F0515 /* Vertical Settings Mixer_2.png in Resources */,
@@ -519,7 +538,9 @@
 				698937A91DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png in Resources */,
 				698937A41DDA23B9006F0515 /* Circled 5 .png in Resources */,
 				698937A51DDA23B9006F0515 /* Electronic Music Filled.png in Resources */,
+				69BFE3E01DEE4DB3009C33A9 /* Plus.png in Resources */,
 				69A084F21DD77B9B008AF00D /* LaunchScreen.storyboard in Resources */,
+				69BFE3DD1DEE4DB3009C33A9 /* Minus Filled.png in Resources */,
 				69A0851E1DD7AE9F008AF00D /* GUI For App 1-03.png in Resources */,
 				6989379D1DDA23B9006F0515 /* 4 Filled.png in Resources */,
 				698937B51DDA23B9006F0515 /* Repeat Filled.png in Resources */,
@@ -724,6 +745,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BGSVHERM8R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -749,6 +771,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BGSVHERM8R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

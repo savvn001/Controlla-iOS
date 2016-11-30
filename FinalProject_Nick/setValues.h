@@ -13,10 +13,11 @@
     
 
 @property (nonatomic, assign) NSInteger CCcontroller;
-@property (nonatomic, assign) int value;
+
+@property (nonatomic, assign) NSInteger value;
 
 + (setValues *) sharedInstance;
-
+-(void)callSetFaders;
 
 
 

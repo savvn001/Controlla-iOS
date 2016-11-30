@@ -119,19 +119,18 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     NSLog(@"data 2 = %i",event->data[1]);
     NSLog(@"data 3 = %i",event->data[2]);
     
-    
-    
-    
+
     
     if(event->data[0] == 0xB1)
     {
         setValues *setValueClass = [setValues sharedInstance];
         
-        //[setValueClass CCcontroller:3];
+        setValueClass.CCcontroller = event->data[1];
+        setValueClass.value = event->data[2];
        
         
         NSLog(@"cc value from ableton = %i", event->data[2]);
-        
+        [setValueClass callSetFaders];
         
         
     }

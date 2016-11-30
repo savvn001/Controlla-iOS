@@ -43,9 +43,6 @@
         //add action method to each slider
         [fader addTarget:self action:@selector(faderSend:) forControlEvents:UIControlEventValueChanged];
         
-       
-        
-        
         
     }
     
@@ -53,28 +50,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-- (IBAction)goToKeyboard:(id)sender {
-    //Switch view to keyboard view
-    UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-    UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"keyboardViewController"];
-    [self presentViewController: vc animated:NO completion:nil];
-}
-
-#pragma mark Switching Views
-
-- (IBAction)goToPads:(id)sender {
-    //Switch view to pads view
-    UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-    UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"padViewController"];
-    [self presentViewController: vc animated:NO completion:nil];
-    
-}
 
 
 #pragma mark slider methods
@@ -90,11 +65,12 @@
     NSLog(@"fader send, value %f:",sender.value);
 }
 
--(void)faderReceive{
+-(void)updateFader{
     
     setValues *setValueClass = [setValues sharedInstance];
     
     self.fader1.value = [setValueClass value];
+
     
     
     

@@ -18,9 +18,6 @@
 
 static setValues *_sharedInstance;
 
-
-
-
 - (id) init
 {
     if (self = [super init])
@@ -40,6 +37,12 @@ static setValues *_sharedInstance;
     }
     
     return _sharedInstance;
+}
+
+-(void)callSetFaders{
+    
+    
+    
 }
 
 
