@@ -14,37 +14,37 @@
 
 //IB oulet collection for buttons
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pads;
+//outlet collection for labels that display octave number variable
 @property (nonatomic, strong) IBOutletCollection(UILabel) NSArray *octaveLabel;
+//outlet array for chord selectors
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *chords;
+//array that stores title of chords
 @property (nonatomic,strong) NSMutableArray *chordArray;
+//array that stores chords 'attached' to each pad
 @property (nonatomic,strong) NSMutableArray *padChord;
 
 
 @end
 
-//variable for octave of note sent when pads are pressed, initally 60
-int note;
-int state;
-int padoctave = 0;
-int octaveNo = 3;
-int lastPadPressed;
-
-//array for sending chords
-//array stuff ->  http://rypress.com/tutorials/objective-c/data-types/nsarray
-
-
+#pragma mark Variable Declarations
+//Variables
+int note; //note for MIDI message sent
+int state;  //state for MIDI message sent
+int padoctave = 0; //variable for octave of note sent when pads are pressed, initally 0
+int octaveNo = 3; //'number' of octave, default 3
+int lastPadPressed; //variable to be assigned sender tag
 
 
 
 @implementation padViewController
 
 
-
+#pragma mark Inital View load
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Assign control events and IBaction events to each button in outlet collcetion
+    //Assign control events and IBaction events to each pad
     for (UIButton *pad  in self.pads) {
         [pad addTarget:self action:@selector(padDown:) forControlEvents:UIControlEventTouchDown];
         [pad addTarget:self action:@selector(padUp:) forControlEvents:UIControlEventTouchUpInside];
@@ -59,25 +59,45 @@ int lastPadPressed;
     self.xtraLabel1.text = [NSString stringWithFormat: @"%d", 4 ];
     self.xtraLabel2.text = [NSString stringWithFormat: @"%d", 4 ];
     
-    //set properties for chord buttons under 'CHORDS' outlet collection, add action 'ChordSelect' for control event Touch down
-    for(NSString *chordLabels in _chordArray){
-        for(UIButton *chordSelect in self.chords){
-            [chordSelect addTarget:self action:@selector(chordSelect:) forControlEvents:UIControlEventTouchDown];
-            [chordSelect setTitle:chordLabels forState:normal];
-            
-        }
-    }
+    
+    
+    
+    
     
     //array for sending chords
-    //array stuff ->  http://rypress.com/tutorials/objective-c/data-types/nsarray
+    //Using arrays learnt from ->   http://rypress.com/tutorials/objective-c/data-types/nsarray
     
+    /*This array stores the values of whether a pad plays a chord or 'none', all are initally set to 'none'.
+     When a chord is selected for a current pad, 'none' changes to selected chord (could be Dim7 for example)
+     this means this chord is 'attached' to pad
+     */
     self.padChord = [NSMutableArray arrayWithObjects: @"None", @"None", @"None",
                      @"None", @"None", @"None", @"None", @"None", @"None",
                      @"None", @"None", @"None", @"None", @"None",
+                     @"None", @"None", @"None", @"None", @"None",
+                     @"None", @"None", @"None", @"None", @"None", @"None",
+                     @"None", @"None", @"None", @"None", @"None",
+                     @"None", @"None", @"None",
                      @"None", @"None", nil];
     
+    //each element here refers to a particular chord
     self.chordArray = [NSMutableArray arrayWithObjects: @"None", @"Maj", @"Min",
-                       @"Dom7", @"Maj7", @"Min7", @"mM7", @"7b5",@"7x5", @",m7b5", @"_7b9",@"b5",@"_5",@"_6",@"m6",@"_69",@"_9",@"_9b5",@"_9x5", @",m9",@"Maj9",@"Add9",@"_7x9",@"_11",@"m11",@"_13",@"_Maj13",@"Sus2",@"Sus4",@"_7Sus4",@"_9Sus4", @"Dim7", @"Aug", nil];
+                       @"Dom7", @"Maj7", @"Min7", @"mM7", @"7b5",@"7x5", @"m7b5", @"_7b9",@"b5",@"_5",@"_6",@"m6",@"_69",@"_9",@"_9b5",@"_9x5", @"m9",@"Maj9",@"Add9",@"_7x9",@"_11",@"m11",@"_13",@"_Maj13",@"Sus2",@"Sus4",@"_7Sus4",@"_9Sus4", @"Dim7", @"Aug", nil];
+    
+    
+    //set properties for chord buttons under 'CHORDS' outlet collection,
+    int n = 0; //a counter for adressing the chordArray below to set titles for buttons
+    for(UIButton *chordSelect in self.chords){
+        
+        NSString *title =  self.chordArray[n];
+        //add IBaction chordSelect to each button touch down
+        [chordSelect addTarget:self action:@selector(chordSelect:) forControlEvents:UIControlEventTouchDown];
+        //set title to be 'n-th' element of chordArray
+        [chordSelect setTitle:title forState:UIControlStateNormal];
+        //also set tag to be n+20
+        chordSelect.tag = n + 20;
+        n++;
+    }
     
     
 }
@@ -85,22 +105,29 @@ int lastPadPressed;
 
 
 
+#pragma mark Action Methods
 
 //When pads are pressed down, send note on
 -(void)padDown:(id)sender{
     
+    //each pad has unique sender tag (which is an int ranging from 0-15) assigned to it in storyboard, assign sender tag of button pressed to lastPadPressed variable
     lastPadPressed = [sender tag];
+    
     
     note = 38 + [sender tag];
     
+    //0x91 = 'note On' in hex
     state = 0x91;
     
     
-    //scan through array of chords and check whether current pad pressed has a chord set to it in the padChord array, if so set chord buttons to represent that
+    //scan through array of chords and check if current pad has that chord attached to it
     
-    for(NSString *item2 in _chordArray){
+    for(NSString *item2 in _chordArray){ //item 2 is current item in chordArray, loops through
         
-        if ([_padChord[[sender tag]] isEqualToString:item2]){
+        
+        if ([_padChord[[sender tag]] isEqualToString:item2]){ //check if the chord attatched to current pad in question is equal to current item in chordArray
+            
+            //have to set states of chord select buttons to reflect chord set to current pad
             for(UIButton *chordSelect in self.chords){
                 //button with name 'item2' should be set: selected == TRUE
                 if([chordSelect.titleLabel.text isEqualToString:item2]){
@@ -114,11 +141,13 @@ int lastPadPressed;
         }
     }
     
+    
     //call the respective function chord function to send MIDI
-    NSString *chordFunction = [_padChord objectAtIndex:[sender tag]];
+    NSString *chordFunction = [_padChord objectAtIndex:[sender tag]]; //make NSstring variable reflects current chord
     NSLog(@"%@", chordFunction);
     
     //call relevant chord function by string name (from http://stackoverflow.com/questions/20400366/dynamically-call-static-method-on-class-from-string
+    //call chord method by 'chordFunction' string name (chord methods listed at bottom of code)
     SEL selector = NSSelectorFromString(chordFunction);
     [self performSelector:selector];
     
@@ -131,14 +160,17 @@ int lastPadPressed;
     
 }
 
+
 //When pads are released down, send note off
 -(void)padUp:(id)sender{
     
     note = 38 + [sender tag];
-    state = 0x81;
+    
+    state = 0x81; //Note Off Message
     
     NSString *chordFunction = [_padChord objectAtIndex:[sender tag]];
     
+    //call same chord method but this time state is different, so sends Note Off
     SEL selector = NSSelectorFromString(chordFunction);
     [self performSelector:selector];
     
@@ -147,9 +179,12 @@ int lastPadPressed;
 
 //octave up & down buttons
 - (IBAction)octaveUp:(UIButton *)sender {
+    
+    //increase octave 1, (12 notes)
     padoctave = padoctave + 12;
     octaveNo++;
     NSLog(@"octave = %i:",padoctave);
+    //Update labels on pads
     for(UILabel *octaveLabel in self.octaveLabel){
         octaveLabel.text = [NSString stringWithFormat: @"%d", octaveNo];
     }
@@ -173,7 +208,7 @@ int lastPadPressed;
     
 }
 
-//action for chord select buttons
+//When you select a chord for a pad this method is called
 -(IBAction)chordSelect:(UIButton*)sender{
     
     
@@ -190,7 +225,7 @@ int lastPadPressed;
     
     //loop through, check sender tag and replace the right element in the 'padchord' array with the correct value from 'chords' array
     //'lastPadPressed' is sender tag of most recent pad pressed, this corresponds exactly to an element in the 'padChord' array
-    for(int j = 20; j < 26; j++){
+    for(int j = 20; j < 54; j++){
         
         if([sender tag] == j){
             
@@ -204,7 +239,7 @@ int lastPadPressed;
     NSLog(@"pad chords%@",_padChord);
 }
 
-
+#pragma mark MIDI Send Function
 
 //function for sending MIDI, called when pads are pressed and released
 - (void)padsSend:(int)note state:(int)status{
@@ -280,6 +315,67 @@ int lastPadPressed;
     
     
 }
+
+-(void)mM7{
+    NSLog(@"sending mM7 chord");
+}
+-(void)_7b5{
+    NSLog(@"sending 7b5 chord");
+}
+-(void)_7x5{
+    NSLog(@"sending 7#5 chord");
+}
+-(void)m7b5{
+}
+-(void)_7b9{
+}
+-(void)b5{
+}
+-(void)_5{
+}
+-(void)_6{
+}
+-(void)m6{
+}
+-(void)_69{
+}
+-(void)_9{
+}
+-(void)_9b5{
+}
+-(void)_9x5{
+}
+-(void)m9{
+}
+-(void)Maj9{
+}
+-(void)Add9{
+}
+-(void)_7x9{
+}
+-(void)_11{
+}
+-(void)m11{
+}
+-(void)_13{
+}
+-(void)_Maj13{
+}
+-(void)Sus2{
+}
+-(void)Sus4{
+
+}
+-(void)_7Sus4{
+}
+-(void)_9Sus4{
+}
+-(void)Dim7{
+}
+-(void)Aug{
+     NSLog(@"sending Aug chord");
+}
+
 
 
 @end
