@@ -16,11 +16,6 @@
 - (void)pianoKeys:(int)note state:(int)statusbyte;
 
 
-//Button for switching View to Pads View
--(IBAction)goToPads:(id)sender;
-
-//button for switching view to controls view
-- (IBAction)goToControls:(id)sender;
 
 - (IBAction) pianoKeyDown: (id) sender;
 - (IBAction) pianoKeyUp: (id) sender;
@@ -34,6 +29,7 @@
 - (IBAction)pitchSliderRelease:(UISlider *)sender;
 
 @property (weak, nonatomic) IBOutlet UISlider *pitchSliderCenter;
+@property (weak, nonatomic) IBOutlet UIImageView *pianoImage;
 
 
 

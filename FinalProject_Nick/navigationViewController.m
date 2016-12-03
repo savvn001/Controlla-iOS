@@ -31,15 +31,15 @@
 //Switchings views programmatically, learned from from 'How to switch storybard views programmatically' https://www.youtube.com/watch?v=QhNdvCE9jVg
 - (IBAction)goToKeyboard:(UIButton *)sender {
     
-    if ( IDIOM == IPAD ) {
+    if ( IDIOM == IPAD) {
         //Switch view to keyboard view, have to have an if statement to check if on iPhone or iPad, storyboards are different
         UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
         UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"keyboardViewController"];
         [self presentViewController: vc animated:NO completion:nil];
         
     } else {
-        UIStoryboard* Main_iphone = [UIStoryboard storyboardWithName: @"Main_iphone" bundle:nil];
-        UIViewController *vc = [Main_iphone instantiateViewControllerWithIdentifier: @"keyboardViewController"];
+        UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
+        UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"keyboardViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     }
     
@@ -53,8 +53,8 @@
         UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"padViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     } else {
-        UIStoryboard* Main_iphone = [UIStoryboard storyboardWithName: @"Main_iphone" bundle:nil];
-        UIViewController *vc = [Main_iphone instantiateViewControllerWithIdentifier: @"padViewController"];
+        UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
+        UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"padViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     }
     
@@ -68,8 +68,8 @@
         UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"controlsViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     } else {
-        UIStoryboard* Main_iphone = [UIStoryboard storyboardWithName: @"Main_iphone" bundle:nil];
-        UIViewController *vc = [Main_iphone instantiateViewControllerWithIdentifier: @"controlsViewController"];
+        UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
+        UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"controlsViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     }
     

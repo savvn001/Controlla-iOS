@@ -10,12 +10,12 @@
 #import "MidiBusClient.h"
 #import "AppDelegate.h"
 
-@interface controlsViewController : UIViewController
+@interface controlsViewController : UIViewController {
+    NSTimer *timer;
+}
  
 
 - (void)faderSendMIDI:(int)controller state:(int)value;
-
--(void)updateFader;
 
 
 

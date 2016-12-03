@@ -15,9 +15,22 @@
 
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pianoKeys;
 
+@property (nonatomic, strong) UIImage *piano1;
+@property (nonatomic, strong) UIImage *piano2;
+@property (nonatomic, strong) UIImage *piano3;
+@property (nonatomic, strong) UIImage *piano4;
+@property (nonatomic, strong) UIImage *piano5;
+@property (nonatomic, strong) UIImage *piano6;
+@property (nonatomic, strong) UIImage *piano7;
+@property (nonatomic, strong) UIImage *piano8;
+@property (nonatomic, strong) UIImage *piano9;
+@property (nonatomic, strong) NSMutableArray *imageArray;
 
 
 @end
+
+int pianoOctaveImage = 3;
+
 
 @implementation ViewController
 
@@ -33,6 +46,23 @@
         [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchCancel];
     }
     
+    _piano1 = [UIImage imageNamed:@"piano_piano1"];
+    _piano2 = [UIImage imageNamed:@"piano_piano2"];
+    _piano3 = [UIImage imageNamed:@"piano_piano3"];
+    _piano4 = [UIImage imageNamed:@"piano_piano4"];
+    _piano5 = [UIImage imageNamed:@"piano_piano5"];
+    _piano6 = [UIImage imageNamed:@"piano_piano6"];
+    _piano7 = [UIImage imageNamed:@"piano_piano7"];
+    _piano8 = [UIImage imageNamed:@"piano_piano8"];
+    _piano8 = [UIImage imageNamed:@"piano_piano9"];
+    
+   
+    
+    [_pianoImage setImage:_piano5];
+    
+    
+   self.imageArray = [NSMutableArray arrayWithObjects:@"_piano1", @"_piano2", @"_piano3", @"_piano4", @"_piano5", nil];
+    
 }
 
 
@@ -42,74 +72,111 @@
 }
 
 
-#pragma mark Switching Views
-
--(IBAction)goToPads:(id)sender {
-    
-    //Switch View to Pads View, learned from from 'How to switch storybard views programmatically' https://www.youtube.com/watch?v=QhNdvCE9jVg
-    UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-    UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"padViewController"];
-    [self presentViewController: vc animated:NO completion:nil];
-}
 
 
-- (IBAction)goToControls:(id)sender {
-    //Switch View to controls View
-    UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-    UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"controlsViewController"];
-    [self presentViewController: vc animated:NO completion:nil];
-    
-}
-
-
-
-
-
-
-
-#pragma mark sending midi
-//variable for controlling octave of notes sent out, initally 0, then set to +/- multiples of 12 when 'octave down' and 'octave up' are pressed
-int octave = 0;
-
+#pragma mark Piano Key Actions
 
 //when piano keys are pressed down
 - (IBAction) pianoKeyDown:(id)sender
 {
+    
     //generate note variable to be unique to each key (each key is identified by its sender tag which is set to be unqiue to each button)
-    int note = 60 + [sender tag];
+    int note = 36 + [sender tag];
     [self pianoKeys:note state:0x90];
     NSLog(@"note on");
 }
 
 - (IBAction) pianoKeyUp:(id)sender
 {
-    UInt8 note = 60 + [sender tag];
+    UInt8 note = 36 + [sender tag];
     [self pianoKeys:note state:0x80];
     NSLog(@"note off");
 }
+
+
+
+#pragma mark Octave Controls
+//variable for controlling octave of notes sent out, initally 0, then set to +/- multiples of 12 when 'octave down' and 'octave up' are pressed
+int octave = 0;
 
 //octave up and down buttons
 - (IBAction)octaveDown:(UIButton *)sender {
     
     //12 notes = 1 octave, so reduce octave by 12
     octave = octave - 12;
-    //if octave goes below -60 (lower limit of midi notes, nothing below 0), set back to -60
-    if (octave <  -60){
-        octave = -60;
+    
+    if(octave == 0){
+        [_pianoImage setImage:_piano5];
+    }
+    else if(octave == 12){
+        [_pianoImage setImage:_piano6];
+    }
+    else if (octave == 24){
+        [_pianoImage setImage:_piano7];
+    }
+    else if (octave == 36){
+        [_pianoImage setImage:_piano8];
+    }
+    else if (octave == 48){
+        [_pianoImage setImage:_piano9];
+    }
+    else if(octave == -12){
+        [_pianoImage setImage:_piano4];
+    }
+    else if (octave == -24){
+        [_pianoImage setImage:_piano3];
+    }
+    else if (octave == -36){
+        [_pianoImage setImage:_piano2];
+    }
+    else if (octave == -48){
+        [_pianoImage setImage:_piano1];
     }
     
+    
 }
+
+
 
 - (IBAction)octaveUp:(UIButton *)sender {
     
+    //increase octave by 12
     octave = octave + 12;
     
-    //if octave goes above 60 (upper limit of midi notes, nothing above 127), set back to 60
-    if (octave > 60){
-        octave = 60;
+    if(octave == 0){
+        [_pianoImage setImage:_piano5];
     }
+    else if(octave == 12){
+        [_pianoImage setImage:_piano6];
+    }
+    else if (octave == 24){
+        [_pianoImage setImage:_piano7];
+    }
+    else if (octave == 36){
+        [_pianoImage setImage:_piano8];
+    }
+    else if (octave == 48){
+        [_pianoImage setImage:_piano9];
+    }
+    else if(octave == -12){
+        [_pianoImage setImage:_piano4];
+    }
+    else if (octave == -24){
+        [_pianoImage setImage:_piano3];
+    }
+    else if (octave == -36){
+        [_pianoImage setImage:_piano2];
+    }
+    else if (octave == -48){
+        [_pianoImage setImage:_piano1];
+    }
+    
+    
+    
 }
 
+
+#pragma Modulation and Pitch slider
 //sending modulation cc message for modulation slider
 - (IBAction)modulationSlider:(UISlider *)sender {
     
@@ -226,9 +293,6 @@ int octave = 0;
     
     
 }
-
-//[self pianoKeys:0x3C state:0x80];
-//[self pianoKeys:0x3C state:0x90];
 
 
 @end

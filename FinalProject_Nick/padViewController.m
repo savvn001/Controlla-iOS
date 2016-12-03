@@ -82,7 +82,7 @@ int lastPadPressed; //variable to be assigned sender tag
     
     //each element here refers to a particular chord
     self.chordArray = [NSMutableArray arrayWithObjects: @"None", @"Maj", @"Min",
-                       @"Dom7", @"Maj7", @"Min7", @"mM7", @"7b5",@"7x5", @"m7b5", @"_7b9",@"b5",@"_5",@"_6",@"m6",@"_69",@"_9",@"_9b5",@"_9x5", @"m9",@"Maj9",@"Add9",@"_7x9",@"_11",@"m11",@"_13",@"_Maj13",@"Sus2",@"Sus4",@"_7Sus4",@"_9Sus4", @"Dim7", @"Aug", nil];
+                       @"Dom7", @"Maj7", @"Min7", @"mM7", @"_7b5",@"_7x5", @"m7b5", @"_7b9",@"b5",@"_5",@"_6",@"m6",@"_69",@"_9",@"_9b5",@"_9x5", @"m9",@"Maj9",@"Add9",@"_7x9",@"_11",@"m11",@"_13",@"_Maj13",@"Sus2",@"Sus4",@"_7Sus4",@"_9Sus4", @"Dim7", @"Aug", nil];
     
     
     //set properties for chord buttons under 'CHORDS' outlet collection,
@@ -114,7 +114,7 @@ int lastPadPressed; //variable to be assigned sender tag
     lastPadPressed = [sender tag];
     
     
-    note = 38 + [sender tag];
+    note = 36 + [sender tag];
     
     //0x91 = 'note On' in hex
     state = 0x91;
@@ -164,7 +164,7 @@ int lastPadPressed; //variable to be assigned sender tag
 //When pads are released down, send note off
 -(void)padUp:(id)sender{
     
-    note = 38 + [sender tag];
+    note = 36 + [sender tag];
     
     state = 0x81; //Note Off Message
     
@@ -321,43 +321,131 @@ int lastPadPressed; //variable to be assigned sender tag
 }
 -(void)_7b5{
     NSLog(@"sending 7b5 chord");
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+6 state:state];
+    [self padsSend:note+10 state:state];
 }
 -(void)_7x5{
     NSLog(@"sending 7#5 chord");
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+8 state:state];
+    [self padsSend:note+10 state:state];
 }
 -(void)m7b5{
+    [self padsSend:note state:state];
+    [self padsSend:note+3 state:state];
+    [self padsSend:note+6 state:state];
+    [self padsSend:note+10 state:state];
 }
 -(void)_7b9{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+13 state:state];
 }
 -(void)b5{
 }
 -(void)_5{
+    [self padsSend:note state:state];
+    [self padsSend:note+7 state:state];
 }
 -(void)_6{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+9 state:state];
 }
 -(void)m6{
+    [self padsSend:note state:state];
+    [self padsSend:note+3 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+9 state:state];
 }
 -(void)_69{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+9 state:state];
+    [self padsSend:note+14 state:state];
 }
 -(void)_9{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+14 state:state];
+    
 }
 -(void)_9b5{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+6 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+14 state:state];
 }
 -(void)_9x5{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+8 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+14 state:state];
 }
 -(void)m9{
+    [self padsSend:note state:state];
+    [self padsSend:note+3 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+14 state:state];
 }
 -(void)Maj9{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+11 state:state];
+    [self padsSend:note+14 state:state];
 }
 -(void)Add9{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+14 state:state];
 }
 -(void)_7x9{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+15 state:state];
 }
 -(void)_11{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+14 state:state];
+    [self padsSend:note+17 state:state];
+    
 }
 -(void)m11{
+    [self padsSend:note state:state];
+    [self padsSend:note+3 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+9 state:state];
+    [self padsSend:note+14 state:state];
+    [self padsSend:note+17 state:state];
 }
 -(void)_13{
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+7 state:state];
+    [self padsSend:note+10 state:state];
+    [self padsSend:note+14 state:state];
+    [self padsSend:note+17 state:state];
+    [self padsSend:note+20 state:state];
+    
 }
 -(void)_Maj13{
 }
@@ -371,9 +459,16 @@ int lastPadPressed; //variable to be assigned sender tag
 -(void)_9Sus4{
 }
 -(void)Dim7{
+    [self padsSend:note state:state];
+    [self padsSend:note+3 state:state];
+    [self padsSend:note+6 state:state];
+    [self padsSend:note+9 state:state];
 }
 -(void)Aug{
      NSLog(@"sending Aug chord");
+    [self padsSend:note state:state];
+    [self padsSend:note+4 state:state];
+    [self padsSend:note+8 state:state];
 }
 
 

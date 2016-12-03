@@ -21,12 +21,6 @@
 
 
 
-- (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event
-{
-    
-   
-    
-}
 
 
 @end

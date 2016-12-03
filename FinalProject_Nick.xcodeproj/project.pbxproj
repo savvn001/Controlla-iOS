@@ -9,9 +9,22 @@
 /* Begin PBXBuildFile section */
 		691266831DDE61AA007B7525 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691266821DDE61AA007B7525 /* QuartzCore.framework */; };
 		691266851DDE64AA007B7525 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691266841DDE64AA007B7525 /* CoreData.framework */; };
+		692598291DEF8F61008489BA /* padbutton_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 692598271DEF8F61008489BA /* padbutton_pressed.png */; };
+		6925982C1DEF9055008489BA /* padbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925982B1DEF9055008489BA /* padbutton.png */; };
+		692598401DEFAC65008489BA /* piano_piano1.png in Resources */ = {isa = PBXBuildFile; fileRef = 692598371DEFAC65008489BA /* piano_piano1.png */; };
+		692598411DEFAC65008489BA /* piano_piano2.png in Resources */ = {isa = PBXBuildFile; fileRef = 692598381DEFAC65008489BA /* piano_piano2.png */; };
+		692598421DEFAC65008489BA /* piano_piano3.png in Resources */ = {isa = PBXBuildFile; fileRef = 692598391DEFAC65008489BA /* piano_piano3.png */; };
+		692598431DEFAC65008489BA /* piano_piano4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983A1DEFAC65008489BA /* piano_piano4.png */; };
+		692598441DEFAC65008489BA /* piano_piano5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983B1DEFAC65008489BA /* piano_piano5.png */; };
+		692598451DEFAC65008489BA /* piano_piano6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983C1DEFAC65008489BA /* piano_piano6.png */; };
+		692598461DEFAC65008489BA /* piano_piano7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983D1DEFAC65008489BA /* piano_piano7.png */; };
+		692598471DEFAC65008489BA /* piano_piano8.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983E1DEFAC65008489BA /* piano_piano8.png */; };
+		692598481DEFAC65008489BA /* piano_piano9.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983F1DEFAC65008489BA /* piano_piano9.png */; };
 		6935B0B01DEC8FB40007C935 /* setValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 6935B0AF1DEC8FB40007C935 /* setValues.m */; };
 		697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A31DE7212B00ED2F27 /* orange_square.png */; };
 		697CF8A61DE7218B00ED2F27 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A51DE7218B00ED2F27 /* Red.png */; };
+		697F189F1DF054450067CF4F /* circle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 697F189D1DF054450067CF4F /* circle_green.png */; };
+		697F18A01DF054450067CF4F /* circle_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 697F189E1DF054450067CF4F /* circle_red.png */; };
 		6981B68B1DDE74C60086D0F5 /* libMidiBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981B6841DDE74C60086D0F5 /* libMidiBus.a */; };
 		6981B68C1DDE74C60086D0F5 /* MidiBusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6981B6881DDE74C60086D0F5 /* MidiBusClient.m */; };
 		6981B68D1DDE74C60086D0F5 /* omac_apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6981B6891DDE74C60086D0F5 /* omac_apps.plist */; };
@@ -106,10 +119,23 @@
 /* Begin PBXFileReference section */
 		691266821DDE61AA007B7525 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		691266841DDE64AA007B7525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		692598271DEF8F61008489BA /* padbutton_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padbutton_pressed.png; sourceTree = "<group>"; };
+		6925982B1DEF9055008489BA /* padbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padbutton.png; sourceTree = "<group>"; };
+		692598371DEFAC65008489BA /* piano_piano1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano1.png; sourceTree = "<group>"; };
+		692598381DEFAC65008489BA /* piano_piano2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano2.png; sourceTree = "<group>"; };
+		692598391DEFAC65008489BA /* piano_piano3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano3.png; sourceTree = "<group>"; };
+		6925983A1DEFAC65008489BA /* piano_piano4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano4.png; sourceTree = "<group>"; };
+		6925983B1DEFAC65008489BA /* piano_piano5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano5.png; sourceTree = "<group>"; };
+		6925983C1DEFAC65008489BA /* piano_piano6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano6.png; sourceTree = "<group>"; };
+		6925983D1DEFAC65008489BA /* piano_piano7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano7.png; sourceTree = "<group>"; };
+		6925983E1DEFAC65008489BA /* piano_piano8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano8.png; sourceTree = "<group>"; };
+		6925983F1DEFAC65008489BA /* piano_piano9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano9.png; sourceTree = "<group>"; };
 		6935B0AE1DEC8FB40007C935 /* setValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setValues.h; sourceTree = "<group>"; };
 		6935B0AF1DEC8FB40007C935 /* setValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setValues.m; sourceTree = "<group>"; };
 		697CF8A31DE7212B00ED2F27 /* orange_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_square.png; sourceTree = "<group>"; };
 		697CF8A51DE7218B00ED2F27 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
+		697F189D1DF054450067CF4F /* circle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_green.png; sourceTree = "<group>"; };
+		697F189E1DF054450067CF4F /* circle_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_red.png; sourceTree = "<group>"; };
 		6981B6841DDE74C60086D0F5 /* libMidiBus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMidiBus.a; sourceTree = "<group>"; };
 		6981B6851DDE74C60086D0F5 /* midibus_enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midibus_enums.h; sourceTree = "<group>"; };
 		6981B6861DDE74C60086D0F5 /* midibus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midibus.h; sourceTree = "<group>"; };
@@ -281,6 +307,17 @@
 				6981B6881DDE74C60086D0F5 /* MidiBusClient.m */,
 				6981B6891DDE74C60086D0F5 /* omac_apps.plist */,
 				6981B68A1DDE74C60086D0F5 /* OMACApplicationRegistry.h */,
+				692598371DEFAC65008489BA /* piano_piano1.png */,
+				692598381DEFAC65008489BA /* piano_piano2.png */,
+				692598391DEFAC65008489BA /* piano_piano3.png */,
+				6925983A1DEFAC65008489BA /* piano_piano4.png */,
+				6925983B1DEFAC65008489BA /* piano_piano5.png */,
+				6925983C1DEFAC65008489BA /* piano_piano6.png */,
+				6925983D1DEFAC65008489BA /* piano_piano7.png */,
+				6925983E1DEFAC65008489BA /* piano_piano8.png */,
+				6925983F1DEFAC65008489BA /* piano_piano9.png */,
+				6925982B1DEF9055008489BA /* padbutton.png */,
+				692598271DEF8F61008489BA /* padbutton_pressed.png */,
 				69BFE3E11DEE509E009C33A9 /* dark_grey_box.jpg */,
 				69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */,
 				69BFE3DA1DEE4DB3009C33A9 /* Minus.png */,
@@ -328,6 +365,8 @@
 				69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */,
 				69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */,
 				69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */,
+				697F189D1DF054450067CF4F /* circle_green.png */,
+				697F189E1DF054450067CF4F /* circle_red.png */,
 				69A084E51DD77B9B008AF00D /* AppDelegate.h */,
 				69A084E61DD77B9B008AF00D /* AppDelegate.m */,
 				6935B0AE1DEC8FB40007C935 /* setValues.h */,
@@ -510,7 +549,10 @@
 				697CF8A61DE7218B00ED2F27 /* Red.png in Resources */,
 				698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */,
 				698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */,
+				697F189F1DF054450067CF4F /* circle_green.png in Resources */,
 				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
+				692598451DEFAC65008489BA /* piano_piano6.png in Resources */,
+				692598411DEFAC65008489BA /* piano_piano2.png in Resources */,
 				698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */,
 				697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */,
 				69A254C01DE125660045F23E /* white.png in Resources */,
@@ -519,10 +561,13 @@
 				698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */,
 				698DA7D01DEE0441009B9760 /* Main_iphone.storyboard in Resources */,
 				698937AE1DDA23B9006F0515 /* Piano.png in Resources */,
+				692598461DEFAC65008489BA /* piano_piano7.png in Resources */,
 				69A254C11DE125660045F23E /* whitepressed.png in Resources */,
+				692598471DEFAC65008489BA /* piano_piano8.png in Resources */,
 				698937AD1DDA23B9006F0515 /* Piano Filled.png in Resources */,
 				6989379F1DDA23B9006F0515 /* Activity Grid.png in Resources */,
 				698937A21DDA23B9006F0515 /* Circled 4 Filled.png in Resources */,
+				697F18A01DF054450067CF4F /* circle_red.png in Resources */,
 				698937A31DDA23B9006F0515 /* Circled 4.png in Resources */,
 				698937BF1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png in Resources */,
 				698937A11DDA23B9006F0515 /* Bass Drum.png in Resources */,
@@ -532,17 +577,21 @@
 				698937AB1DDA23B9006F0515 /* Mixer.png in Resources */,
 				69BFE3DF1DEE4DB3009C33A9 /* Plus Filled.png in Resources */,
 				698937B31DDA23B9006F0515 /* Record_2.png in Resources */,
+				6925982C1DEF9055008489BA /* padbutton.png in Resources */,
 				698937BA1DDA23B9006F0515 /* Skip to Start.png in Resources */,
+				692598441DEFAC65008489BA /* piano_piano5.png in Resources */,
 				698937C01DDA23B9006F0515 /* Vertical Settings Mixer_2.png in Resources */,
 				698937A01DDA23B9006F0515 /* Bass Drum Filled.png in Resources */,
 				698937A91DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png in Resources */,
 				698937A41DDA23B9006F0515 /* Circled 5 .png in Resources */,
 				698937A51DDA23B9006F0515 /* Electronic Music Filled.png in Resources */,
 				69BFE3E01DEE4DB3009C33A9 /* Plus.png in Resources */,
+				692598481DEFAC65008489BA /* piano_piano9.png in Resources */,
 				69A084F21DD77B9B008AF00D /* LaunchScreen.storyboard in Resources */,
 				69BFE3DD1DEE4DB3009C33A9 /* Minus Filled.png in Resources */,
 				69A0851E1DD7AE9F008AF00D /* GUI For App 1-03.png in Resources */,
 				6989379D1DDA23B9006F0515 /* 4 Filled.png in Resources */,
+				692598401DEFAC65008489BA /* piano_piano1.png in Resources */,
 				698937B51DDA23B9006F0515 /* Repeat Filled.png in Resources */,
 				69A254BE1DE125660045F23E /* black.png in Resources */,
 				698937B11DDA23B9006F0515 /* Play Record.png in Resources */,
@@ -550,14 +599,17 @@
 				69A084EF1DD77B9B008AF00D /* Assets.xcassets in Resources */,
 				698937BD1DDA23B9006F0515 /* Time Filled.png in Resources */,
 				698937AF1DDA23B9006F0515 /* Play Filled.png in Resources */,
+				692598431DEFAC65008489BA /* piano_piano4.png in Resources */,
 				698937BC1DDA23B9006F0515 /* Stop.png in Resources */,
 				698937BB1DDA23B9006F0515 /* Stop Filled.png in Resources */,
+				692598291DEF8F61008489BA /* padbutton_pressed.png in Resources */,
 				698937AC1DDA23B9006F0515 /* Musical Notes.png in Resources */,
 				698937C11DDA23B9006F0515 /* Vertical Settings Mixer.png in Resources */,
 				698937B21DDA23B9006F0515 /* Play.png in Resources */,
 				6989379E1DDA23B9006F0515 /* Activity Grid Filled.png in Resources */,
 				698937B81DDA23B9006F0515 /* Rewind.png in Resources */,
 				698937B41DDA23B9006F0515 /* Record.png in Resources */,
+				692598421DEFAC65008489BA /* piano_piano3.png in Resources */,
 				698937B61DDA23B9006F0515 /* Repeat.png in Resources */,
 				69A254BF1DE125660045F23E /* blackpressed.png in Resources */,
 				69A084ED1DD77B9B008AF00D /* Main.storyboard in Resources */,

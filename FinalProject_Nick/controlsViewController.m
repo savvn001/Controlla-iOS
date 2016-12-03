@@ -22,9 +22,7 @@
 @property (nonatomic, strong) IBOutletCollection(UISlider) NSArray *faders;
 
 
-
 @end
-
 @implementation controlsViewController
 
 
@@ -46,7 +44,11 @@
         
     }
     
-  //UISlider *fader1 = (UISlider*)[self.view viewWithTag:0];
+    /*Using NSTimer to call 'updateFader' method below, method is called every 0.001 seconds (1ms), so it almost essentially runs in the backround continuously
+     this allows fader positions to always be updated to by 'in sync' with faders in DAW
+     from: http://ajourneywithios.blogspot.co.uk/2011/03/simplified-use-of-nstimer-class-in-ios.html
+     */
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(updateFader:) userInfo:nil repeats:YES];
     
 }
 
@@ -54,27 +56,39 @@
 
 #pragma mark slider methods
 
--(void)faderSend:(UISlider *)sender{
+int sliderReleased;
+
+
+
+ -(void)faderSend:(UISlider *)sender{
+ 
+ int controller = 40 + [sender tag];
+ 
+ int value = sender.value;
+ 
+ [self faderSendMIDI:controller state:value];
+ 
+ NSLog(@"fader send, value %f:",sender.value);
+ }
+
+
+
+
+
+-(void)updateFader:(NSTimer *) theTimer{
     
-    int controller = 40 + [sender tag];
+    /*
+
+        if(UIControlEventValueChanged == FALSE){
+            
+            setValues *setValueClass = [setValues sharedInstance];
+            
+            self.fader1.value = [setValueClass value];
+        }
+     */
     
-    int value = sender.value;
-    
-    [self faderSendMIDI:controller state:value];
-    
-    NSLog(@"fader send, value %f:",sender.value);
 }
 
--(void)updateFader{
-    
-    setValues *setValueClass = [setValues sharedInstance];
-    
-    self.fader1.value = [setValueClass value];
-
-    
-    
-    
-}
 
 
 
