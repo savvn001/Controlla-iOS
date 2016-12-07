@@ -7,6 +7,7 @@
 //
 
 #import "positionViewController.h"
+#import "setValues.h"
 
 @interface positionViewController ()
 
@@ -17,6 +18,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /*timer so interfaceNameLabel method can be almost essentially running in the backround
+     this is so if the connection status changes, for example if you disconnect from network and switch to bluetooth, label
+     will update it's status
+     */
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(interfaceNameLabel:) userInfo:nil repeats:YES];
+   
+    
+}
+
+-(void)interfaceNameLabel:(NSTimer *) timer{
+    
+    
+    
+    //call shared instance
+    setValues *setValueClass = [setValues sharedInstance];
+    
+    //set the label to display the name of the interface
+    self.interfaceLabel.text = [setValueClass interfaceName];
+    
+    if([setValueClass connectionPresent] == 1){
+        
+        UIImage *green = [UIImage imageNamed: @"circle_red.png"];
+        
+        //[_connectionIndicator setImage:green];
+        NSLog(@"green circle set");
+    }
+    
+    
 }
 
 
@@ -25,5 +54,3 @@
 
 @end
 
-// NSLog(@":%f",BPM);
-//self.bpmLabel.text = [NSString stringWithFormat:BPM<0 ? @"%.1f%%" : @"+%.1f%%", BPM];

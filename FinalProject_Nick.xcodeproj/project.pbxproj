@@ -68,9 +68,7 @@
 		698937C11DDA23B9006F0515 /* Vertical Settings Mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */; };
 		698937C41DDA253A006F0515 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698937C31DDA253A006F0515 /* CoreAudioKit.framework */; };
 		698937C61DDA2542006F0515 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698937C51DDA2542006F0515 /* CoreMIDI.framework */; };
-		698DA7D01DEE0441009B9760 /* Main_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */; };
 		698DA7D31DEE10C2009B9760 /* navigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698DA7D21DEE10C2009B9760 /* navigationViewController.m */; };
-		6997C5BF1DDE5B34003451C1 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6997C5BE1DDE5B34003451C1 /* SetupViewController.m */; };
 		69A084E41DD77B9B008AF00D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E31DD77B9B008AF00D /* main.m */; };
 		69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E61DD77B9B008AF00D /* AppDelegate.m */; };
 		69A084EA1DD77B9B008AF00D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A084E91DD77B9B008AF00D /* ViewController.m */; };
@@ -97,6 +95,8 @@
 		69E6A4241DDA391000562E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4231DDA391000562E75 /* UIKit.framework */; };
 		69E6A4261DDA391900562E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4251DDA391900562E75 /* Foundation.framework */; };
 		69E6A4281DDA392100562E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E6A4271DDA392100562E75 /* CoreGraphics.framework */; };
+		69F6222B1DF64C4800C43286 /* mute.png in Resources */ = {isa = PBXBuildFile; fileRef = 69F622291DF64C4800C43286 /* mute.png */; };
+		69F6222C1DF64C4800C43286 /* solo.png in Resources */ = {isa = PBXBuildFile; fileRef = 69F6222A1DF64C4800C43286 /* solo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,11 +184,8 @@
 		6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vertical Settings Mixer.png"; sourceTree = "<group>"; };
 		698937C31DDA253A006F0515 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		698937C51DDA2542006F0515 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iphone.storyboard; sourceTree = "<group>"; };
 		698DA7D11DEE10C2009B9760 /* navigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = navigationViewController.h; sourceTree = "<group>"; };
 		698DA7D21DEE10C2009B9760 /* navigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = navigationViewController.m; sourceTree = "<group>"; };
-		6997C5BD1DDE5B34003451C1 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
-		6997C5BE1DDE5B34003451C1 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
 		69A084DF1DD77B9B008AF00D /* FinalProject_Nick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject_Nick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A084E31DD77B9B008AF00D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69A084E51DD77B9B008AF00D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -226,6 +223,8 @@
 		69E6A4231DDA391000562E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		69E6A4251DDA391900562E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		69E6A4271DDA392100562E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		69F622291DF64C4800C43286 /* mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mute.png; sourceTree = "<group>"; };
+		69F6222A1DF64C4800C43286 /* solo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +306,8 @@
 				6981B6881DDE74C60086D0F5 /* MidiBusClient.m */,
 				6981B6891DDE74C60086D0F5 /* omac_apps.plist */,
 				6981B68A1DDE74C60086D0F5 /* OMACApplicationRegistry.h */,
+				69F622291DF64C4800C43286 /* mute.png */,
+				69F6222A1DF64C4800C43286 /* solo.png */,
 				692598371DEFAC65008489BA /* piano_piano1.png */,
 				692598381DEFAC65008489BA /* piano_piano2.png */,
 				692598391DEFAC65008489BA /* piano_piano3.png */,
@@ -371,10 +372,7 @@
 				69A084E61DD77B9B008AF00D /* AppDelegate.m */,
 				6935B0AE1DEC8FB40007C935 /* setValues.h */,
 				6935B0AF1DEC8FB40007C935 /* setValues.m */,
-				6997C5BD1DDE5B34003451C1 /* SetupViewController.h */,
-				6997C5BE1DDE5B34003451C1 /* SetupViewController.m */,
 				69A084EB1DD77B9B008AF00D /* Main.storyboard */,
-				698DA7CF1DEE0441009B9760 /* Main_iphone.storyboard */,
 				698DA7D11DEE10C2009B9760 /* navigationViewController.h */,
 				698DA7D21DEE10C2009B9760 /* navigationViewController.m */,
 				69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */,
@@ -550,6 +548,7 @@
 				698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */,
 				698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */,
 				697F189F1DF054450067CF4F /* circle_green.png in Resources */,
+				69F6222C1DF64C4800C43286 /* solo.png in Resources */,
 				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
 				692598451DEFAC65008489BA /* piano_piano6.png in Resources */,
 				692598411DEFAC65008489BA /* piano_piano2.png in Resources */,
@@ -559,12 +558,12 @@
 				698937B71DDA23B9006F0515 /* Rewind Filled.png in Resources */,
 				698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */,
 				698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */,
-				698DA7D01DEE0441009B9760 /* Main_iphone.storyboard in Resources */,
 				698937AE1DDA23B9006F0515 /* Piano.png in Resources */,
 				692598461DEFAC65008489BA /* piano_piano7.png in Resources */,
 				69A254C11DE125660045F23E /* whitepressed.png in Resources */,
 				692598471DEFAC65008489BA /* piano_piano8.png in Resources */,
 				698937AD1DDA23B9006F0515 /* Piano Filled.png in Resources */,
+				69F6222B1DF64C4800C43286 /* mute.png in Resources */,
 				6989379F1DDA23B9006F0515 /* Activity Grid.png in Resources */,
 				698937A21DDA23B9006F0515 /* Circled 4 Filled.png in Resources */,
 				697F18A01DF054450067CF4F /* circle_red.png in Resources */,
@@ -646,7 +645,6 @@
 				698272491DE60A6C0079233B /* positionViewController.m in Sources */,
 				69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */,
 				69A085171DD783A7008AF00D /* padViewController.m in Sources */,
-				6997C5BF1DDE5B34003451C1 /* SetupViewController.m in Sources */,
 				69A084E41DD77B9B008AF00D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +795,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BGSVHERM8R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -823,6 +822,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = BGSVHERM8R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

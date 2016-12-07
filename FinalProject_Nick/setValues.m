@@ -7,7 +7,7 @@
 //
 
 
-//class for setting states of objects in application from incoming MIDI data, adapted from https://www.cocoanetics.com/2009/05/the-death-of-global-variables/
+//class for setting states of objects in application from incoming MIDI data, adapted from https://www.cocoanetics.com/2009/05/the-death-of-global-variables/ and https://eencae.wordpress.com/ios-tutorials/other/passing-data-between-multiple-views/
 
 #import "setValues.h"
 
@@ -15,6 +15,9 @@
 
 @synthesize CCcontroller;
 @synthesize value;
+@synthesize connectionPresent;
+@synthesize interfaceName = _interfaceName;
+
 
 static setValues *_sharedInstance;
 
@@ -37,12 +40,6 @@ static setValues *_sharedInstance;
     }
     
     return _sharedInstance;
-}
-
--(void)callSetFaders{
-    
-    
-    
 }
 
 

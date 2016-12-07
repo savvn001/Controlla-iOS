@@ -230,7 +230,7 @@ int octave = 0;
 }
 
 - (IBAction)pitchSliderRelease:(UISlider *)sender {
-    //reset slider to centre after released by user
+    //reset slider to centre after released by user, mimicks real pitch bend wheel behaviour
     self.pitchSliderCenter.value = 64.00;
     
     int pitchvalue = sender.value;
@@ -253,19 +253,6 @@ int octave = 0;
     
     
 }
-
-
-
-
-- (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
-    // do something with a received MIDI event
-    //NSLog(@"just recieved some midi");
-    //[MidiBusClient sendMidiBusEvent:event->index withEvent:event];
-}
-
-
-
-
 
 
 

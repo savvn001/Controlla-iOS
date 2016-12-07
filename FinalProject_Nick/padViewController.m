@@ -148,6 +148,8 @@ int lastPadPressed; //variable to be assigned sender tag
     
     //call relevant chord function by string name (from http://stackoverflow.com/questions/20400366/dynamically-call-static-method-on-class-from-string
     //call chord method by 'chordFunction' string name (chord methods listed at bottom of code)
+    //this will give a warning in the in the compiler, it is possible to call a method that doesn't exist and cause a crash
+    
     SEL selector = NSSelectorFromString(chordFunction);
     [self performSelector:selector];
     

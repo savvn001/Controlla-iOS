@@ -10,7 +10,7 @@
 #import "MidiBusClient.h"
 
 @interface ViewController : UIViewController
-    <MidiBusClientDelegate>
+  
 
 //method for sending midi when keys are pressed, more information in implemenation of method in ViewController.m
 - (void)pianoKeys:(int)note state:(int)statusbyte;

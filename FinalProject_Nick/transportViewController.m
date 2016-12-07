@@ -33,7 +33,7 @@
     //when transport buttons are pressed down
 - (IBAction)transportDown:(id)sender{
    
-    //asign unique value to each button
+    //asign unique value to each button from sender tag (sender tags are set unique in storyboard)
     int controllerno = 70 + [sender tag];
     
     //call function and send midi cc message with value 127

@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "MidiBusClient.h"
 
-@interface positionViewController : UIViewController
+
+@interface positionViewController : UIViewController{
+    NSTimer *timer;
+}
 
 
-@property (weak, nonatomic) IBOutlet UILabel *bpmLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *interfaceLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *connectionIndicator;
 
 @end

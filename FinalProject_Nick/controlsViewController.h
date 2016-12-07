@@ -16,15 +16,19 @@
  
 
 - (void)faderSendMIDI:(int)controller state:(int)value;
-
+- (void)muteSolo:(int)note state:(int)state;
 
 
 
 - (IBAction)faderSend:(UISlider *)sender;
+- (IBAction)faderRelease:(UISlider *)sender;
 
+- (IBAction)MuteSoloDown:(UISlider *)sender;
+- (IBAction)MuteSoloUp:(UISlider *)sender;
 
+- (IBAction)moveLeft:(UIButton *)sender;
+- (IBAction)moveRight:(UIButton *)sender;
 
-@property (weak, nonatomic) IBOutlet UISlider *fader1;
 
 
 

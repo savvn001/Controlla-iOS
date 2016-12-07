@@ -11,13 +11,17 @@
 @interface setValues : NSObject
     
     
-
+/*these two are integers that get pushed from the received MIDI method in the app delegate to the controls view controller
+ in order to update the value of faders
+ */
 @property (nonatomic, assign) NSInteger CCcontroller;
-
 @property (nonatomic, assign) NSInteger value;
+@property (nonatomic, assign) NSInteger connectionPresent;
+
+@property (nonatomic, copy) NSString* interfaceName;
 
 + (setValues *) sharedInstance;
--(void)callSetFaders;
+
 
 
 
