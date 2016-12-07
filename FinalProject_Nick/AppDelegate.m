@@ -93,13 +93,18 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
             NSLog(@"Interface name : %s", interface->ident);
         }
         
-        
+        //check if connnection is present
         if(interface->network_connections == YES){
-            NSLog(@"network conncetion present");
-            setValueClass.connectionPresent = 1;
+            //set conncetionPresent variable to = 1
+            NSLog(@"network connection present");
+            
+            setValueClass.connectionPresent = YES;
+            NSLog(@"%i:",[setValueClass connectionPresent]);
+            
         }
         else{
-            setValueClass.connectionPresent = 0;
+            
+        
         }
         
         

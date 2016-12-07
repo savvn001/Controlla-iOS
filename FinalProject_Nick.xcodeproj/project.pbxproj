@@ -86,6 +86,10 @@
 		69A254BF1DE125660045F23E /* blackpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BB1DE125660045F23E /* blackpressed.png */; };
 		69A254C01DE125660045F23E /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BC1DE125660045F23E /* white.png */; };
 		69A254C11DE125660045F23E /* whitepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A254BD1DE125660045F23E /* whitepressed.png */; };
+		69AE90FC1DF8BA08005A9DDA /* app-icon-76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AE90F81DF8BA08005A9DDA /* app-icon-76x76.png */; };
+		69AE90FD1DF8BA08005A9DDA /* app-icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AE90F91DF8BA08005A9DDA /* app-icon-120x120.png */; };
+		69AE90FE1DF8BA08005A9DDA /* app-icon-152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AE90FA1DF8BA08005A9DDA /* app-icon-152x152.png */; };
+		69AE90FF1DF8BA08005A9DDA /* app-icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 69AE90FB1DF8BA08005A9DDA /* app-icon-180x180.png */; };
 		69BB7CE51DE5ACD900DCAF2F /* transportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */; };
 		69BFE3DD1DEE4DB3009C33A9 /* Minus Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */; };
 		69BFE3DE1DEE4DB3009C33A9 /* Minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 69BFE3DA1DEE4DB3009C33A9 /* Minus.png */; };
@@ -213,6 +217,10 @@
 		69A254BB1DE125660045F23E /* blackpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpressed.png; sourceTree = "<group>"; };
 		69A254BC1DE125660045F23E /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		69A254BD1DE125660045F23E /* whitepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitepressed.png; sourceTree = "<group>"; };
+		69AE90F81DF8BA08005A9DDA /* app-icon-76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-76x76.png"; sourceTree = "<group>"; };
+		69AE90F91DF8BA08005A9DDA /* app-icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-120x120.png"; sourceTree = "<group>"; };
+		69AE90FA1DF8BA08005A9DDA /* app-icon-152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-152x152.png"; sourceTree = "<group>"; };
+		69AE90FB1DF8BA08005A9DDA /* app-icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-180x180.png"; sourceTree = "<group>"; };
 		69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transportViewController.h; sourceTree = "<group>"; };
 		69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = transportViewController.m; sourceTree = "<group>"; };
 		69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Minus Filled.png"; sourceTree = "<group>"; };
@@ -260,6 +268,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		695337241DF82AC90009648F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				692598391DEFAC65008489BA /* piano_piano3.png */,
+				69F622291DF64C4800C43286 /* mute.png */,
+				69F6222A1DF64C4800C43286 /* solo.png */,
+				692598371DEFAC65008489BA /* piano_piano1.png */,
+				692598381DEFAC65008489BA /* piano_piano2.png */,
+				698937961DDA23B9006F0515 /* Stop Filled.png */,
+				698937951DDA23B9006F0515 /* Skip to Start.png */,
+				698937971DDA23B9006F0515 /* Stop.png */,
+				698937981DDA23B9006F0515 /* Time Filled.png */,
+				698937991DDA23B9006F0515 /* Time.png */,
+				6989379A1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png */,
+				6989379B1DDA23B9006F0515 /* Vertical Settings Mixer_2.png */,
+				6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */,
+				69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */,
+				69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */,
+				69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */,
+				697F189D1DF054450067CF4F /* circle_green.png */,
+				697F189E1DF054450067CF4F /* circle_red.png */,
+				6925983A1DEFAC65008489BA /* piano_piano4.png */,
+				6925983B1DEFAC65008489BA /* piano_piano5.png */,
+				6925983C1DEFAC65008489BA /* piano_piano6.png */,
+				6925983D1DEFAC65008489BA /* piano_piano7.png */,
+				6925983E1DEFAC65008489BA /* piano_piano8.png */,
+				6925983F1DEFAC65008489BA /* piano_piano9.png */,
+				6925982B1DEF9055008489BA /* padbutton.png */,
+				692598271DEF8F61008489BA /* padbutton_pressed.png */,
+				69BFE3E11DEE509E009C33A9 /* dark_grey_box.jpg */,
+				69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */,
+				69BFE3DA1DEE4DB3009C33A9 /* Minus.png */,
+				69BFE3DB1DEE4DB3009C33A9 /* Plus Filled.png */,
+				69BFE3DC1DEE4DB3009C33A9 /* Plus.png */,
+				697CF8A31DE7212B00ED2F27 /* orange_square.png */,
+				697CF8A51DE7218B00ED2F27 /* Red.png */,
+				698937781DDA23B9006F0515 /* 4 Filled.png */,
+				698937791DDA23B9006F0515 /* Activity Grid Filled.png */,
+				6989377A1DDA23B9006F0515 /* Activity Grid.png */,
+				6989377B1DDA23B9006F0515 /* Bass Drum Filled.png */,
+				6989377C1DDA23B9006F0515 /* Bass Drum.png */,
+				6989377D1DDA23B9006F0515 /* Circled 4 Filled.png */,
+				6989377E1DDA23B9006F0515 /* Circled 4.png */,
+				6989377F1DDA23B9006F0515 /* Circled 5 .png */,
+				698937801DDA23B9006F0515 /* Electronic Music Filled.png */,
+				698937811DDA23B9006F0515 /* Electronic Music.png */,
+				698937821DDA23B9006F0515 /* Fast Forward Filled.png */,
+				698937831DDA23B9006F0515 /* Fast Forward.png */,
+				698937841DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png */,
+				698937851DDA23B9006F0515 /* Horizontal Settings Mixer.png */,
+				698937861DDA23B9006F0515 /* Mixer.png */,
+				698937871DDA23B9006F0515 /* Musical Notes.png */,
+				698937881DDA23B9006F0515 /* Piano Filled.png */,
+				698937891DDA23B9006F0515 /* Piano.png */,
+				6989378A1DDA23B9006F0515 /* Play Filled.png */,
+				6989378B1DDA23B9006F0515 /* Play Record Filled.png */,
+				6989378C1DDA23B9006F0515 /* Play Record.png */,
+				6989378D1DDA23B9006F0515 /* Play.png */,
+				6989378E1DDA23B9006F0515 /* Record_2.png */,
+				6989378F1DDA23B9006F0515 /* Record.png */,
+				698937901DDA23B9006F0515 /* Repeat Filled.png */,
+				698937921DDA23B9006F0515 /* Rewind Filled.png */,
+				698937931DDA23B9006F0515 /* Rewind.png */,
+				698937911DDA23B9006F0515 /* Repeat.png */,
+				698937941DDA23B9006F0515 /* Skip to Start Filled.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		698937C21DDA253A006F0515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,68 +383,6 @@
 				6981B6881DDE74C60086D0F5 /* MidiBusClient.m */,
 				6981B6891DDE74C60086D0F5 /* omac_apps.plist */,
 				6981B68A1DDE74C60086D0F5 /* OMACApplicationRegistry.h */,
-				69F622291DF64C4800C43286 /* mute.png */,
-				69F6222A1DF64C4800C43286 /* solo.png */,
-				692598371DEFAC65008489BA /* piano_piano1.png */,
-				692598381DEFAC65008489BA /* piano_piano2.png */,
-				692598391DEFAC65008489BA /* piano_piano3.png */,
-				6925983A1DEFAC65008489BA /* piano_piano4.png */,
-				6925983B1DEFAC65008489BA /* piano_piano5.png */,
-				6925983C1DEFAC65008489BA /* piano_piano6.png */,
-				6925983D1DEFAC65008489BA /* piano_piano7.png */,
-				6925983E1DEFAC65008489BA /* piano_piano8.png */,
-				6925983F1DEFAC65008489BA /* piano_piano9.png */,
-				6925982B1DEF9055008489BA /* padbutton.png */,
-				692598271DEF8F61008489BA /* padbutton_pressed.png */,
-				69BFE3E11DEE509E009C33A9 /* dark_grey_box.jpg */,
-				69BFE3D91DEE4DB3009C33A9 /* Minus Filled.png */,
-				69BFE3DA1DEE4DB3009C33A9 /* Minus.png */,
-				69BFE3DB1DEE4DB3009C33A9 /* Plus Filled.png */,
-				69BFE3DC1DEE4DB3009C33A9 /* Plus.png */,
-				697CF8A31DE7212B00ED2F27 /* orange_square.png */,
-				697CF8A51DE7218B00ED2F27 /* Red.png */,
-				698937781DDA23B9006F0515 /* 4 Filled.png */,
-				698937791DDA23B9006F0515 /* Activity Grid Filled.png */,
-				6989377A1DDA23B9006F0515 /* Activity Grid.png */,
-				6989377B1DDA23B9006F0515 /* Bass Drum Filled.png */,
-				6989377C1DDA23B9006F0515 /* Bass Drum.png */,
-				6989377D1DDA23B9006F0515 /* Circled 4 Filled.png */,
-				6989377E1DDA23B9006F0515 /* Circled 4.png */,
-				6989377F1DDA23B9006F0515 /* Circled 5 .png */,
-				698937801DDA23B9006F0515 /* Electronic Music Filled.png */,
-				698937811DDA23B9006F0515 /* Electronic Music.png */,
-				698937821DDA23B9006F0515 /* Fast Forward Filled.png */,
-				698937831DDA23B9006F0515 /* Fast Forward.png */,
-				698937841DDA23B9006F0515 /* Horizontal Settings Mixer Filled.png */,
-				698937851DDA23B9006F0515 /* Horizontal Settings Mixer.png */,
-				698937861DDA23B9006F0515 /* Mixer.png */,
-				698937871DDA23B9006F0515 /* Musical Notes.png */,
-				698937881DDA23B9006F0515 /* Piano Filled.png */,
-				698937891DDA23B9006F0515 /* Piano.png */,
-				6989378A1DDA23B9006F0515 /* Play Filled.png */,
-				6989378B1DDA23B9006F0515 /* Play Record Filled.png */,
-				6989378C1DDA23B9006F0515 /* Play Record.png */,
-				6989378D1DDA23B9006F0515 /* Play.png */,
-				6989378E1DDA23B9006F0515 /* Record_2.png */,
-				6989378F1DDA23B9006F0515 /* Record.png */,
-				698937901DDA23B9006F0515 /* Repeat Filled.png */,
-				698937911DDA23B9006F0515 /* Repeat.png */,
-				698937921DDA23B9006F0515 /* Rewind Filled.png */,
-				698937931DDA23B9006F0515 /* Rewind.png */,
-				698937941DDA23B9006F0515 /* Skip to Start Filled.png */,
-				698937951DDA23B9006F0515 /* Skip to Start.png */,
-				698937961DDA23B9006F0515 /* Stop Filled.png */,
-				698937971DDA23B9006F0515 /* Stop.png */,
-				698937981DDA23B9006F0515 /* Time Filled.png */,
-				698937991DDA23B9006F0515 /* Time.png */,
-				6989379A1DDA23B9006F0515 /* Vertical Settings Mixer Filled.png */,
-				6989379B1DDA23B9006F0515 /* Vertical Settings Mixer_2.png */,
-				6989379C1DDA23B9006F0515 /* Vertical Settings Mixer.png */,
-				69A0851B1DD7ADA9008AF00D /* GUI For App 1-02.png */,
-				69A0851F1DD7AFED008AF00D /* GUI For App 1-05.png */,
-				69A0851D1DD7AE9F008AF00D /* GUI For App 1-03.png */,
-				697F189D1DF054450067CF4F /* circle_green.png */,
-				697F189E1DF054450067CF4F /* circle_red.png */,
 				69A084E51DD77B9B008AF00D /* AppDelegate.h */,
 				69A084E61DD77B9B008AF00D /* AppDelegate.m */,
 				6935B0AE1DEC8FB40007C935 /* setValues.h */,
@@ -388,6 +403,8 @@
 				69A084EE1DD77B9B008AF00D /* Assets.xcassets */,
 				69A084F01DD77B9B008AF00D /* LaunchScreen.storyboard */,
 				69A084F31DD77B9B008AF00D /* Info.plist */,
+				69AE90F71DF8B7F0005A9DDA /* App Icons */,
+				695337241DF82AC90009648F /* images */,
 				69A084E21DD77B9B008AF00D /* Supporting Files */,
 			);
 			path = FinalProject_Nick;
@@ -428,6 +445,17 @@
 				69A254BD1DE125660045F23E /* whitepressed.png */,
 			);
 			name = pianoGUI;
+			sourceTree = "<group>";
+		};
+		69AE90F71DF8B7F0005A9DDA /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				69AE90F81DF8BA08005A9DDA /* app-icon-76x76.png */,
+				69AE90F91DF8BA08005A9DDA /* app-icon-120x120.png */,
+				69AE90FB1DF8BA08005A9DDA /* app-icon-180x180.png */,
+				69AE90FA1DF8BA08005A9DDA /* app-icon-152x152.png */,
+			);
+			name = "App Icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +587,7 @@
 				698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */,
 				698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */,
 				698937AE1DDA23B9006F0515 /* Piano.png in Resources */,
+				69AE90FD1DF8BA08005A9DDA /* app-icon-120x120.png in Resources */,
 				692598461DEFAC65008489BA /* piano_piano7.png in Resources */,
 				69A254C11DE125660045F23E /* whitepressed.png in Resources */,
 				692598471DEFAC65008489BA /* piano_piano8.png in Resources */,
@@ -572,6 +601,7 @@
 				698937A11DDA23B9006F0515 /* Bass Drum.png in Resources */,
 				69BFE3DE1DEE4DB3009C33A9 /* Minus.png in Resources */,
 				69A0851C1DD7ADA9008AF00D /* GUI For App 1-02.png in Resources */,
+				69AE90FE1DF8BA08005A9DDA /* app-icon-152x152.png in Resources */,
 				698937AA1DDA23B9006F0515 /* Horizontal Settings Mixer.png in Resources */,
 				698937AB1DDA23B9006F0515 /* Mixer.png in Resources */,
 				69BFE3DF1DEE4DB3009C33A9 /* Plus Filled.png in Resources */,
@@ -595,6 +625,7 @@
 				69A254BE1DE125660045F23E /* black.png in Resources */,
 				698937B11DDA23B9006F0515 /* Play Record.png in Resources */,
 				69A085201DD7AFED008AF00D /* GUI For App 1-05.png in Resources */,
+				69AE90FF1DF8BA08005A9DDA /* app-icon-180x180.png in Resources */,
 				69A084EF1DD77B9B008AF00D /* Assets.xcassets in Resources */,
 				698937BD1DDA23B9006F0515 /* Time Filled.png in Resources */,
 				698937AF1DDA23B9006F0515 /* Play Filled.png in Resources */,
@@ -605,6 +636,7 @@
 				698937AC1DDA23B9006F0515 /* Musical Notes.png in Resources */,
 				698937C11DDA23B9006F0515 /* Vertical Settings Mixer.png in Resources */,
 				698937B21DDA23B9006F0515 /* Play.png in Resources */,
+				69AE90FC1DF8BA08005A9DDA /* app-icon-76x76.png in Resources */,
 				6989379E1DDA23B9006F0515 /* Activity Grid Filled.png in Resources */,
 				698937B81DDA23B9006F0515 /* Rewind.png in Resources */,
 				698937B41DDA23B9006F0515 /* Record.png in Resources */,

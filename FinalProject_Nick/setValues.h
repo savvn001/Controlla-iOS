@@ -16,7 +16,7 @@
  */
 @property (nonatomic, assign) NSInteger CCcontroller;
 @property (nonatomic, assign) NSInteger value;
-@property (nonatomic, assign) NSInteger connectionPresent;
+@property (nonatomic, assign) BOOL connectionPresent;
 
 @property (nonatomic, copy) NSString* interfaceName;
 

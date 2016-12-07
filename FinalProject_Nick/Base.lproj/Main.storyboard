@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efM-47-mlL">
@@ -246,7 +246,7 @@
                                 </connections>
                             </slider>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuv-qY-71X">
-                                <rect key="frame" x="0.0" y="704" width="702.5" height="64"/>
+                                <rect key="frame" x="0.0" y="675" width="1024" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wuv-qY-71X" secondAttribute="height" multiplier="1024:93" id="Sws-h0-zaP"/>
                                 </constraints>
@@ -266,7 +266,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-8M-GTd">
-                                <rect key="frame" x="0.0" y="0.0" width="702.5" height="54"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bCC-8M-GTd" secondAttribute="height" multiplier="1024:79" id="mQ6-AU-RBW"/>
                                 </constraints>
@@ -275,7 +275,7 @@
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cDR-Aw-s0E">
-                                <rect key="frame" x="374.5" y="58" width="294" height="116.5"/>
+                                <rect key="frame" x="365" y="83" width="294" height="80"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="68"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -284,7 +284,7 @@
                                 </variation>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-Ka-0DU">
-                                <rect key="frame" x="0.0" y="58" width="114.5" height="638"/>
+                                <rect key="frame" x="0.0" y="83" width="105" height="584"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iLS-Ka-0DU" secondAttribute="height" multiplier="105:584" id="hQY-2S-5HZ"/>
                                 </constraints>
@@ -293,7 +293,7 @@
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DLP-5J-8Ye">
-                                <rect key="frame" x="140.5" y="213.5" width="537" height="18.5"/>
+                                <rect key="frame" x="131" y="202" width="868" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DLP-5J-8Ye" secondAttribute="height" multiplier="434:15" id="IwZ-32-KCU"/>
                                 </constraints>
@@ -1455,10 +1455,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="79"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
-                                <rect key="frame" x="951" y="23" width="32" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connection: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-tx-V2w">
                                 <rect key="frame" x="20" y="28" width="97" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1470,7 +1466,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-Rh-4GF">
-                                <rect key="frame" x="125" y="29" width="159" height="21"/>
+                                <rect key="frame" x="125" y="27" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1479,6 +1475,10 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
+                                <rect key="frame" x="201" y="23" width="32" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1489,36 +1489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GB-Ap-KWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="-407"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lxn-Gh-AvP">
-            <objects>
-                <viewController id="mAM-TG-fDE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Onh-Tm-7Gf"/>
-                        <viewControllerLayoutGuide type="bottom" id="0wZ-MC-qE4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Vf-ZY-ZKU">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-yJ-hfw">
-                                <rect key="frame" x="20" y="42" width="235" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="continue"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Zc9-pA-ENH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZg-vR-aTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-962" y="45"/>
+            <point key="canvasLocation" x="675.5859375" y="-407.421875"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="KYC-TX-uli">
@@ -1622,8 +1593,8 @@
         <image name="whitepressed.png" width="238" height="1004"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Hob-7x-DPe"/>
         <segue reference="ePZ-iC-bew"/>
         <segue reference="W3M-hR-vGK"/>
-        <segue reference="jo8-pb-fF8"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -23,26 +23,25 @@
      will update it's status
      */
     timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(interfaceNameLabel:) userInfo:nil repeats:YES];
-   
+    
     
 }
 
 -(void)interfaceNameLabel:(NSTimer *) timer{
     
-    
-    
     //call shared instance
     setValues *setValueClass = [setValues sharedInstance];
+    
     
     //set the label to display the name of the interface
     self.interfaceLabel.text = [setValueClass interfaceName];
     
-    if([setValueClass connectionPresent] == 1){
-        
+    //check if connection is present
+    if([setValueClass connectionPresent] == YES){
+        //set circle to be green
         UIImage *green = [UIImage imageNamed: @"circle_red.png"];
+        [_connectionIndicator setImage:green];
         
-        //[_connectionIndicator setImage:green];
-        NSLog(@"green circle set");
     }
     
     

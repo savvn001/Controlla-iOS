@@ -15,7 +15,7 @@
 
 @synthesize CCcontroller;
 @synthesize value;
-@synthesize connectionPresent;
+@synthesize connectionPresent = _connectionPresent;
 @synthesize interfaceName = _interfaceName;
 
 
