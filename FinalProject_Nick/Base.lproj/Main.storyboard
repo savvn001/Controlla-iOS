@@ -1041,7 +1041,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pads" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-AK-TqF">
-                                <rect key="frame" x="409" y="72" width="205" height="80"/>
+                                <rect key="frame" x="409" y="65" width="205" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1607,8 +1607,8 @@
         <image name="whitepressed.png" width="238" height="1004"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hob-7x-DPe"/>
-        <segue reference="UuW-4C-U2E"/>
-        <segue reference="cyV-Dz-dvP"/>
+        <segue reference="Anr-dc-LUW"/>
+        <segue reference="ETp-MC-7Hk"/>
+        <segue reference="hCb-dP-ecN"/>
     </inferredMetricsTieBreakers>
 </document>
