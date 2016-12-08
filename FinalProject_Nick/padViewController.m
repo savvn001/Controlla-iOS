@@ -94,6 +94,7 @@ int lastPadPressed; //variable to be assigned sender tag
     int n = 0; //a counter for adressing the chordArray below to set titles for buttons
     for(UIButton *chordSelect in self.chords){
         
+        //programatically setting labels
         NSString *title =  self.chordLabels[n];
         //add IBaction chordSelect to each button touch down
         [chordSelect addTarget:self action:@selector(chordSelect:) forControlEvents:UIControlEventTouchDown];
@@ -110,7 +111,7 @@ int lastPadPressed; //variable to be assigned sender tag
 
 
 
-#pragma mark Action Methods
+#pragma mark Pad Action Methods
 
 //When pads are pressed down, send note on
 -(void)padDown:(id)sender{
@@ -157,7 +158,6 @@ int lastPadPressed; //variable to be assigned sender tag
     //call relevant chord function by string name (from http://stackoverflow.com/questions/20400366/dynamically-call-static-method-on-class-from-string
     //call chord method by 'chordFunction' string name (chord methods listed at bottom of code)
     //this will give a warning in the in the compiler, it is possible to call a method that doesn't exist and cause a crash
-    
     SEL selector = NSSelectorFromString(chordFunction);
     [self performSelector:selector];
     
@@ -186,6 +186,8 @@ int lastPadPressed; //variable to be assigned sender tag
     
     
 }
+
+#pragma mark Octave buttons
 
 //octave up & down buttons
 - (IBAction)octaveUp:(UIButton *)sender {
@@ -217,6 +219,8 @@ int lastPadPressed; //variable to be assigned sender tag
     
     
 }
+
+#pragma mark chord select
 
 //When you select a chord for a pad this method is called
 -(IBAction)chordSelect:(UIButton*)sender{
@@ -357,6 +361,7 @@ int lastPadPressed; //variable to be assigned sender tag
     [self padsSend:note+13 state:state];
 }
 -(void)b5{
+    
 }
 -(void)_5{
     [self padsSend:note state:state];
