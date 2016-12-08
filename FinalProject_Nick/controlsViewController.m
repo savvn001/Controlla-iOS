@@ -46,10 +46,11 @@
         
     }
     
-    int j = 20;
+    
+    int j = 20; //variable for sender tag
     for(UIButton *button in self.muteSolo){
-        button.tag = j;
-        j++;
+        button.tag = j; //assign sender tag to button
+        j++; //increment j, so next button has sender tag that = 21 and so forth
         [button addTarget:self action:@selector(MuteSoloDown:) forControlEvents:UIControlEventTouchDown];
         [button addTarget:self action:@selector(MuteSoloUp:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -98,6 +99,7 @@ int controllerMove = 0;
     
 }
 
+//move left & right,
 - (IBAction)moveLeft:(UIButton *)sender {
     controllerMove++;
 }
@@ -133,6 +135,7 @@ int controllerMove = 0;
 
 #pragma mark Mute/Solo buttons
 
+//mute & solo buttons underneath each fader
 -(void)MuteSoloDown:(UISlider *)sender{
     
     int state = 0x92;

@@ -42,6 +42,11 @@
         UIImage *green = [UIImage imageNamed: @"circle_red.png"];
         [_connectionIndicator setImage:green];
         
+    } else if ([setValueClass connectionPresent] == NO){
+        //set image to red if disconnected 
+        UIImage *red = [UIImage imageNamed: @"circle_green.png"];
+        [_connectionIndicator setImage:red];
+        
     }
     
     

@@ -263,7 +263,7 @@ int lastPadPressed; //variable to be assigned sender tag
 }
 
 #pragma mark Chord functions
-//each chord that is selected for each pad will trigger one of the below method (none just sends a single note, ie no chord)
+//each chord that is selected for each pad will trigger one of the below method ('none' just sends a single note, ie no chord)
 
 -(void)None{
     

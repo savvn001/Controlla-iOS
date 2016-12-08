@@ -38,8 +38,8 @@
         [self presentViewController: vc animated:NO completion:nil];
         
     } else {
-        UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-        UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"keyboardViewController"];
+        UIStoryboard* Main_iPhone = [UIStoryboard storyboardWithName: @"Main_iPhone" bundle:nil];
+        UIViewController *vc = [Main_iPhone instantiateViewControllerWithIdentifier: @"keyboardViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     }
     
@@ -53,8 +53,8 @@
         UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"padViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     } else {
-        UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-        UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"padViewController"];
+        UIStoryboard* Main_iPhone = [UIStoryboard storyboardWithName: @"Main_iPhone" bundle:nil];
+        UIViewController *vc = [Main_iPhone instantiateViewControllerWithIdentifier: @"padViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     }
     
@@ -68,8 +68,8 @@
         UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"controlsViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     } else {
-        UIStoryboard* Main = [UIStoryboard storyboardWithName: @"Main" bundle:nil];
-        UIViewController *vc = [Main instantiateViewControllerWithIdentifier: @"controlsViewController"];
+        UIStoryboard* Main_iPhone = [UIStoryboard storyboardWithName: @"Main_iPhone" bundle:nil];
+        UIViewController *vc = [Main_iPhone instantiateViewControllerWithIdentifier: @"controlsViewController"];
         [self presentViewController: vc animated:NO completion:nil];
     }
     

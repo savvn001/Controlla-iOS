@@ -21,6 +21,8 @@
 		692598471DEFAC65008489BA /* piano_piano8.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983E1DEFAC65008489BA /* piano_piano8.png */; };
 		692598481DEFAC65008489BA /* piano_piano9.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983F1DEFAC65008489BA /* piano_piano9.png */; };
 		6935B0B01DEC8FB40007C935 /* setValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 6935B0AF1DEC8FB40007C935 /* setValues.m */; };
+		696C731D1DF8C46200BBD1E3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696C731B1DF8C46200BBD1E3 /* Main_iPhone.storyboard */; };
+		696C731F1DF8D87B00BBD1E3 /* startup_screen_5s.png in Resources */ = {isa = PBXBuildFile; fileRef = 696C731E1DF8D87B00BBD1E3 /* startup_screen_5s.png */; };
 		697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A31DE7212B00ED2F27 /* orange_square.png */; };
 		697CF8A61DE7218B00ED2F27 /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A51DE7218B00ED2F27 /* Red.png */; };
 		697F189F1DF054450067CF4F /* circle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 697F189D1DF054450067CF4F /* circle_green.png */; };
@@ -136,6 +138,8 @@
 		6925983F1DEFAC65008489BA /* piano_piano9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano9.png; sourceTree = "<group>"; };
 		6935B0AE1DEC8FB40007C935 /* setValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setValues.h; sourceTree = "<group>"; };
 		6935B0AF1DEC8FB40007C935 /* setValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setValues.m; sourceTree = "<group>"; };
+		696C731C1DF8C46200BBD1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		696C731E1DF8D87B00BBD1E3 /* startup_screen_5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startup_screen_5s.png; sourceTree = "<group>"; };
 		697CF8A31DE7212B00ED2F27 /* orange_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_square.png; sourceTree = "<group>"; };
 		697CF8A51DE7218B00ED2F27 /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
 		697F189D1DF054450067CF4F /* circle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_green.png; sourceTree = "<group>"; };
@@ -375,7 +379,6 @@
 		69A084E11DD77B9B008AF00D /* FinalProject_Nick */ = {
 			isa = PBXGroup;
 			children = (
-				69A254C21DE125720045F23E /* pianoGUI */,
 				6981B6841DDE74C60086D0F5 /* libMidiBus.a */,
 				6981B6851DDE74C60086D0F5 /* midibus_enums.h */,
 				6981B6861DDE74C60086D0F5 /* midibus.h */,
@@ -388,6 +391,7 @@
 				6935B0AE1DEC8FB40007C935 /* setValues.h */,
 				6935B0AF1DEC8FB40007C935 /* setValues.m */,
 				69A084EB1DD77B9B008AF00D /* Main.storyboard */,
+				696C731B1DF8C46200BBD1E3 /* Main_iPhone.storyboard */,
 				698DA7D11DEE10C2009B9760 /* navigationViewController.h */,
 				698DA7D21DEE10C2009B9760 /* navigationViewController.m */,
 				69BB7CE31DE5ACD900DCAF2F /* transportViewController.h */,
@@ -403,6 +407,7 @@
 				69A084EE1DD77B9B008AF00D /* Assets.xcassets */,
 				69A084F01DD77B9B008AF00D /* LaunchScreen.storyboard */,
 				69A084F31DD77B9B008AF00D /* Info.plist */,
+				69A254C21DE125720045F23E /* pianoGUI */,
 				69AE90F71DF8B7F0005A9DDA /* App Icons */,
 				695337241DF82AC90009648F /* images */,
 				69A084E21DD77B9B008AF00D /* Supporting Files */,
@@ -450,6 +455,7 @@
 		69AE90F71DF8B7F0005A9DDA /* App Icons */ = {
 			isa = PBXGroup;
 			children = (
+				696C731E1DF8D87B00BBD1E3 /* startup_screen_5s.png */,
 				69AE90F81DF8BA08005A9DDA /* app-icon-76x76.png */,
 				69AE90F91DF8BA08005A9DDA /* app-icon-120x120.png */,
 				69AE90FB1DF8BA08005A9DDA /* app-icon-180x180.png */,
@@ -579,6 +585,7 @@
 				69F6222C1DF64C4800C43286 /* solo.png in Resources */,
 				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
 				692598451DEFAC65008489BA /* piano_piano6.png in Resources */,
+				696C731F1DF8D87B00BBD1E3 /* startup_screen_5s.png in Resources */,
 				692598411DEFAC65008489BA /* piano_piano2.png in Resources */,
 				698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */,
 				697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */,
@@ -602,6 +609,7 @@
 				69BFE3DE1DEE4DB3009C33A9 /* Minus.png in Resources */,
 				69A0851C1DD7ADA9008AF00D /* GUI For App 1-02.png in Resources */,
 				69AE90FE1DF8BA08005A9DDA /* app-icon-152x152.png in Resources */,
+				696C731D1DF8C46200BBD1E3 /* Main_iPhone.storyboard in Resources */,
 				698937AA1DDA23B9006F0515 /* Horizontal Settings Mixer.png in Resources */,
 				698937AB1DDA23B9006F0515 /* Mixer.png in Resources */,
 				69BFE3DF1DEE4DB3009C33A9 /* Plus Filled.png in Resources */,
@@ -713,6 +721,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		696C731B1DF8C46200BBD1E3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				696C731C1DF8C46200BBD1E3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
 		69A084EB1DD77B9B008AF00D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

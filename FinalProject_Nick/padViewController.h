@@ -42,7 +42,7 @@
 
 
 //each chord has seperate function for sending MIDI
-//cant start name with a number so have to put a underscore before
+//can't start name with a number so have to put a underscore before
 -(void)None;
 -(void)Maj;
 -(void)Min;

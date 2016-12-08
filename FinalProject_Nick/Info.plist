@@ -33,7 +33,7 @@
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main</string>
 	<key>UIMainStoryboardFile~iphone</key>
-	<string>Main</string>
+	<string>Main_iPhone</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
