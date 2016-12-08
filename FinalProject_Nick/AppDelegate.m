@@ -11,6 +11,8 @@
 #import "setValues.h"
 
 
+
+
 @interface AppDelegate ()
 
 @end
@@ -44,7 +46,8 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
 
 
 
-// this delegate method is called every time there is a change in the // MIDI world; add/remove ports or network connect/disconnect
+// this delegate method is called every time there is a change in connections to the app, for example an interface connected or disconnected
+//the skeleton for this method is from the MidiBus library documentation which is included in the project .zip file (documentation.html)
 - (void)handleMidiBusClientNotification:(uint8_t)type {
     
     uint8_t myVirtualIndex = [MidiBusClient getMidiBusOwnInterfaceIndex];
@@ -87,7 +90,6 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
             [setValueClass setInterfaceName:nameOfInterface];
         }
         
-        // [MidiBusClient enableMidiBusInterface:interface->index andFlag:!interface->enabled];
         
         if(interface->present == YES){
             NSLog(@"Interface name : %s", interface->ident);
@@ -95,18 +97,19 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
         
         //check if connnection is present
         if(interface->network_connections == YES){
-            //set conncetionPresent variable to = 1
+            //set connectionPresent variable to = 1
             NSLog(@"network connection present");
             
             setValueClass.connectionPresent = YES;
             NSLog(@"%i:",[setValueClass connectionPresent]);
             
         }
-        else{
-            
+        /*
+        else if(interface->network_connections == NO){
+            setValueClass.connectionPresent = NO;
         
         }
-        
+        */
         
     }
 }
