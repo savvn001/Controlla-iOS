@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690F69901DF996CE00BA9AFD /* Bluetooth 2 Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 690F698A1DF996CE00BA9AFD /* Bluetooth 2 Filled.png */; };
+		690F69911DF996CE00BA9AFD /* Bluetooth 2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 690F698B1DF996CE00BA9AFD /* Bluetooth 2_2.png */; };
+		690F69921DF996CE00BA9AFD /* Bluetooth 2_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 690F698C1DF996CE00BA9AFD /* Bluetooth 2_3.png */; };
+		690F69931DF996CE00BA9AFD /* Bluetooth 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 690F698D1DF996CE00BA9AFD /* Bluetooth 2.png */; };
+		690F69941DF996CE00BA9AFD /* Wi-Fi Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 690F698E1DF996CE00BA9AFD /* Wi-Fi Filled.png */; };
+		690F69951DF996CE00BA9AFD /* Wi-Fi.png in Resources */ = {isa = PBXBuildFile; fileRef = 690F698F1DF996CE00BA9AFD /* Wi-Fi.png */; };
 		691266831DDE61AA007B7525 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691266821DDE61AA007B7525 /* QuartzCore.framework */; };
 		691266851DDE64AA007B7525 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691266841DDE64AA007B7525 /* CoreData.framework */; };
 		692598291DEF8F61008489BA /* padbutton_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 692598271DEF8F61008489BA /* padbutton_pressed.png */; };
@@ -123,6 +129,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690F698A1DF996CE00BA9AFD /* Bluetooth 2 Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth 2 Filled.png"; sourceTree = "<group>"; };
+		690F698B1DF996CE00BA9AFD /* Bluetooth 2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth 2_2.png"; sourceTree = "<group>"; };
+		690F698C1DF996CE00BA9AFD /* Bluetooth 2_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth 2_3.png"; sourceTree = "<group>"; };
+		690F698D1DF996CE00BA9AFD /* Bluetooth 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth 2.png"; sourceTree = "<group>"; };
+		690F698E1DF996CE00BA9AFD /* Wi-Fi Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wi-Fi Filled.png"; sourceTree = "<group>"; };
+		690F698F1DF996CE00BA9AFD /* Wi-Fi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wi-Fi.png"; sourceTree = "<group>"; };
 		691266821DDE61AA007B7525 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		691266841DDE64AA007B7525 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		692598271DEF8F61008489BA /* padbutton_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padbutton_pressed.png; sourceTree = "<group>"; };
@@ -275,6 +287,12 @@
 		695337241DF82AC90009648F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				690F698A1DF996CE00BA9AFD /* Bluetooth 2 Filled.png */,
+				690F698B1DF996CE00BA9AFD /* Bluetooth 2_2.png */,
+				690F698C1DF996CE00BA9AFD /* Bluetooth 2_3.png */,
+				690F698D1DF996CE00BA9AFD /* Bluetooth 2.png */,
+				690F698E1DF996CE00BA9AFD /* Wi-Fi Filled.png */,
+				690F698F1DF996CE00BA9AFD /* Wi-Fi.png */,
 				692598391DEFAC65008489BA /* piano_piano3.png */,
 				69F622291DF64C4800C43286 /* mute.png */,
 				69F6222A1DF64C4800C43286 /* solo.png */,
@@ -581,6 +599,7 @@
 				697CF8A61DE7218B00ED2F27 /* Red.png in Resources */,
 				698937B01DDA23B9006F0515 /* Play Record Filled.png in Resources */,
 				698937A61DDA23B9006F0515 /* Electronic Music.png in Resources */,
+				690F69941DF996CE00BA9AFD /* Wi-Fi Filled.png in Resources */,
 				697F189F1DF054450067CF4F /* circle_green.png in Resources */,
 				69F6222C1DF64C4800C43286 /* solo.png in Resources */,
 				698937BE1DDA23B9006F0515 /* Time.png in Resources */,
@@ -590,6 +609,8 @@
 				698937B91DDA23B9006F0515 /* Skip to Start Filled.png in Resources */,
 				697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */,
 				69A254C01DE125660045F23E /* white.png in Resources */,
+				690F69921DF996CE00BA9AFD /* Bluetooth 2_3.png in Resources */,
+				690F69951DF996CE00BA9AFD /* Wi-Fi.png in Resources */,
 				698937B71DDA23B9006F0515 /* Rewind Filled.png in Resources */,
 				698937A71DDA23B9006F0515 /* Fast Forward Filled.png in Resources */,
 				698937A81DDA23B9006F0515 /* Fast Forward.png in Resources */,
@@ -611,11 +632,13 @@
 				69AE90FE1DF8BA08005A9DDA /* app-icon-152x152.png in Resources */,
 				696C731D1DF8C46200BBD1E3 /* Main_iPhone.storyboard in Resources */,
 				698937AA1DDA23B9006F0515 /* Horizontal Settings Mixer.png in Resources */,
+				690F69901DF996CE00BA9AFD /* Bluetooth 2 Filled.png in Resources */,
 				698937AB1DDA23B9006F0515 /* Mixer.png in Resources */,
 				69BFE3DF1DEE4DB3009C33A9 /* Plus Filled.png in Resources */,
 				698937B31DDA23B9006F0515 /* Record_2.png in Resources */,
 				6925982C1DEF9055008489BA /* padbutton.png in Resources */,
 				698937BA1DDA23B9006F0515 /* Skip to Start.png in Resources */,
+				690F69931DF996CE00BA9AFD /* Bluetooth 2.png in Resources */,
 				692598441DEFAC65008489BA /* piano_piano5.png in Resources */,
 				698937C01DDA23B9006F0515 /* Vertical Settings Mixer_2.png in Resources */,
 				698937A01DDA23B9006F0515 /* Bass Drum Filled.png in Resources */,
@@ -650,6 +673,7 @@
 				698937B41DDA23B9006F0515 /* Record.png in Resources */,
 				692598421DEFAC65008489BA /* piano_piano3.png in Resources */,
 				698937B61DDA23B9006F0515 /* Repeat.png in Resources */,
+				690F69911DF996CE00BA9AFD /* Bluetooth 2_2.png in Resources */,
 				69A254BF1DE125660045F23E /* blackpressed.png in Resources */,
 				69A084ED1DD77B9B008AF00D /* Main.storyboard in Resources */,
 			);
