@@ -24,6 +24,8 @@
  
  -Bluetooth connectioon will only be available when running on physical iOS device (cannot simulate bluetooth)
  
+ -Icons for UI were obtained from https://icons8.com/, rest of custom graphics made in Adobe Illustrator
+ 
  */
 
 
@@ -77,10 +79,10 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     //call shared instance
     setValues *setValueClass = [setValues sharedInstance];
     
-    // create a static query object which we can reuse time and time again
+    // from documentation: "create a static query object which we can reuse time and time again
     // that won't get de-alloced by ARC by making a strong reference
     // this query gets all interfaces; you can get subsets of the interfaces
-    // by using a different filter value - see midibus.h for #defines for this
+    // by using a different filter value - see midibus.h for #defines for this"
     static MidiBusInterfaceQuery* query = nil;
     if (query == nil)
         query = [[MidiBusInterfaceQuery alloc]
@@ -96,31 +98,34 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
         
         MIDIBUS_INTERFACE* interface = obj->interface;
         
-        
+        //print interface & type (useful for debugging)
         NSLog(@"interface name %s:",interface->ident);
         NSLog(@"interface type %u:",interface->type);
         
-        //        //get interface name and assign name to string
-        //        NSString* nameOfInterface = [NSString stringWithFormat:@"%s",interface->ident];
-        //        //set name of interface to string, passed to label in positionViewController class
-        //        [setValueClass setInterfaceName:nameOfInterface];
-        
+        //Check if interface is type 1 (network) and see if there's a connection
         if(interface->type == 1 && interface->network_connections == YES){
+            //set the networkPresent boolean to YES
             setValueClass.networkPresent = YES;
+            //Update label string to say network
             [setValueClass setInterfaceName:@"Network"];
             
         }
         else if(interface->type == 1 && interface->network_connections == NO)
         {
+            //if no connection on network yet set boolean to NO
             setValueClass.networkPresent = NO;
             [setValueClass setInterfaceName:@"None"];
         }
         
+        //Check if interface is type 0 (bluetooth)
         if(interface->type == 0){
+            
             setValueClass.bluetoothPresent = YES;
+            //convert interface name from char* to NSSstring (from http://stackoverflow.com/questions/5134663/casting-or-converting-a-char-to-an-nsstring-in-objective-c)
             NSString* nameOfInterface = [NSString stringWithFormat:@"%s",interface->ident];
             //set name of interface to string, passed to label in positionViewController class
             [setValueClass setInterfaceName:nameOfInterface];
+            
         }
         else{
             setValueClass.bluetoothPresent = NO;
@@ -140,6 +145,7 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
 //When any MIDI data is recieved, this method is called
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
     
+    //call shared instance
     setValues *setValueClass = [setValues sharedInstance];
     
     
@@ -153,16 +159,13 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     NSLog(@"data 1 = %i",event->data[1]);
     NSLog(@"data 2 = %i",event->data[2]);
     
-    //NSLog(@"interface recieved on %i",index);
-    
-    //if Control change on channel 2 is recieved
+    //if Control change on channel 2 is recieved (for sliders in controlsViewController)
     if(event->data[0] == 0xB1)
     {
         
         //map the incoming cc number and value to the variables in the shared instance - to be pushed to 'controlsViewController'
         setValueClass.CCcontroller = event->data[1];
         setValueClass.value = event->data[2];
-        
         
         NSLog(@"cc value from ableton = %i", event->data[2]);
         

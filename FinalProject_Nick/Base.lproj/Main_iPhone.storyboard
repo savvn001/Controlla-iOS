@@ -649,7 +649,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUH-4U-dLU">
-                                <rect key="frame" x="486" y="54" width="55" height="30"/>
+                                <rect key="frame" x="489" y="54" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Maj7">
@@ -657,7 +657,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okm-ai-ktJ">
-                                <rect key="frame" x="527" y="55" width="42" height="30"/>
+                                <rect key="frame" x="531" y="55" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                 <state key="normal" title="Min7">
@@ -830,7 +830,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmf-8J-V6n">
-                                <rect key="frame" x="320" y="139" width="55" height="30"/>
+                                <rect key="frame" x="320" y="141" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="None">
@@ -838,7 +838,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmQ-Fj-YkS">
-                                <rect key="frame" x="372" y="142" width="41" height="30"/>
+                                <rect key="frame" x="372" y="141" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Maj">
@@ -861,7 +861,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-3O-Z0w">
-                                <rect key="frame" x="455" y="150" width="43" height="30"/>
+                                <rect key="frame" x="455" y="141" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Dom7">
@@ -869,7 +869,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khx-ZM-1mZ">
-                                <rect key="frame" x="486" y="152" width="55" height="30"/>
+                                <rect key="frame" x="489" y="142" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Maj7">
@@ -877,7 +877,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JB-6d-i5t">
-                                <rect key="frame" x="518" y="153" width="60" height="30"/>
+                                <rect key="frame" x="522" y="142" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
                                 <state key="normal" title="Min7">
@@ -893,7 +893,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwL-zX-Mpc">
-                                <rect key="frame" x="374" y="168" width="41" height="30"/>
+                                <rect key="frame" x="372" y="166" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Maj">
@@ -1061,16 +1061,6 @@
                                     <segue destination="PWi-DM-P1T" kind="embed" id="jo8-pb-fF8"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUz-fN-xEF">
-                                <rect key="frame" x="37" y="236" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="left ">
-                                    <color key="titleColor" red="0.34579470130000001" green="0.65123726479999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="moveLeft:" destination="lQE-o0-jFt" eventType="touchUpInside" id="0ph-ws-8ne"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F1-5a-O2X">
                                 <rect key="frame" x="75" y="231" width="27" height="32.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1267,55 +1257,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGb-j2-3Zh">
-                                <rect key="frame" x="-1" y="-4" width="69" height="45"/>
+                                <rect key="frame" x="13" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Skip to Start.png"/>
                                 <state key="highlighted" image="Skip to Start Filled.png"/>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlq-Rd-aJc">
-                                <rect key="frame" x="69" y="-6" width="59" height="48"/>
+                                <rect key="frame" x="72" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Rewind.png"/>
                                 <state key="highlighted" image="Rewind Filled.png"/>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZh-aG-R29">
-                                <rect key="frame" x="153" y="-8" width="51" height="51"/>
+                                <rect key="frame" x="145" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Fast Forward.png"/>
                                 <state key="highlighted" image="Fast Forward Filled.png"/>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWV-9e-r4B">
-                                <rect key="frame" x="214" y="-6" width="53" height="47"/>
+                                <rect key="frame" x="208" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop.png"/>
                                 <state key="highlighted" image="Stop Filled.png"/>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obI-dB-BFa">
-                                <rect key="frame" x="445" y="-1" width="42" height="37"/>
+                                <rect key="frame" x="449" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Time.png"/>
                                 <state key="highlighted" image="Time Filled.png"/>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcn-7T-9kq">
-                                <rect key="frame" x="506" y="-5" width="48" height="45"/>
+                                <rect key="frame" x="511" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Circled 4.png"/>
                                 <state key="highlighted" image="Circled 4 Filled.png"/>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOr-i9-HVn">
-                                <rect key="frame" x="380" y="-8" width="50" height="50"/>
+                                <rect key="frame" x="389" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Repeat.png"/>
                                 <state key="highlighted" image="Repeat Filled.png"/>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-ps-RWJ">
-                                <rect key="frame" x="319" y="-10" width="51" height="54"/>
+                                <rect key="frame" x="327" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Record.png"/>
                                 <state key="highlighted" image="Record_2.png"/>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSK-vT-6kK">
-                                <rect key="frame" x="273" y="-7" width="48" height="48"/>
+                                <rect key="frame" x="271" y="-5" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play.png"/>
                                 <state key="highlighted" image="Play Filled.png"/>
@@ -1337,6 +1327,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O54-LY-PBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="675" y="531.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nYM-1f-2dA">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="ZQg-wd-yMB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Smg-vT-SKX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ass-mx-S2B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zdv-iu-BEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvj-Hh-XcQ">
+                                <rect key="frame" x="9" y="5" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.071623883928571427" blue="0.18087852328431372" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="100" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGK-iB-FUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="-759"/>
         </scene>
         <!--Position View Controller-->
         <scene sceneID="foP-Is-qgy">
@@ -1376,6 +1396,12 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wi-Fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
+                                <rect key="frame" x="409" y="-13" width="31" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="gLG-wc-FnR"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0R-6G-fDD">
                                 <rect key="frame" x="477" y="2" width="26" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1384,12 +1410,19 @@
                                     <action selector="bluetoothAd:" destination="PWi-DM-P1T" eventType="touchUpInside" id="Wbu-ML-qKX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wi-Fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
-                                <rect key="frame" x="409" y="-13" width="31" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="31" id="gLG-wc-FnR"/>
-                                </constraints>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO7-Kj-CQI">
+                                <rect key="frame" x="524" y="-2" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZQg-wd-yMB" kind="popoverPresentation" popoverAnchorView="xO7-Kj-CQI" id="mDy-vs-hAA">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

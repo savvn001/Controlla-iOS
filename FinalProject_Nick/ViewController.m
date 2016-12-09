@@ -15,6 +15,7 @@
 //IBoutlet collection for piano keys, learned from http://useyourloaf.com/blog/interface-builder-outlet-collections/
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pianoKeys;
 
+//UI images for piano imageview
 @property (nonatomic, strong) UIImage *piano1;
 @property (nonatomic, strong) UIImage *piano2;
 @property (nonatomic, strong) UIImage *piano3;
@@ -181,7 +182,8 @@ int octave = 0;
 
 
 
-#pragma Modulation and Pitch slider
+
+#pragma mark Modulation and Pitch slider
 //sending modulation cc message for modulation slider
 - (IBAction)modulationSlider:(UISlider *)sender {
     
@@ -201,9 +203,11 @@ int octave = 0;
     
     NSLog(@"modlation slider, value: %i", modvalue);
     
+    //send on all interfaces (index 0, 1 and 2)
     [MidiBusClient sendMidiBusEvent:0 withEvent:modulation];
     [MidiBusClient sendMidiBusEvent:1 withEvent:modulation];
     [MidiBusClient sendMidiBusEvent:2 withEvent:modulation];
+    //dispose of event afterwards
     [MidiBusClient disposeSmallEvent:modulation];
 }
 
@@ -257,8 +261,8 @@ int octave = 0;
     
     key1->timestamp = 0;
     key1->length = 3;
-    key1->data[0] = statusbyte;
-    key1->data[1] = note + octave;
+    key1->data[0] = statusbyte; //status byte, for note on/note off
+    key1->data[1] = note + octave; //note & octave variable
     key1->data[2] = 0x7F;
     
     [MidiBusClient sendMidiBusEvent:0 withEvent:key1];
