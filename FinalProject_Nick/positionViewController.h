@@ -23,6 +23,8 @@
 
 
 - (IBAction)bluetoothAd:(id)sender;
+- (IBAction)helpButton:(id)sender;
+
 
 
 @end

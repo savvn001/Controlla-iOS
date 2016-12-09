@@ -75,18 +75,40 @@
     
 }
 
+#pragma mark Help View 
 
-#pragma mark Bluetooth
-
-- (void)doneAction:(id)sender
-
-{
+- (IBAction)helpButton:(id)sender {
+    //using UIPopoverPresentationController to popup a help menu for the app when the '?' icon is pressed
+    //adaptd from http://pinkstone.co.uk/how-to-create-popovers-in-ios-9/
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //Get 'helpViewController'
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"helpViewController"];
+
+    // present the controller
+    // on iPad, this will be a Popover
+    // on iPhone, this will be an action sheet
+    controller.modalPresentationStyle = UIModalPresentationPopover;
+    [self presentViewController:controller animated:YES completion:nil];
+    
+    
+    // configure the Popover presentation controller
+    UIPopoverPresentationController *popController = [controller popoverPresentationController];
+    popController.permittedArrowDirections = UIPopoverArrowDirectionUp;
+    popController.delegate = self;
+    
+    //Using sourceView and sourceRect properties to set origin of popup view
+    popController.sourceView = self.view;
+    popController.sourceRect = CGRectMake(520, 50, 10, 10); //defines position of where popup will be
+        
+    
+    
     
 }
 
 
+
+#pragma mark Bluetooth
 
 - (IBAction)bluetoothAd:(id)sender {
    
@@ -143,6 +165,7 @@
 #endif
     
 }
+
 
 
 @end

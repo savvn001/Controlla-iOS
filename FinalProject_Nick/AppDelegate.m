@@ -18,7 +18,7 @@
  The library handles the 'heavy lifting' of using the core MIDI framework, so focus can be put on the 'higher level' aspects,
  ie. actually sending & recieving MIDI
  
- -App layout works best on iPad Retina & iPhone 5s
+ -App layout works best on iPad Retina & iPhone 5s, however app is mostly optimised for iPad usage
  
  -Connection can to mac be simulated while running simulator, by enabling network session on Mac utilites > Audio MIDI setup > MIDI Studio > Network, and enable session, 'iphone simulator' should appear.
  

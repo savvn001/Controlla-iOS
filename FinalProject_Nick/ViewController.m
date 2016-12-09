@@ -58,7 +58,7 @@ int pianoOctaveImage = 3;
     _piano6 = [UIImage imageNamed:@"piano_piano6"];
     _piano7 = [UIImage imageNamed:@"piano_piano7"];
     _piano8 = [UIImage imageNamed:@"piano_piano8"];
-    _piano8 = [UIImage imageNamed:@"piano_piano9"];
+    _piano9 = [UIImage imageNamed:@"piano_piano9"];
     
     
     //set default to image of middle octave
@@ -107,6 +107,7 @@ int octave = 0;
 - (IBAction)octaveDown:(UIButton *)sender {
     
     //12 notes = 1 octave, so reduce octave by 12
+    
     octave = octave - 12;
     
     //set image dependant on current octave
@@ -138,6 +139,9 @@ int octave = 0;
         [_pianoImage setImage:_piano1];
     }
     
+    if(octave < -48){
+        octave = -48;  //have to set limits, no MIDI notes below 0 and above 127
+    }
     
 }
 
@@ -146,7 +150,9 @@ int octave = 0;
 - (IBAction)octaveUp:(UIButton *)sender {
     
     //increase octave by 12
+   
     octave = octave + 12;
+    
     
     if(octave == 0){
         [_pianoImage setImage:_piano5];
@@ -176,7 +182,9 @@ int octave = 0;
         [_pianoImage setImage:_piano1];
     }
     
-    
+    if(octave > 48){
+        octave = 48;  //have to set limits, no MIDI notes below 0 and above 127
+    }
     
 }
 

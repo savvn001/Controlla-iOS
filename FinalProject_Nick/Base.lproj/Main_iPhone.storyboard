@@ -1328,36 +1328,6 @@
             </objects>
             <point key="canvasLocation" x="675" y="531.5625"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nYM-1f-2dA">
-            <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="ZQg-wd-yMB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Smg-vT-SKX"/>
-                        <viewControllerLayoutGuide type="bottom" id="ass-mx-S2B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zdv-iu-BEJ">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvj-Hh-XcQ">
-                                <rect key="frame" x="9" y="5" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.071623883928571427" blue="0.18087852328431372" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="100" height="100"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MGK-iB-FUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="662" y="-759"/>
-        </scene>
         <!--Position View Controller-->
         <scene sceneID="foP-Is-qgy">
             <objects>
@@ -1408,19 +1378,6 @@
                                 <state key="normal" image="Bluetooth 2_3.png"/>
                                 <connections>
                                     <action selector="bluetoothAd:" destination="PWi-DM-P1T" eventType="touchUpInside" id="Wbu-ML-qKX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO7-Kj-CQI">
-                                <rect key="frame" x="524" y="-2" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="?">
-                                    <color key="titleColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZQg-wd-yMB" kind="popoverPresentation" popoverAnchorView="xO7-Kj-CQI" id="mDy-vs-hAA">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
                                 </connections>
                             </button>
                         </subviews>

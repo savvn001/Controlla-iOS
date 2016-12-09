@@ -1281,42 +1281,42 @@
                                 <color key="thumbTintColor" red="0.11864908784627914" green="0.64578860998153687" blue="0.56177031993865967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm3-ER-aDx">
-                                <rect key="frame" x="150" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="150" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute1" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIt-rx-Qd4">
-                                <rect key="frame" x="254" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="254" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute2" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kiz-nW-xQy">
-                                <rect key="frame" x="358" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="358" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute3" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0n-op-HQ6">
-                                <rect key="frame" x="462" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="462" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute4" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTd-hh-HkY">
-                                <rect key="frame" x="566" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="566" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute5" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFj-ZC-qAp">
-                                <rect key="frame" x="670" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="670" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute6" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv1-Lu-zkd">
-                                <rect key="frame" x="772" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="772" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute7" image="mute.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQl-BD-n8B">
-                                <rect key="frame" x="876" y="563" width="47" height="54.5"/>
+                                <rect key="frame" x="876" y="547" width="47" height="54.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Mute8" image="mute.png"/>
                             </button>
@@ -1457,23 +1457,73 @@
             </objects>
             <point key="canvasLocation" x="676" y="532"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="18p-K2-qh5">
             <objects>
-                <viewController id="xGB-n9-v1D" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="helpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xGB-n9-v1D" customClass="helpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fxx-GP-GPH"/>
                         <viewControllerLayoutGuide type="bottom" id="hsA-FZ-xZR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DFW-jy-CXr">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7D-tQ-cXa">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="650"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPD-Rw-hrj">
+                                <rect key="frame" x="265" y="20" width="270" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <color key="textColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLR-ga-cgd">
+                                <rect key="frame" x="20" y="164" width="346" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">-Ensure the iOS device and host Mac are on the same local network connection         -Open Audio MIDI Setup from 'Other' under launchpad                                           -Open MIDI studio, under Window &gt; Show MIDI studio  and select 'network'     -Press + under sessions to create a new session, in the directory below the current iOS device should be shown, (ie. iPhone simulator, Nick's ipad)                      -Select the device and press 'connect'            -The app should now be paired and ready to send and recieve MIDI from the host Mac  </mutableString>
+                                <color key="textColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Connect (WiFi)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSh-Xp-bAl">
+                                <rect key="frame" x="20" y="118" width="323" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Connect (Bluetooth)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-y2-21u">
+                                <rect key="frame" x="428" y="123" width="341" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DzR-aX-TXD">
+                                <rect key="frame" x="425" y="164" width="335" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">-Ensure bluetooth is enabled on iOS device                                                              -After starting the app, press the bluetooth icon at the top of the view           -Press the slider to adertise bluetooth availability                                                    -On the Mac, open MIDI studio, under Window &gt; Show MIDI studio  and select 'Bluetooth'                                                   -The iOS device should be visible, press connect to pair the app device with the Mac                                                                -The app will automatically move the slider to disable availability if the pairing was successful, press 'done' in the top right                                                                -The app should now be paired and ready to send and recieve MIDI from the host Mac  </mutableString>
+                                <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="800" height="650"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z96-dd-88J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="-808"/>
+            <point key="canvasLocation" x="675.5859375" y="-730.46875"/>
         </scene>
         <!--Position View Controller-->
         <scene sceneID="foP-Is-qgy">
@@ -1507,24 +1557,27 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wi-Fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="uGO-q1-s5o">
-                                <rect key="frame" x="331" y="8" width="51" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-ng-O7D">
-                                <rect key="frame" x="433" y="13" width="57" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="bluetoothAd:" destination="PWi-DM-P1T" eventType="touchUpInside" id="rRS-t1-VfH"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og4-yo-F8L">
-                                <rect key="frame" x="944" y="15" width="60" height="48"/>
+                                <rect key="frame" x="956" y="15" width="60" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="82"/>
                                 <state key="normal" title="?">
                                     <color key="titleColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="helpButton:" destination="PWi-DM-P1T" eventType="touchUpInside" id="zcB-Sm-yhN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wi-Fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="uGO-q1-s5o">
+                                <rect key="frame" x="755" y="-21" width="59" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-ng-O7D">
+                                <rect key="frame" x="857" y="14" width="57" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bluetoothAd:" destination="PWi-DM-P1T" eventType="touchUpInside" id="rRS-t1-VfH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
@@ -1602,6 +1655,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfW-lW-kcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-340" y="-6"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nlp-zt-gOA">
+            <objects>
+                <viewController id="bUD-fO-0hv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SAR-a7-svo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Szr-Ug-MNc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hch-Uo-8ry">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cC2-nI-HHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

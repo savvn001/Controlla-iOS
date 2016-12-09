@@ -27,6 +27,7 @@
 		692598471DEFAC65008489BA /* piano_piano8.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983E1DEFAC65008489BA /* piano_piano8.png */; };
 		692598481DEFAC65008489BA /* piano_piano9.png in Resources */ = {isa = PBXBuildFile; fileRef = 6925983F1DEFAC65008489BA /* piano_piano9.png */; };
 		6935B0B01DEC8FB40007C935 /* setValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 6935B0AF1DEC8FB40007C935 /* setValues.m */; };
+		694102291DFA495B0049BA81 /* helpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 694102281DFA495B0049BA81 /* helpViewController.m */; };
 		696C731D1DF8C46200BBD1E3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696C731B1DF8C46200BBD1E3 /* Main_iPhone.storyboard */; };
 		696C731F1DF8D87B00BBD1E3 /* startup_screen_5s.png in Resources */ = {isa = PBXBuildFile; fileRef = 696C731E1DF8D87B00BBD1E3 /* startup_screen_5s.png */; };
 		697CF8A41DE7212B00ED2F27 /* orange_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 697CF8A31DE7212B00ED2F27 /* orange_square.png */; };
@@ -150,6 +151,8 @@
 		6925983F1DEFAC65008489BA /* piano_piano9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piano_piano9.png; sourceTree = "<group>"; };
 		6935B0AE1DEC8FB40007C935 /* setValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setValues.h; sourceTree = "<group>"; };
 		6935B0AF1DEC8FB40007C935 /* setValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = setValues.m; sourceTree = "<group>"; };
+		694102271DFA495B0049BA81 /* helpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpViewController.h; sourceTree = "<group>"; };
+		694102281DFA495B0049BA81 /* helpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpViewController.m; sourceTree = "<group>"; };
 		696C731C1DF8C46200BBD1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		696C731E1DF8D87B00BBD1E3 /* startup_screen_5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startup_screen_5s.png; sourceTree = "<group>"; };
 		697CF8A31DE7212B00ED2F27 /* orange_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange_square.png; sourceTree = "<group>"; };
@@ -422,6 +425,8 @@
 				69BB7CE41DE5ACD900DCAF2F /* transportViewController.m */,
 				698272471DE60A6C0079233B /* positionViewController.h */,
 				698272481DE60A6C0079233B /* positionViewController.m */,
+				694102271DFA495B0049BA81 /* helpViewController.h */,
+				694102281DFA495B0049BA81 /* helpViewController.m */,
 				69A084EE1DD77B9B008AF00D /* Assets.xcassets */,
 				69A084F01DD77B9B008AF00D /* LaunchScreen.storyboard */,
 				69A084F31DD77B9B008AF00D /* Info.plist */,
@@ -706,6 +711,7 @@
 				69A0851A1DD788A0008AF00D /* controlsViewController.m in Sources */,
 				6981B68C1DDE74C60086D0F5 /* MidiBusClient.m in Sources */,
 				6935B0B01DEC8FB40007C935 /* setValues.m in Sources */,
+				694102291DFA495B0049BA81 /* helpViewController.m in Sources */,
 				698272491DE60A6C0079233B /* positionViewController.m in Sources */,
 				69A084E71DD77B9B008AF00D /* AppDelegate.m in Sources */,
 				69A085171DD783A7008AF00D /* padViewController.m in Sources */,
