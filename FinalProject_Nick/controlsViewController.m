@@ -163,8 +163,9 @@ int controllerMove = 0;
     fader->data[1] = controller; //controller no. variable
     fader->data[2] = value; //value variable, dependant on UI slider position, from 0 to 127
     
-    
-    [MidiBusClient sendMidiBusEvent:fader->index withEvent:fader];
+    [MidiBusClient sendMidiBusEvent:0 withEvent:fader];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:fader];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:fader];
     [MidiBusClient disposeSmallEvent:fader];
     
     
@@ -181,8 +182,9 @@ int controllerMove = 0;
     fader->data[1] = note; //note variable
     fader->data[2] = 127; //velocity (just set to 127)
     
-    
-    [MidiBusClient sendMidiBusEvent:fader->index withEvent:fader];
+    [MidiBusClient sendMidiBusEvent:0 withEvent:fader];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:fader];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:fader];
     [MidiBusClient disposeSmallEvent:fader];
     
     NSLog(@"mute/solo sent");

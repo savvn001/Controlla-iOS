@@ -53,6 +53,9 @@
     
 }
 
+
+#pragma mark Sending MIDI
+
     //function for sending MIDI CC messages which are sent when transport control buttons are pressed 
 - (void)transportSend:(int)controller controllervalue:(int)value;{
     
@@ -64,8 +67,9 @@
     sendTransport->data[1] = controller; //controller number
     sendTransport->data[2] = value; //value (either 0 or 127)
     
-    [MidiBusClient sendMidiBusEvent:sendTransport->index withEvent:sendTransport];
-    
+    [MidiBusClient sendMidiBusEvent:0 withEvent:sendTransport];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:sendTransport];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:sendTransport];
     [MidiBusClient disposeSmallEvent:sendTransport];
     
 }

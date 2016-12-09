@@ -12,7 +12,7 @@
 @interface ViewController ()
 
 
-
+//IBoutlet collection for piano keys, learned from http://useyourloaf.com/blog/interface-builder-outlet-collections/
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *pianoKeys;
 
 @property (nonatomic, strong) UIImage *piano1;
@@ -29,6 +29,7 @@
 
 @end
 
+
 int pianoOctaveImage = 3;
 
 
@@ -38,14 +39,16 @@ int pianoOctaveImage = 3;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     for (UIButton *pianoKey in self.pianoKeys) {
+        //add actions for control events to all buttons in outlet collection
         [pianoKey addTarget:self action:@selector(pianoKeyDown:) forControlEvents:UIControlEventTouchDown];
         [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchUpInside];
         [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchUpOutside];
         [pianoKey addTarget:self action:@selector(pianoKeyUp:) forControlEvents:UIControlEventTouchCancel];
     }
     
+    //different objects for piano image
     _piano1 = [UIImage imageNamed:@"piano_piano1"];
     _piano2 = [UIImage imageNamed:@"piano_piano2"];
     _piano3 = [UIImage imageNamed:@"piano_piano3"];
@@ -56,12 +59,12 @@ int pianoOctaveImage = 3;
     _piano8 = [UIImage imageNamed:@"piano_piano8"];
     _piano8 = [UIImage imageNamed:@"piano_piano9"];
     
-   
     
+    //set default to image of middle octave
     [_pianoImage setImage:_piano5];
     
-    
-   self.imageArray = [NSMutableArray arrayWithObjects:@"_piano1", @"_piano2", @"_piano3", @"_piano4", @"_piano5", nil];
+    //make array for piano objects
+    self.imageArray = [NSMutableArray arrayWithObjects:@"_piano1", @"_piano2", @"_piano3", @"_piano4", @"_piano5", nil];
     
 }
 
@@ -80,7 +83,7 @@ int pianoOctaveImage = 3;
 - (IBAction) pianoKeyDown:(id)sender
 {
     
-    //generate note variable to be unique to each key (each key is identified by its sender tag which is set to be unqiue to each button)
+    //generate note variable to be unique to each key (each key is identified by its sender tag which is set to be unqiue to each button, set in storyboard)
     int note = 36 + [sender tag];
     [self pianoKeys:note state:0x90];
     NSLog(@"note on");
@@ -105,6 +108,7 @@ int octave = 0;
     //12 notes = 1 octave, so reduce octave by 12
     octave = octave - 12;
     
+    //set image dependant on current octave
     if(octave == 0){
         [_pianoImage setImage:_piano5];
     }
@@ -176,6 +180,7 @@ int octave = 0;
 }
 
 
+
 #pragma Modulation and Pitch slider
 //sending modulation cc message for modulation slider
 - (IBAction)modulationSlider:(UISlider *)sender {
@@ -184,10 +189,10 @@ int octave = 0;
     int modvalue = sender.value;
     
     
-    //midibus event
+    //midibus event for sending MIDI, defined in documentation
     MIDIBUS_MIDI_EVENT* modulation = [MidiBusClient setupSmallEvent];
     
-    modulation->timestamp = 0;
+    modulation->timestamp = 0; //Timestamp, set to 0, don't need to delay anything
     modulation->length = 3; //3 byte message
     modulation->data[0] = 0xB0; //control change message
     modulation->data[1] = 0x01; //controller set to modulation
@@ -196,7 +201,9 @@ int octave = 0;
     
     NSLog(@"modlation slider, value: %i", modvalue);
     
-    [MidiBusClient sendMidiBusEvent:modulation->index withEvent:modulation];
+    [MidiBusClient sendMidiBusEvent:0 withEvent:modulation];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:modulation];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:modulation];
     [MidiBusClient disposeSmallEvent:modulation];
 }
 
@@ -221,32 +228,9 @@ int octave = 0;
     
     NSLog(@"pitch value slider, value: %i", pitchvalue);
     
-    [MidiBusClient sendMidiBusEvent:pitch->index withEvent:pitch];
-    [MidiBusClient disposeSmallEvent:pitch];
-    
-    
-    
-    
-}
-
-- (IBAction)pitchSliderRelease:(UISlider *)sender {
-    //reset slider to centre after released by user, mimicks real pitch bend wheel behaviour
-    self.pitchSliderCenter.value = 64.00;
-    
-    int pitchvalue = sender.value;
-    
-    MIDIBUS_MIDI_EVENT* pitch = [MidiBusClient setupSmallEvent];
-    
-    pitch->timestamp = 0;
-    pitch->length = 3; //3 byte message
-    pitch->data[0] = 0xE0; //pitch bend message
-    pitch->data[1] = 0x01; //LSB (7 bits) bend value
-    pitch->data[2] = pitchvalue; //MSB (7 bits) bend value
-    
-    
-    NSLog(@"pitch value slider, value: %i", pitchvalue);
-    
-    [MidiBusClient sendMidiBusEvent:pitch->index withEvent:pitch];
+    [MidiBusClient sendMidiBusEvent:0 withEvent:pitch];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:pitch];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:pitch];
     [MidiBusClient disposeSmallEvent:pitch];
     
     
@@ -256,7 +240,10 @@ int octave = 0;
 
 
 
-#pragma mark Button Methods
+
+
+
+#pragma mark MIDI Events
 
 /* - method for sending a MIDI note on/note off when piano key button is pressed
  - takes two input parameters, note value and status byte (both defined in hex)
@@ -274,12 +261,41 @@ int octave = 0;
     key1->data[1] = note + octave;
     key1->data[2] = 0x7F;
     
-    [MidiBusClient sendMidiBusEvent:key1->index withEvent:key1];
+    [MidiBusClient sendMidiBusEvent:0 withEvent:key1];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:key1];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:key1];
     
     [MidiBusClient disposeSmallEvent:key1];
     
     
 }
+
+- (IBAction)pitchSliderRelease:(UISlider *)sender {
+    //reset slider to centre after released by user, mimicks real pitch bend wheel behaviour
+    self.pitchSliderCenter.value = 64.00;
+    
+    int pitchvalue = sender.value;
+    
+    //have to send a pitch bend message with 64 so host is notified of return to center
+    MIDIBUS_MIDI_EVENT* pitch = [MidiBusClient setupSmallEvent];
+    
+    pitch->timestamp = 0;
+    pitch->length = 3; //3 byte message
+    pitch->data[0] = 0xE0; //pitch bend message
+    pitch->data[1] = 0x01; //LSB (7 bits) bend value
+    pitch->data[2] = pitchvalue; //MSB (7 bits) bend value
+    
+    
+    NSLog(@"pitch value slider, value: %i", pitchvalue);
+    
+    [MidiBusClient sendMidiBusEvent:0 withEvent:pitch];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:pitch];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:pitch];
+    [MidiBusClient disposeSmallEvent:pitch];
+    
+    
+}
+
 
 
 @end

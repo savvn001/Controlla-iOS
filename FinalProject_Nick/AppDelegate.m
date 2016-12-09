@@ -10,7 +10,21 @@
 #import <CoreMIDI/CoreMIDI.h>
 #import "setValues.h"
 
-
+/*
+ APPLICATION NOTES:
+ 
+ -For this project an external library was used to handle MIDI functionality.
+ Called 'MidiBus', from https://audeonic.com/midibus/
+ The library handles the 'heavy lifting' of using the core MIDI framework, so focus can be put on the 'higher level' aspects,
+ ie. actually sending & recieving MIDI
+ 
+ -App layout works best on iPad Retina & iPhone 5s
+ 
+ -Connection can to mac be simulated while running simulator, by enabling network session on Mac utilites > Audio MIDI setup > MIDI Studio > Network, and enable session, 'iphone simulator' should appear.
+ 
+ -Bluetooth connectioon will only be available when running on physical iOS device (cannot simulate bluetooth)
+ 
+ */
 
 
 @interface AppDelegate ()
@@ -22,7 +36,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
     //start midi bus library
     [MidiBusClient startWithApp:@"Controlla" andDelegate:self];
@@ -61,7 +74,8 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     // adjust CoreMIDI to get loopbacked virtual events early
     MIDIObjectSetIntegerProperty(CoreMIDI_ref_input, kMIDIPropertyAdvanceScheduleTimeMuSec, 1);
     
-    
+    //call shared instance
+    setValues *setValueClass = [setValues sharedInstance];
     
     // create a static query object which we can reuse time and time again
     // that won't get de-alloced by ARC by making a strong reference
@@ -74,44 +88,49 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     NSArray* interfaces = [query getInterfaces];
     
     
+    
     //scan through the interaces array
     for (MidiBusInterface* obj in interfaces)
     {
+        
+        
         MIDIBUS_INTERFACE* interface = obj->interface;
         
-        setValues *setValueClass = [setValues sharedInstance]; //call shared instance
         
-        //get interface name (network, bluetooth etc.) and assign name to string
+        NSLog(@"interface name %s:",interface->ident);
+        NSLog(@"interface type %u:",interface->type);
         
-        NSString* nameOfInterface = [NSString stringWithFormat:@"%s",interface->ident];
+        //        //get interface name and assign name to string
+        //        NSString* nameOfInterface = [NSString stringWithFormat:@"%s",interface->ident];
+        //        //set name of interface to string, passed to label in positionViewController class
+        //        [setValueClass setInterfaceName:nameOfInterface];
         
-        //map this to shared instance 'interface name'
-        if([nameOfInterface isEqualToString:@"Network"]){
+        if(interface->type == 1 && interface->network_connections == YES){
+            setValueClass.networkPresent = YES;
+            [setValueClass setInterfaceName:@"Network"];
+            
+        }
+        else if(interface->type == 1 && interface->network_connections == NO)
+        {
+            setValueClass.networkPresent = NO;
+            [setValueClass setInterfaceName:@"None"];
+        }
+        
+        if(interface->type == 0){
+            setValueClass.bluetoothPresent = YES;
+            NSString* nameOfInterface = [NSString stringWithFormat:@"%s",interface->ident];
+            //set name of interface to string, passed to label in positionViewController class
             [setValueClass setInterfaceName:nameOfInterface];
         }
-        
-        
-        if(interface->present == YES){
-            NSLog(@"Interface name : %s", interface->ident);
-        }
-        
-        //check if connnection is present
-        if(interface->network_connections == YES){
-            //set connectionPresent variable to = 1
-            NSLog(@"network connection present");
-            
-            setValueClass.connectionPresent = YES;
-            NSLog(@"%i:",[setValueClass connectionPresent]);
+        else{
+            setValueClass.bluetoothPresent = NO;
             
         }
-        /*
-        else if(interface->network_connections == NO){
-            setValueClass.connectionPresent = NO;
         
-        }
-        */
         
     }
+    
+    
 }
 
 
@@ -134,6 +153,7 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     NSLog(@"data 1 = %i",event->data[1]);
     NSLog(@"data 2 = %i",event->data[2]);
     
+    //NSLog(@"interface recieved on %i",index);
     
     //if Control change on channel 2 is recieved
     if(event->data[0] == 0xB1)

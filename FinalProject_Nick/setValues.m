@@ -15,7 +15,8 @@
 
 @synthesize CCcontroller;
 @synthesize value;
-@synthesize connectionPresent = _connectionPresent;
+@synthesize networkPresent = _networkPresent;
+@synthesize bluetoothPresent = _bluetoothPresent;
 @synthesize interfaceName = _interfaceName;
 
 

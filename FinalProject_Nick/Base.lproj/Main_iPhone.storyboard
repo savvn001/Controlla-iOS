@@ -1364,10 +1364,10 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-Rh-4GF">
-                                <rect key="frame" x="78" y="4" width="68" height="21"/>
+                                <rect key="frame" x="78" y="4" width="180" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="2I8-vE-AOd"/>
-                                    <constraint firstAttribute="width" constant="68" id="ysM-60-b7P"/>
+                                    <constraint firstAttribute="width" constant="180" id="ysM-60-b7P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1376,30 +1376,34 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
-                                <rect key="frame" x="117" y="4" width="22" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="gLG-wc-FnR"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0R-6G-fDD">
-                                <rect key="frame" x="180" y="2" width="26" height="25"/>
+                                <rect key="frame" x="477" y="2" width="26" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Bluetooth 2_3.png"/>
+                                <connections>
+                                    <action selector="bluetoothAd:" destination="PWi-DM-P1T" eventType="touchUpInside" id="Wbu-ML-qKX"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wi-Fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
+                                <rect key="frame" x="409" y="-13" width="31" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="gLG-wc-FnR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZVg-Rh-4GF" firstAttribute="leading" secondItem="nGI-tx-V2w" secondAttribute="trailing" constant="1" id="0u3-2y-K7h"/>
                             <constraint firstAttribute="leadingMargin" secondItem="nGI-tx-V2w" secondAttribute="leading" id="2lK-Y3-76g"/>
-                            <constraint firstItem="JHY-Ki-JsE" firstAttribute="top" secondItem="ZVg-Rh-4GF" secondAttribute="top" id="3iq-2b-m5A"/>
-                            <constraint firstItem="JHY-Ki-JsE" firstAttribute="leading" secondItem="nGI-tx-V2w" secondAttribute="trailing" constant="40" id="MKH-hC-aHu"/>
+                            <constraint firstItem="JHY-Ki-JsE" firstAttribute="top" secondItem="ZVg-Rh-4GF" secondAttribute="top" constant="-17" id="3iq-2b-m5A"/>
+                            <constraint firstItem="JHY-Ki-JsE" firstAttribute="leading" secondItem="nGI-tx-V2w" secondAttribute="trailing" constant="332" id="MKH-hC-aHu"/>
                             <constraint firstItem="ZVg-Rh-4GF" firstAttribute="centerY" secondItem="ECR-8m-hKB" secondAttribute="centerY" id="ZE3-33-dRX"/>
-                            <constraint firstItem="JHY-Ki-JsE" firstAttribute="bottom" secondItem="ZVg-Rh-4GF" secondAttribute="bottom" id="boX-Ic-5e1"/>
+                            <constraint firstItem="JHY-Ki-JsE" firstAttribute="bottom" secondItem="ZVg-Rh-4GF" secondAttribute="bottom" constant="14" id="boX-Ic-5e1"/>
                             <constraint firstItem="nGI-tx-V2w" firstAttribute="centerY" secondItem="ECR-8m-hKB" secondAttribute="centerY" id="sBx-Rq-Lko"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bluetoothEnable" destination="z0R-6G-fDD" id="AWR-Aw-rH8"/>
                         <outlet property="connectionIndicator" destination="JHY-Ki-JsE" id="OBF-c8-lkU"/>
                         <outlet property="interfaceLabel" destination="ZVg-Rh-4GF" id="2F9-W6-7Bv"/>
                     </connections>
@@ -1483,9 +1487,9 @@
         <image name="Stop.png" width="100" height="100"/>
         <image name="Time Filled.png" width="100" height="100"/>
         <image name="Time.png" width="100" height="100"/>
+        <image name="Wi-Fi.png" width="50" height="50"/>
         <image name="black.png" width="238" height="1004"/>
         <image name="blackpressed.png" width="238" height="1004"/>
-        <image name="circle_green.png" width="72" height="72"/>
         <image name="mute.png" width="223" height="255"/>
         <image name="padbutton.png" width="379" height="379"/>
         <image name="padbutton_pressed.png" width="379" height="379"/>

@@ -20,7 +20,7 @@
 @property (nonatomic, strong) IBOutletCollection(UIButton) NSArray *chords;
 //array that stores title of chords
 @property (nonatomic,strong) NSMutableArray *chordArray;
-//array that stores title of chords
+//array that stores labels of chords
 @property (nonatomic,strong) NSMutableArray *chordLabels;
 //array that stores chords 'attached' to each pad
 @property (nonatomic,strong) NSMutableArray *padChord;
@@ -70,7 +70,7 @@ int lastPadPressed; //variable to be assigned sender tag
     //Using arrays learnt from ->   http://rypress.com/tutorials/objective-c/data-types/nsarray
     
     /*This array stores the values of whether a pad plays a chord or 'none', all are initally set to 'none'.
-     When a chord is selected for a current pad, 'none' changes to selected chord (could be Dim7 for example)
+     When a chord is selected for a current pad, 'none' string changes to string of selected chord (could be Dim7 for example)
      this means this chord is 'attached' to pad
      */
     self.padChord = [NSMutableArray arrayWithObjects: @"None", @"None", @"None",
@@ -82,16 +82,18 @@ int lastPadPressed; //variable to be assigned sender tag
                      @"None", @"None", @"None",
                      @"None", @"None", nil];
     
-    //each element here refers to a particular chord
+    //each element here refers to a particular chord method (all implemented at bottom of file)
     self.chordArray = [NSMutableArray arrayWithObjects: @"None", @"Maj", @"Min",
                        @"Dom7", @"Maj7", @"Min7", @"mM7", @"_7b5",@"_7x5", @"m7b5", @"_7b9",@"b5",@"_5",@"_6",@"m6",@"_69",@"_9",@"_9b5",@"_9x5", @"m9",@"Maj9",@"Add9",@"_7x9",@"_11",@"m11",@"_13",@"_Maj13",@"Sus2",@"Sus4",@"_7Sus4",@"_9Sus4", @"Dim7", @"Aug", nil];
     
+    //array of strings for labels for buttons in view
     self.chordLabels = [NSMutableArray arrayWithObjects: @"None", @"Maj", @"Min",
                         @"Dom7", @"Maj7", @"Min7", @"mM7", @"7b5",@"7#5", @"m7b5", @"7b9",@"b5",@"5",@"6",@"m6",@"6/9",@"9",@"9b5",@"9#5", @"m9",@"Maj9",@"Add9",@"7#9",@"11",@"m11",@"13",@"Maj13",@"Sus2",@"Sus4",@"7Sus4",@"9Sus4", @"Dim7", @"Aug", nil];
     
     
     //set properties for chord buttons under 'CHORDS' outlet collection,
     int n = 0; //a counter for adressing the chordArray below to set titles for buttons
+    //enumerate chord button array
     for(UIButton *chordSelect in self.chords){
         
         //programatically setting labels
@@ -119,7 +121,7 @@ int lastPadPressed; //variable to be assigned sender tag
     //each pad has unique sender tag (which is an int ranging from 0-15) assigned to it in storyboard, assign sender tag of button pressed to lastPadPressed variable
     lastPadPressed = [sender tag];
     
-    
+    //note variable, mapped by sender tag of pad
     note = 36 + [sender tag];
     
     //0x91 = 'note On' in hex
@@ -128,7 +130,7 @@ int lastPadPressed; //variable to be assigned sender tag
     
     //scan through array of chords and check if current pad has that chord attached to it
     int y = 0;
-    for(NSString *item2 in _chordLabels){ //item 2 is current item in chordLabels, loops through
+    for(NSString *item in _chordLabels){ //item 2 is current item in chordLabels, loops through
         
         
         if ([_padChord[[sender tag]] isEqualToString:[_chordArray objectAtIndex:y]]){ //check if the chord attatched to current pad in question is equal to current item in chordArray
@@ -136,7 +138,7 @@ int lastPadPressed; //variable to be assigned sender tag
             //have to set states of chord select buttons to reflect chord set to current pad
             for(UIButton *chordSelect in self.chords){
                 //button with name 'item2' should be set: selected == TRUE
-                if([chordSelect.titleLabel.text isEqualToString:item2]){
+                if([chordSelect.titleLabel.text isEqualToString:item]){
                     chordSelect.selected = TRUE;
                 }
                 else{
@@ -145,13 +147,11 @@ int lastPadPressed; //variable to be assigned sender tag
                 }
             }
         }
-        y++;
+        y++; //increment counter
     }
     
     
     //call the respective function chord function to send MIDI
-    
-    
     NSString *chordFunction = [_padChord objectAtIndex:[sender tag]]; //make NSstring variable reflects current chord
     NSLog(@"%@", chordFunction);
     
@@ -180,7 +180,7 @@ int lastPadPressed; //variable to be assigned sender tag
     
     NSString *chordFunction = [_padChord objectAtIndex:[sender tag]];
     
-    //call same chord method but this time state is different, so sends Note Off
+    //call same chord method but this time 'state' is different, so sends Note Off
     SEL selector = NSSelectorFromString(chordFunction);
     [self performSelector:selector];
     
@@ -266,7 +266,9 @@ int lastPadPressed; //variable to be assigned sender tag
     pad1->data[1] = note + padoctave;
     pad1->data[2] = 0x7F;
     
-    [MidiBusClient sendMidiBusEvent:pad1->index withEvent:pad1];
+    [MidiBusClient sendMidiBusEvent:0 withEvent:pad1];
+    [MidiBusClient sendMidiBusEvent:1 withEvent:pad1];
+    [MidiBusClient sendMidiBusEvent:2 withEvent:pad1];
     
     [MidiBusClient disposeSmallEvent:pad1];
     

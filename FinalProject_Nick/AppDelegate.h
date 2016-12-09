@@ -10,7 +10,10 @@
 #import "MidiBusClient.h"
 
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, MidiBusClientDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, MidiBusClientDelegate>{
+    uint8_t bluetoothIndex;
+    uint8_t networkIndex;
+}
     
   
     

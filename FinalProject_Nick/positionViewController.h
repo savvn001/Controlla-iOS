@@ -17,6 +17,12 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *interfaceLabel;
+
 @property (strong, nonatomic) IBOutlet UIImageView *connectionIndicator;
+@property (strong, nonatomic) IBOutlet UIButton *bluetoothEnable;
+
+
+- (IBAction)bluetoothAd:(id)sender;
+
 
 @end

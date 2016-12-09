@@ -1469,36 +1469,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="79"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connection: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-tx-V2w">
-                                <rect key="frame" x="20" y="28" width="97" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connection: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuO-1b-ITE">
+                                <rect key="frame" x="29" y="29" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-Rh-4GF">
-                                <rect key="frame" x="125" y="27" width="68" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0p-0X-iVp">
+                                <rect key="frame" x="172" y="30" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="JHY-Ki-JsE">
-                                <rect key="frame" x="201" y="23" width="32" height="31"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wi-Fi.png" translatesAutoresizingMaskIntoConstraints="NO" id="uGO-q1-s5o">
+                                <rect key="frame" x="331" y="8" width="51" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-ng-O7D">
+                                <rect key="frame" x="433" y="13" width="57" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bluetoothAd:" destination="PWi-DM-P1T" eventType="touchUpInside" id="rRS-t1-VfH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="connectionIndicator" destination="JHY-Ki-JsE" id="OBF-c8-lkU"/>
-                        <outlet property="interfaceLabel" destination="ZVg-Rh-4GF" id="2F9-W6-7Bv"/>
+                        <outlet property="bluetoothEnable" destination="kXF-ng-O7D" id="IJp-dC-qSq"/>
+                        <outlet property="connectionIndicator" destination="uGO-q1-s5o" id="yvs-ie-alS"/>
+                        <outlet property="interfaceLabel" destination="I0p-0X-iVp" id="24I-Wm-71b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GB-Ap-KWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1596,9 +1604,9 @@
         <image name="Stop.png" width="100" height="100"/>
         <image name="Time Filled.png" width="100" height="100"/>
         <image name="Time.png" width="100" height="100"/>
+        <image name="Wi-Fi.png" width="50" height="50"/>
         <image name="black.png" width="238" height="1004"/>
         <image name="blackpressed.png" width="238" height="1004"/>
-        <image name="circle_green.png" width="72" height="72"/>
         <image name="mute.png" width="223" height="255"/>
         <image name="padbutton.png" width="379" height="379"/>
         <image name="padbutton_pressed.png" width="379" height="379"/>
