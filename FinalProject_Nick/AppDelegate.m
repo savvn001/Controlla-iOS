@@ -17,6 +17,7 @@
  Called 'MidiBus', from https://audeonic.com/midibus/
  The library handles the 'heavy lifting' of using the core MIDI framework, so focus can be put on the 'higher level' aspects,
  ie. actually sending & recieving MIDI
+ -Library files included in project at top of folder
  
  -App layout works best on iPad Retina & iPhone 5s, however app is mostly optimised for iPad usage
  
@@ -65,6 +66,7 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
 //the skeleton for this method is from the MidiBus library documentation which is included in the project .zip file (documentation.html)
 - (void)handleMidiBusClientNotification:(uint8_t)type {
     
+    //get virtual index
     uint8_t myVirtualIndex = [MidiBusClient getMidiBusOwnInterfaceIndex];
     
     
@@ -91,11 +93,11 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
     
     
     
-    //scan through the interaces array
+    //enumerate the interaces array
     for (MidiBusInterface* obj in interfaces)
     {
         
-        
+        //object for current item
         MIDIBUS_INTERFACE* interface = obj->interface;
         
         //print interface & type (useful for debugging)
@@ -142,7 +144,7 @@ void mbs_coremidi_get_refs(uint8_t index, MIDIEndpointRef* input, MIDIEndpointRe
 
 #pragma mark Receiving MIDI
 
-//When any MIDI data is recieved, this method is called
+//When any MIDI data is recieved, this method is called (runs in the backround)
 - (void)receivedMidiBusClientEvent:(MIDIBUS_MIDI_EVENT*)event {
     
     //call shared instance

@@ -122,7 +122,7 @@
      have to add a check below to only run outside of simulator
      */
     
-#if !(TARGET_IPHONE_SIMULATOR)
+#if !(TARGET_IPHONE_SIMULATOR) //have to check not on simulator
     CABTMIDILocalPeripheralViewController *viewController = [CABTMIDILocalPeripheralViewController new];
     
     

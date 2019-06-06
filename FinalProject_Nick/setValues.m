@@ -13,6 +13,7 @@
 
 @implementation setValues
 
+//have to synthesize variables
 @synthesize CCcontroller;
 @synthesize value;
 @synthesize networkPresent = _networkPresent;

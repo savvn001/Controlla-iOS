@@ -57,7 +57,7 @@
     
     
     /*Using NSTimer to call 'updateFader' method below, method is called every 0.001 seconds (1ms), so it almost essentially runs in the backround continuously
-     this allows fader positions to always be updated to by 'in sync' with faders in DAW
+     this allows fader position s to always be updated to by 'in sync' with faders in DAW
      from: http://ajourneywithios.blogspot.co.uk/2011/03/simplified-use-of-nstimer-class-in-ios.html
      */
     timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(updateFader:) userInfo:nil repeats:YES];
@@ -111,7 +111,7 @@ int controllerMove = 0;
 
 
 //updating sliders so they are automatically moved if moved in DAW
-//if slider is moved in DAW, it will send out a message back to the app to update the postion of mapped slider ('remote' function in ableton)
+//if slider is moved in DAW, it will send out a message back to the app to update the postion of mapped slider ('remote' function in ableton for example does this, other DAWs vary)
 -(void)updateFader:(NSTimer *) theTimer{
     
     //called shared instance (to receive variables from recieved MIDI method in app delegate)

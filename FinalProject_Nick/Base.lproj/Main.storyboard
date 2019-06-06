@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1488,7 +1488,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLR-ga-cgd">
                                 <rect key="frame" x="20" y="164" width="346" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-Ensure the iOS device and host Mac are on the same local network connection         -Open Audio MIDI Setup from 'Other' under launchpad                                           -Open MIDI studio, under Window &gt; Show MIDI studio  and select 'network'     -Press + under sessions to create a new session, in the directory below the current iOS device should be shown, (ie. iPhone simulator, Nick's ipad)                      -Select the device and press 'connect'            -The app should now be paired and ready to send and recieve MIDI from the host Mac  </mutableString>
+                                <string key="text">-Ensure the iOS device and host Mac are on the same local network connection         -Open Audio MIDI Setup from 'Other' under launchpad                                           -Open MIDI studio, under Window &gt; Show MIDI studio  and select 'network'     -Press + under sessions to create a new session, in the directory below the current iOS device should be shown, (ie. iPhone simulator, Nick's ipad)                      -Select the device and press 'connect'            -The app should now be paired and ready to send and recieve MIDI from the host Mac  </string>
                                 <color key="textColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1510,7 +1510,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DzR-aX-TXD">
                                 <rect key="frame" x="425" y="164" width="335" height="442"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">-Ensure bluetooth is enabled on iOS device                                                              -After starting the app, press the bluetooth icon at the top of the view           -Press the slider to adertise bluetooth availability                                                    -On the Mac, open MIDI studio, under Window &gt; Show MIDI studio  and select 'Bluetooth'                                                   -The iOS device should be visible, press connect to pair the app device with the Mac                                                                -The app will automatically move the slider to disable availability if the pairing was successful, press 'done' in the top right                                                                -The app should now be paired and ready to send and recieve MIDI from the host Mac  </mutableString>
+                                <string key="text">-Ensure bluetooth is enabled on iOS device                                                              -After starting the app, press the bluetooth icon at the top of the view           -Press the slider to adertise bluetooth availability                                                    -On the Mac, open MIDI studio, under Window &gt; Show MIDI studio  and select 'Bluetooth'                                                   -The iOS device should be visible, press connect to pair the app device with the Mac                                                                -The app will automatically move the slider to disable availability if the pairing was successful, press 'done' in the top right                                                                -The app should now be paired and ready to send and recieve MIDI from the host Mac  </string>
                                 <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1590,7 +1590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GB-Ap-KWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675.5859375" y="-407.421875"/>
+            <point key="canvasLocation" x="676" y="-354"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="KYC-TX-uli">
@@ -1659,19 +1659,10 @@
         <!--View Controller-->
         <scene sceneID="nlp-zt-gOA">
             <objects>
-                <viewController id="bUD-fO-0hv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SAR-a7-svo"/>
-                        <viewControllerLayoutGuide type="bottom" id="Szr-Ug-MNc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hch-Uo-8ry">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
+                <viewController id="bUD-fO-0hv" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cC2-nI-HHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-71" y="1536"/>
         </scene>
     </scenes>
     <resources>
