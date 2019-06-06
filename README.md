@@ -1,5 +1,5 @@
 # Controlla-iOS
-DAW control surface app for iOS (iPad). Can connect to a computer running any DAW via WiFi or bluetooth and sends MIDI commands. 
+DAW control surface app for iOS (iPad), made for a University 2nd year mobile applications module. Can connect to a computer running any DAW via WiFi or bluetooth and sends MIDI commands. 
 TODO - Compiled for an old version of iOS (2016), will need work in order to compile for latest iOS version most likely.
 
 # Features
